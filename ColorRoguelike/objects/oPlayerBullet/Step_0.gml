@@ -12,6 +12,7 @@ if(place_meeting(x,y,oEnemyMaster))
 		enemyHealth = enemyHealth - 2	
 	}
 	
+	
 	instance_destroy()
 }
 

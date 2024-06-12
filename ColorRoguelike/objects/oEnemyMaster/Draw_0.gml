@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Draw self
 draw_self() //always needs to draw itself
 
 //separately, needs to draw the white fill sprite over itself based on health
