@@ -1,12 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemyTriangle",
+  "name": "oEnemyTriangleBullet",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":3,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -14,10 +12,7 @@
     "name": "Enemies",
     "path": "folders/Objects/Enemies.yy",
   },
-  "parentObjectId": {
-    "name": "oEnemyMaster",
-    "path": "objects/oEnemyMaster/oEnemyMaster.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -34,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sEnemyTriangleGreen",
-    "path": "sprites/sEnemyTriangleGreen/sEnemyTriangleGreen.yy",
+    "name": "sTriangleBulletGreen",
+    "path": "sprites/sTriangleBulletGreen/sTriangleBulletGreen.yy",
   },
   "spriteMaskId": null,
   "visible": true,

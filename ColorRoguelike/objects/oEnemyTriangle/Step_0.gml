@@ -51,7 +51,18 @@ else if(moveStage = "2") //start rotating
 
 else if (moveStage = "3") //need to shoot projectiles
 {
-	moveStage = "4"
+	
+	if(not(alarm_get(3) > 0)) //if we are waiting for a bullet to be shot, do nothing
+	{
+		angleToPlayer = point_direction(x,y,oPlayer.x,oPlayer.y)  //determine direction of player relative to this enemy
+	
+		bulletsShot = 0
+		shootingCurrentAngle = angleToPlayer - (sign(stage2RotIncrementSpeed) * arcRange / 2) //start shooting in the general direction of player, starting at one side of arc
+		shootingIncrementAngle = arcRange / bulletsToShoot * sign(stage2RotIncrementSpeed) // increment direction is based off of which direction the triangle is rotating
+	
+		alarm_set(3,firingCooldownSteps) //wait specified number of steps, then shoot first bullet
+	}
+	
 }
 
 else if (moveStage = "4")
@@ -65,10 +76,6 @@ else if (moveStage = "4")
 		moveStage = "0"
 		alarm_set(1,120)
 	}
-
-
-
-
 
 //move based on xSpeed and ySpeed
 x = x + xSpeed
