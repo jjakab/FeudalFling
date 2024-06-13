@@ -3,6 +3,10 @@
 
 //If state is in rotate, change to dash, will only happen every 2 seconds
 if (state == "rotate"){
+	var player_x = oPlayer.x
+	var player_y = oPlayer.y 
+	
+	player_direction = point_direction(x, y, player_x, player_y)
 	state = "dash"
 	alarm_set(0, 120)
 }

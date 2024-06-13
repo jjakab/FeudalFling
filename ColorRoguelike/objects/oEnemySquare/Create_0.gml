@@ -9,6 +9,10 @@ ySpeed = 0
 rotSpeed = 0
 dashSpeed = 10
 
+xdirection = 0
+ydirection = 0
+player_direction = 0
+
 state = "rotate"
 rotationTime = 120;
 
