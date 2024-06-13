@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -21,18 +21,20 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
-    {"name":"sEnemyPentagonWhite","order":2,"path":"sprites/sEnemyPentagonWhite/sEnemyPentagonWhite.yy",},
-    {"name":"oEnemyTriangle","order":2,"path":"objects/oEnemyTriangle/oEnemyTriangle.yy",},
-    {"name":"sWhiteBackground","order":1,"path":"sprites/sWhiteBackground/sWhiteBackground.yy",},
-    {"name":"sTriangleBulletGreen","order":5,"path":"sprites/sTriangleBulletGreen/sTriangleBulletGreen.yy",},
-    {"name":"sPlayerBullet","order":1,"path":"sprites/sPlayerBullet/sPlayerBullet.yy",},
-    {"name":"oPlayerBullet","order":1,"path":"objects/oPlayerBullet/oPlayerBullet.yy",},
-    {"name":"oEnemyTriangleBullet","order":3,"path":"objects/oEnemyTriangleBullet/oEnemyTriangleBullet.yy",},
-    {"name":"sEnemyTriangleWhite","order":4,"path":"sprites/sEnemyTriangleWhite/sEnemyTriangleWhite.yy",},
-    {"name":"sEnemyTriangleGreen","order":3,"path":"sprites/sEnemyTriangleGreen/sEnemyTriangleGreen.yy",},
-    {"name":"sEnemyPentagonRed","order":1,"path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",},
+  "ResourceOrderSettings":[
     {"name":"oEnemyMaster","order":1,"path":"objects/oEnemyMaster/oEnemyMaster.yy",},
+    {"name":"oEnemySquare","order":4,"path":"objects/oEnemySquare/oEnemySquare.yy",},
+    {"name":"oEnemyTriangle","order":2,"path":"objects/oEnemyTriangle/oEnemyTriangle.yy",},
+    {"name":"oEnemyTriangleBullet","order":3,"path":"objects/oEnemyTriangleBullet/oEnemyTriangleBullet.yy",},
+    {"name":"oPlayerBullet","order":1,"path":"objects/oPlayerBullet/oPlayerBullet.yy",},
+    {"name":"sEnemyPentagonRed","order":1,"path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",},
+    {"name":"sEnemyPentagonWhite","order":2,"path":"sprites/sEnemyPentagonWhite/sEnemyPentagonWhite.yy",},
+    {"name":"sEnemySquareBlue","order":6,"path":"sprites/sEnemySquareBlue/sEnemySquareBlue.yy",},
+    {"name":"sEnemyTriangleGreen","order":3,"path":"sprites/sEnemyTriangleGreen/sEnemyTriangleGreen.yy",},
+    {"name":"sEnemyTriangleWhite","order":4,"path":"sprites/sEnemyTriangleWhite/sEnemyTriangleWhite.yy",},
     {"name":"sMovementBig","order":1,"path":"sprites/sMovementBig/sMovementBig.yy",},
+    {"name":"sPlayerBullet","order":1,"path":"sprites/sPlayerBullet/sPlayerBullet.yy",},
+    {"name":"sTriangleBulletGreen","order":5,"path":"sprites/sTriangleBulletGreen/sTriangleBulletGreen.yy",},
+    {"name":"sWhiteBackground","order":1,"path":"sprites/sWhiteBackground/sWhiteBackground.yy",},
   ],
 }
