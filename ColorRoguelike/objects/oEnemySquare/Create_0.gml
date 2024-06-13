@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Creating some instance variables for the square..
+
 fillSprite = sEnemySquareBlue
 enemyBaseHealth = 75
 
