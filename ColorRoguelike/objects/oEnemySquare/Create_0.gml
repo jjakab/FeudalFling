@@ -4,17 +4,18 @@ fillSprite = sEnemySquareBlue
 enemyBaseHealth = 75
 
 
-xSpeed = 0
-ySpeed = 0
-rotSpeed = 0
-dashSpeed = 10
+xSpeed = 7
+ySpeed = 7
+rotSpeed = 2
+dashSpeed = 7
 
 xdirection = 0
 ydirection = 0
-player_direction = 0
+playerDirection = 0
+angleIncrement = 0.5
 
 state = "rotate"
-rotationTime = 120;
+standardPhaseTime = 120;
 
 alarm_set(0, 120)
 event_inherited()
