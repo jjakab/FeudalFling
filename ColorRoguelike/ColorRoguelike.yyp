@@ -48,6 +48,7 @@
     {"id":{"name":"oPlayerBullet","path":"objects/oPlayerBullet/oPlayerBullet.yy",},},
     {"id":{"name":"rBase","path":"rooms/rBase/rBase.yy",},},
     {"id":{"name":"drawSpriteOffsetFixed","path":"scripts/drawSpriteOffsetFixed/drawSpriteOffsetFixed.yy",},},
+    {"id":{"name":"gainExp","path":"scripts/gainExp/gainExp.yy",},},
     {"id":{"name":"sEnemyPentagonRed","path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",},},
     {"id":{"name":"sEnemyPentagonWhite","path":"sprites/sEnemyPentagonWhite/sEnemyPentagonWhite.yy",},},
     {"id":{"name":"sEnemySquareBlue","path":"sprites/sEnemySquareBlue/sEnemySquareBlue.yy",},},

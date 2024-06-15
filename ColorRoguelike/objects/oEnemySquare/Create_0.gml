@@ -15,7 +15,9 @@ playerDirection = 0
 angleIncrement = 0.5
 
 state = "rotate"
-standardPhaseTime = 120;
+standardPhaseTime = 120
+
+expAmount = 5
 
 alarm_set(0, 120)
 event_inherited()
