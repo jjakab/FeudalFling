@@ -3,7 +3,7 @@
 fillSprite = sEnemyTriangleWhite
 enemyBaseHealth = 50
 
-expAmount = 5
+enemyType = "triangle"
 
 //movement related
 

@@ -17,7 +17,7 @@ angleIncrement = 0.5
 state = "rotate"
 standardPhaseTime = 120
 
-expAmount = 5
+enemyType = "square"
 
 alarm_set(0, 120)
 event_inherited()

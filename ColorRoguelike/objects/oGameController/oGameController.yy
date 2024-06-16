@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyPentagon",
+  "%Name":"oGameController",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyPentagon",
+  "name":"oGameController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Control",
+    "path":"folders/Objects/Control.yy",
   },
-  "parentObjectId":{
-    "name":"oEnemyMaster",
-    "path":"objects/oEnemyMaster/oEnemyMaster.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sEnemyPentagonRed",
-    "path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
