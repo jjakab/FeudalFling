@@ -2,7 +2,7 @@
 
 fillSprite = sEnemyPentagonWhite
 enemySpeed = 1.2
-enemyBaseHealth = 100
+enemyBaseHealth = 50
 
 enemyType = "pentagon"
 

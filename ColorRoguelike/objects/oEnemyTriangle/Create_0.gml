@@ -1,7 +1,7 @@
 /// @description Variable declarations
 
 fillSprite = sEnemyTriangleWhite
-enemyBaseHealth = 50
+enemyBaseHealth = 25
 
 enemyType = "triangle"
 

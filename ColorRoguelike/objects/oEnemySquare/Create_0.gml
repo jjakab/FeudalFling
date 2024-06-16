@@ -1,7 +1,7 @@
 //Creating some instance variables for the square..
 
-fillSprite = sEnemySquareBlue
-enemyBaseHealth = 75
+fillSprite = sEnemySquareWhite
+enemyBaseHealth = 40
 
 
 xSpeed = 7

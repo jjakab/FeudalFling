@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTriangleBulletGreen",
-    "path":"sprites/sTriangleBulletGreen/sTriangleBulletGreen.yy",
+    "name":"sEnemyTriangleBulletGreen",
+    "path":"sprites/sEnemyTriangleBulletGreen/sEnemyTriangleBulletGreen.yy",
   },
   "spriteMaskId":null,
   "visible":true,

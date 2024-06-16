@@ -12,6 +12,5 @@ function gainExp(){
 		global.level += 1
 	}
 	
-	
 }
 
