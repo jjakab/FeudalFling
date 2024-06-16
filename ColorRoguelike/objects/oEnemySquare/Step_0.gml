@@ -31,3 +31,5 @@ else if(state = "dash"){
 else if(state = "pause"){
 	
 }
+
+event_inherited()

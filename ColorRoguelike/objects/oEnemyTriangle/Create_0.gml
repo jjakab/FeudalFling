@@ -3,6 +3,8 @@
 fillSprite = sEnemyTriangleWhite
 enemyBaseHealth = 50
 
+expAmount = 5
+
 //movement related
 
 xSpeed = 0
