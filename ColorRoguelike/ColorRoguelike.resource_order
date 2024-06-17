@@ -28,7 +28,7 @@
     {"name":"oEnemyTriangle","order":2,"path":"objects/oEnemyTriangle/oEnemyTriangle.yy",},
     {"name":"oEnemyTriangleBullet","order":3,"path":"objects/oEnemyTriangleBullet/oEnemyTriangleBullet.yy",},
     {"name":"oPlayerBullet","order":1,"path":"objects/oPlayerBullet/oPlayerBullet.yy",},
-    {"name":"oPlayerRotatingCircleDisappearing","order":3,"path":"objects/oPlayerRotatingCircleDisappearing/oPlayerRotatingCircleDisappearing.yy",},
+    {"name":"oPlayerRotatingCircle","order":3,"path":"objects/oPlayerRotatingCircle/oPlayerRotatingCircle.yy",},
     {"name":"createPlayerRotatingCircle","order":2,"path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},
     {"name":"gainExp","order":1,"path":"scripts/gainExp/gainExp.yy",},
     {"name":"sEnemyPentagonRed","order":1,"path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",},

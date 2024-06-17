@@ -9,7 +9,7 @@ function createPlayerRotatingCircle(){
 	var xPos = oPlayer.x + tempRadiusFromPlayer * (cos(tempCurrentAngle))
 	var yPos = oPlayer.y + tempRadiusFromPlayer * (sin(tempCurrentAngle))
 	
-	newCircle = instance_create_depth(xPos,yPos,0,oPlayerRotatingCircleDisappearing)
+	newCircle = instance_create_depth(xPos,yPos,0,oPlayerRotatingCircle)
 	with(newCircle)
 	{
 		radiusFromPlayer = argument0

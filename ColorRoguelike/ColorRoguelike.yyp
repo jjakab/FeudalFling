@@ -49,7 +49,7 @@
     {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oPlayerBullet","path":"objects/oPlayerBullet/oPlayerBullet.yy",},},
-    {"id":{"name":"oPlayerRotatingCircleDisappearing","path":"objects/oPlayerRotatingCircleDisappearing/oPlayerRotatingCircleDisappearing.yy",},},
+    {"id":{"name":"oPlayerRotatingCircle","path":"objects/oPlayerRotatingCircle/oPlayerRotatingCircle.yy",},},
     {"id":{"name":"rBase","path":"rooms/rBase/rBase.yy",},},
     {"id":{"name":"createPlayerRotatingCircle","path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},},
     {"id":{"name":"drawSpriteOffsetFixed","path":"scripts/drawSpriteOffsetFixed/drawSpriteOffsetFixed.yy",},},
