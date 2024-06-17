@@ -22,7 +22,7 @@ else if(state = "pause"){
 	var distance = point_distance(x, y, player_x, player_y)
 	var travelTime = distance/dashSpeed
 	
-	alarm_set(0, travelTime)
+	alarm_set(0, max(1,travelTime))
 }
 //Dashes the square towards  the player
 //Changes square back to rotate after 2 seconds
