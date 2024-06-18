@@ -7,7 +7,7 @@ global.level = 1
 //Map to dictate how much exp each shape gives
 shapeExpMap = ds_map_create()
 	
-ds_map_add(shapeExpMap, "square", 5)
+ds_map_add(shapeExpMap, "square", 11)
 ds_map_add(shapeExpMap, "triangle", 2)
 ds_map_add(shapeExpMap, "pentagon", 7)
 

@@ -10,6 +10,12 @@ function gainExp(){
 		global.exp -= global.expNextLevel
 		global.expNextLevel = global.expNextLevel * 1.5
 		global.level += 1
+		
+		//Create an instance of the power up zone every time you level up
+		var xPos = irandom_range(0 + 64, room_width - 64)
+		var yPos = irandom_range(0 + 64, room_width - 64)
+		
+		instance_create_layer(xPos, yPos, "Instances", oPowerUpZone)
 	}
 	
 }
