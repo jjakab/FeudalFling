@@ -12,7 +12,10 @@ ds_map_add(shapeExpMap, "triangle", 2)
 ds_map_add(shapeExpMap, "pentagon", 7)
 
 
-//draw settings
+//Draw settings
 draw_set_color(c_black)
 draw_set_halign(fa_center)
 draw_set_font(fLevelFont)
+
+//Generate random seeds
+randomize()
