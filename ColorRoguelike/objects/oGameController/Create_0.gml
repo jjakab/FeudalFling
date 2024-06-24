@@ -11,6 +11,23 @@ ds_map_add(shapeExpMap, "square", 11)
 ds_map_add(shapeExpMap, "triangle", 2)
 ds_map_add(shapeExpMap, "pentagon", 7)
 
+//Variables related to spawning enemies
+enemiesToSpawn = 3 //will be determined based on wave #
+enemiesSpawned = 0
+
+spawnVertical = 0
+spawnX = 0
+spawnY = 0
+targetX = 0
+targetY = 0
+spawnAngleToTarget = 0
+spawnConeWidth = 60
+spawnCurrentAngle = 0
+spawnIncrementAngle = 0
+spawnDirectionalModifier = 0
+spawnInitialVelocity = 8
+
+alarm_set(0,60)
 
 //Draw settings
 draw_set_color(c_black)
