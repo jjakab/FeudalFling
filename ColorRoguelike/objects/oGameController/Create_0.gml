@@ -11,6 +11,13 @@ ds_map_add(shapeExpMap, "square", 11)
 ds_map_add(shapeExpMap, "triangle", 2)
 ds_map_add(shapeExpMap, "pentagon", 7)
 
+//Map of enemy types to arbitrary integers
+enemyTypeMap = ds_map_create()
+
+ds_map_add(enemyTypeMap,1,oEnemyPentagon)
+ds_map_add(enemyTypeMap,2,oEnemySquare)
+ds_map_add(enemyTypeMap,3,oEnemyTriangle)
+
 //Variables related to spawning enemies
 enemiesToSpawn = 3 //will be determined based on wave #
 enemiesSpawned = 0
@@ -21,7 +28,7 @@ spawnY = 0
 targetX = 0
 targetY = 0
 spawnAngleToTarget = 0
-spawnConeWidth = 60
+spawnConeWidth = 80
 spawnCurrentAngle = 0
 spawnIncrementAngle = 0
 spawnDirectionalModifier = 0

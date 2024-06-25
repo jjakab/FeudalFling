@@ -51,7 +51,7 @@ else
 
 for (var i = enemiesSpawned; i < enemiesToSpawn; i++) //ENHANCEMENT: INCORPORATE ALARMS
 {
-	spawnedEnemy = instance_create_depth(spawnX,spawnY,0,oEnemyTriangle) //ENHANCEMENT: determine enemy type dynamically?
+	spawnedEnemy = instance_create_depth(spawnX,spawnY,0,ds_map_find_value(enemyTypeMap,irandom_range(1,ds_map_size(enemyTypeMap)))) //ENHANCEMENT: determine enemy type dynamically?
 	with(spawnedEnemy)
 	{
 		spawnVelocityX = other.spawnInitialVelocity * cos(degtorad(other.spawnCurrentAngle))
