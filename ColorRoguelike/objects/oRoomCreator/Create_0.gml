@@ -26,12 +26,13 @@ arrayUpperY = 0
 angleToSearch = 0
 gridDistanceToSearch = divisor / 5
 
-roomCount = 3
+roomCount = 7
 currentRoom = 1
 
 for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 {
-	if(currentRoom = 1) //if this is the first room, we generate a random x y coordinate pair
+	//DYNAMIC ROOM GENERATION
+	/*if(currentRoom = 1) //if this is the first room, we generate a random x y coordinate pair
 	{
 		roomXPos = irandom_range(5,ds_grid_width(occupiedGrid) - 5)
 		roomYPos = irandom_range(5,ds_grid_height(occupiedGrid) - 5)
@@ -53,9 +54,41 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 		roomXPos += max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * cos(angleToSearch))))
 		roomYPos += max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * sin(angleToSearch))))
 	}
+	*/
 	
-	roomWidth = irandom_range(8,16)
-	roomHeight = irandom_range(8,16)
+	switch(currentRoom)
+	{
+		case 1:
+			roomXPos = 6
+			roomYPos = 6
+		break;
+		case 2:
+			roomXPos = 18
+			roomYPos = 6
+		break;
+		case 3:
+			roomXPos = 30
+			roomYPos = 6
+		break;
+		case 4:
+			roomXPos = 6
+			roomYPos = 17
+		break;
+		case 5:
+			roomXPos = 18
+			roomYPos = 17
+		break;
+		case 6:
+			roomXPos = 30
+			roomYPos = 17
+		break;
+		default:
+		break;
+	}
+	
+	
+	roomWidth = irandom_range(8,12)
+	roomHeight = irandom_range(8,12)
 	
 	arrayLeftX = max(0,roomXPos - ceil(roomWidth / 2))
 	arrayRightX = min(ds_grid_width(occupiedGrid),roomXPos + ceil(roomWidth / 2))
