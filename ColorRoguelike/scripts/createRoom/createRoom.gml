@@ -18,8 +18,9 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 	var iteration = 0
 	//Looping through the number of steps and moving through the grid randomly
 	repeat (stepCount) {
-		ds_grid_set(grid_, controllerX, controllerY, FLOOR)
-	
+		ds_grid_set(grid_, controllerX, controllerY, FLOOR) //set value of this local grid
+		ds_grid_set(occupiedGrid,controllerX + (leftX / wallSize),controllerY + (lowerY / wallSize),true) //set value of master occupiedGrid
+		
 		controllerDirection = irandom(3)
 	
 		//reset the controller periodically
@@ -62,7 +63,8 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 	for(var _y = 1; _y < height_ -1; _y++){
 		for(var _x = 1; _x < width_ -1; _x++){
 			if (ds_grid_get(grid_, _x, _y) == FLOOR){
-				instance_create_depth(leftX + (_x * wallSize), lowerY + (_y * wallSize),0,oWall)
+				//instance_create_depth(leftX + (_x * wallSize), lowerY + (_y * wallSize),0,oFloor)
+				tilemap_set(wallMapID,1,(leftX / wallSize) + _x, (lowerY / wallSize) + _y)
 			}
 		}
 	}

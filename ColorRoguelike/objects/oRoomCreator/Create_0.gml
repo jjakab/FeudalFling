@@ -3,17 +3,17 @@
 
 randomize()
 
+//Split the room based on the tile size
 divisor = 64
 
+//Declare the tilemap we're using
+wallMapID = layer_tilemap_get_id("WallTiles"); //declare the tilemap we're using
 
-//make a 2d grid to represent different cells in 2D array and set every cell to false
+//Make a 2d grid to represent different cells in 2D array and set every cell to false
 occupiedGrid = ds_grid_create(room_width / divisor, room_height / divisor)
-for (var heightIncrement = 0; heightIncrement < ds_grid_height(occupiedGrid);heightIncrement++) {
-	for (var widthIncrement = 0; widthIncrement < ds_grid_width(occupiedGrid); widthIncrement++) {
-		ds_grid_set(occupiedGrid,widthIncrement,heightIncrement,false)
-	}
-}
+ds_grid_set_region(occupiedGrid,0,0,(room_width / divisor) - 1,(room_height / divisor) - 1,false)
 
+//Variables related to room generation
 roomXPos = 0
 roomYPos = 0
 roomHeight = 0
@@ -29,13 +29,17 @@ gridDistanceToSearch = divisor / 5
 roomCount = 7
 currentRoom = 1
 
+//Declare two 1D arrays of room positions
+roomXCoordinates[0] = 0
+roomYCoordinates[0] = 0
+
 for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 {
 	//DYNAMIC ROOM GENERATION
-	/*if(currentRoom = 1) //if this is the first room, we generate a random x y coordinate pair
+	/*if(currentRoom = 1) //if this is the first room, we place it at the top left
 	{
-		roomXPos = irandom_range(5,ds_grid_width(occupiedGrid) - 5)
-		roomYPos = irandom_range(5,ds_grid_height(occupiedGrid) - 5)
+		roomXPos = 5
+		roomYPos = 5
 		
 	}
 	else //if this is not the first room, we move in a random direction until that direction is valid
@@ -86,6 +90,9 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 		break;
 	}
 	
+	roomXCoordinates[currentRoom] = roomXPos
+	roomYCoordinates[currentRoom] = roomYPos
+	
 	
 	roomWidth = irandom_range(8,12)
 	roomHeight = irandom_range(8,12)
@@ -96,11 +103,13 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 	arrayUpperY = max(0,roomYPos - ceil(roomHeight / 2))
 	
 	//set surrounding array cells to be filled
+	/*
 	for (var arrayX = arrayLeftX; arrayX < arrayRightX; arrayX++) {
 		for (var arrayY = arrayUpperY; arrayY < arrayLowerY; arrayY++) {
 			ds_grid_set(occupiedGrid,arrayX,arrayY,true)
 		}
 	}
+	*/
 	
 	//create a room at the specified position
 	createRoom(
@@ -108,11 +117,19 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 		(arrayLeftX * divisor),
 		(arrayLowerY * divisor),
 		(arrayUpperY * divisor),
-		200
+		100
 		)
 	
-	
 }
+
+bridgeGap(roomXCoordinates[1],roomYCoordinates[1],roomXCoordinates[4],roomYCoordinates[4])
+bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[5],roomYCoordinates[5])
+bridgeGap(roomXCoordinates[3],roomYCoordinates[3],roomXCoordinates[6],roomYCoordinates[6])
+
+bridgeGap(roomXCoordinates[1],roomYCoordinates[1],roomXCoordinates[2],roomYCoordinates[2])
+bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[3],roomYCoordinates[3])
+bridgeGap(roomXCoordinates[4],roomYCoordinates[4],roomXCoordinates[5],roomYCoordinates[5])
+bridgeGap(roomXCoordinates[5],roomYCoordinates[5],roomXCoordinates[6],roomYCoordinates[6])
 
 
 //createRoom(room_width,0,room_height,0,200)

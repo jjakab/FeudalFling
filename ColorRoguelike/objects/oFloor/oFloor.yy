@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
+  "%Name":"oFloor",
   "eventList":[],
   "managed":true,
-  "name":"oWall",
+  "name":"oFloor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Walls.yy",
+    "name":"Terrain",
+    "path":"folders/Objects/Terrain.yy",
   },
   "parentObjectId":null,
   "persistent":false,
