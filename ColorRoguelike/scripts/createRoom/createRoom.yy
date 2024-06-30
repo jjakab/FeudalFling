@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"macroCreator",
+  "%Name":"createRoom",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"macroCreator",
+  "name":"createRoom",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

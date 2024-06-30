@@ -61,7 +61,7 @@ for (var i = enemiesSpawned; i < enemiesToSpawn; i++) //ENHANCEMENT: INCORPORATE
 	spawnCurrentAngle += spawnIncrementAngle
 }
 
-alarm_set(0,240)
+alarm_set(0,-1)
 
 
 

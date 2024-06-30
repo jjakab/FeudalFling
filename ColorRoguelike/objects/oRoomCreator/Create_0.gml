@@ -2,6 +2,93 @@
 // You can write your code in this editor
 
 randomize()
+
+divisor = 64
+
+
+//make a 2d grid to represent different cells in 2D array and set every cell to false
+occupiedGrid = ds_grid_create(room_width / divisor, room_height / divisor)
+for (var heightIncrement = 0; heightIncrement < ds_grid_height(occupiedGrid);heightIncrement++) {
+	for (var widthIncrement = 0; widthIncrement < ds_grid_width(occupiedGrid); widthIncrement++) {
+		ds_grid_set(occupiedGrid,widthIncrement,heightIncrement,false)
+	}
+}
+
+roomXPos = 0
+roomYPos = 0
+roomHeight = 0
+roomWidth = 0
+arrayLeftX = 0
+arrayRightX = 0
+arrayLowerY = 0
+arrayUpperY = 0
+
+angleToSearch = 0
+gridDistanceToSearch = divisor / 5
+
+roomCount = 3
+currentRoom = 1
+
+for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
+{
+	if(currentRoom = 1) //if this is the first room, we generate a random x y coordinate pair
+	{
+		roomXPos = irandom_range(5,ds_grid_width(occupiedGrid) - 5)
+		roomYPos = irandom_range(5,ds_grid_height(occupiedGrid) - 5)
+		
+	}
+	else //if this is not the first room, we move in a random direction until that direction is valid
+	{
+		do {
+			angleToSearch = irandom_range(0,359) //choose a random angle
+		} until(
+			ds_grid_get( //if we go a certain number of units in the direction we chose, do we hit an occupied cell?
+				occupiedGrid,
+				roomXPos + max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * cos(angleToSearch)))),
+				roomYPos + max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * sin(angleToSearch))))
+			) = false
+		)
+		
+		//change the new x and y accordingly
+		roomXPos += max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * cos(angleToSearch))))
+		roomYPos += max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * sin(angleToSearch))))
+	}
+	
+	roomWidth = irandom_range(8,16)
+	roomHeight = irandom_range(8,16)
+	
+	arrayLeftX = max(0,roomXPos - ceil(roomWidth / 2))
+	arrayRightX = min(ds_grid_width(occupiedGrid),roomXPos + ceil(roomWidth / 2))
+	arrayLowerY = min(ds_grid_height(occupiedGrid),roomYPos + ceil(roomHeight / 2))
+	arrayUpperY = max(0,roomYPos - ceil(roomHeight / 2))
+	
+	//set surrounding array cells to be filled
+	for (var arrayX = arrayLeftX; arrayX < arrayRightX; arrayX++) {
+		for (var arrayY = arrayUpperY; arrayY < arrayLowerY; arrayY++) {
+			ds_grid_set(occupiedGrid,arrayX,arrayY,true)
+		}
+	}
+	
+	//create a room at the specified position
+	createRoom(
+		(arrayRightX * divisor),
+		(arrayLeftX * divisor),
+		(arrayLowerY * divisor),
+		(arrayUpperY * divisor),
+		200
+		)
+	
+	
+}
+
+
+//createRoom(room_width,0,room_height,0,200)
+
+
+
+
+
+/*
 var wallMapID = layer_tilemap_get_id("WallTiles");
 
 //Creating grid for room generation
@@ -17,11 +104,19 @@ var controllerY = height_ div 2
 //Randomizing first direction of controller
 var controllerDirection = irandom(3)
 var steps = 200
+var iteration = 0
 //Looping through the number of steps and moving through the grid randomly
 repeat (steps) {
 	ds_grid_set(grid_, controllerX, controllerY, FLOOR)
 	
 	controllerDirection = irandom(3)
+	
+	//reset the controller periodically
+	if(iteration % 25 = 0)
+	{
+		controllerX = width_ div 2
+		controllerY = height_ div 2
+	}
 	
 	if(controllerDirection == 0){
 		controllerX += 1
@@ -37,7 +132,7 @@ repeat (steps) {
 	}
 	//Ensuring the controllers don't fall outside the grid
 	if (controllerX < 2){
-		controllerX -= 2
+		controllerX += 2
 	}
 	else if(controllerX >= width_ -2){
 		controllerX -= 2
@@ -48,6 +143,7 @@ repeat (steps) {
 	else if(controllerY >= height_ -2){
 		controllerY -= 2
 	}
+	iteration++
 }
 
 //tilemap_set(wallMapID, 1, 5, 5)
