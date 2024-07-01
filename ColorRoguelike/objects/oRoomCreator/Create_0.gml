@@ -7,7 +7,8 @@ randomize()
 divisor = 16
 
 //Declare the tilemap we're using
-wallMapID = layer_tilemap_get_id("WallTiles"); //declare the tilemap we're using
+floorMapID = layer_tilemap_get_id("FloorTiles"); //declare the tilemap we're using
+wallMapID = layer_tilemap_get_id("WallTiles");
 
 //Make a 2d grid to represent different cells in 2D array and set every cell to false
 occupiedGrid = ds_grid_create(room_width / divisor, room_height / divisor)
@@ -138,96 +139,20 @@ bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[6],roomYCoord
 for (var _y = 0; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 	for (var _x = 0; _x < ds_grid_width(occupiedGrid)-1;_x++) {
 		
-		if(_x=12 and _y = 17) {
-				show_debug_message("test point reached")	
-			}
-		if(ds_grid_get(occupiedGrid,_x,_y) = true) {
-			
-			var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == true
-			var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == true
-			var _east_tile = ds_grid_get(occupiedGrid,_x+1,_y) == true
-			var _south_tile = ds_grid_get(occupiedGrid,_x,_y+1) == true
-			
-			var _tile_index = north * _north_tile + west * _west_tile + east * _east_tile + south * _south_tile
-			tilemap_set(wallMapID,_tile_index,_x+1,_y+1)		
-		
+		var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == true
+		var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == true
+		var _east_tile = ds_grid_get(occupiedGrid,_x+1,_y) == true
+		var _south_tile = ds_grid_get(occupiedGrid,_x,_y+1) == true
+		var _tile_index = north * _north_tile + west * _west_tile + east * _east_tile + south * _south_tile
+		//Create floors
+		if(ds_grid_get(occupiedGrid,_x,_y) = true)  {
+			tilemap_set(floorMapID,_tile_index,_x+1,_y+1)
+		}
+		//Create walls if necessary
+		else if(ds_grid_get(occupiedGrid,_x,_y) = false) {
+			//tilemap_set(wallMapID, _tile_index, _x+1, _y+1)
 		}
 	}
 	
-}
-
-
-//createRoom(room_width,0,room_height,0,200)
-
-
-
-
-
-/*
-var wallMapID = layer_tilemap_get_id("WallTiles");
-
-//Creating grid for room generation
-width_ = room_width div cellWidth
-height_ = room_height div cellHeight
-
-grid_ = ds_grid_create(width_, height_)
-//Setting entire region to void
-ds_grid_set_region(grid_, 0, 0, width_, height_, empty)
-//Centering controller in the middle  of grid
-var controllerX = width_ div 2
-var controllerY = height_ div 2
-//Randomizing first direction of controller
-var controllerDirection = irandom(3)
-var steps = 200
-var iteration = 0
-//Looping through the number of steps and moving through the grid randomly
-repeat (steps) {
-	ds_grid_set(grid_, controllerX, controllerY, FLOOR)
-	
-	controllerDirection = irandom(3)
-	
-	//reset the controller periodically
-	if(iteration % 25 = 0)
-	{
-		controllerX = width_ div 2
-		controllerY = height_ div 2
-	}
-	
-	if(controllerDirection == 0){
-		controllerX += 1
-	}
-	else if(controllerDirection == 1){
-		controllerY += 1	
-	}
-	else if(controllerDirection == 2){
-		controllerX -= 1	
-	}
-	else if(controllerDirection == 3){
-		controllerY -= 1	
-	}
-	//Ensuring the controllers don't fall outside the grid
-	if (controllerX < 2){
-		controllerX += 2
-	}
-	else if(controllerX >= width_ -2){
-		controllerX -= 2
-	}
-	if(controllerY < 2){
-		controllerY += 2
-	}
-	else if(controllerY >= height_ -2){
-		controllerY -= 2
-	}
-	iteration++
-}
-
-//tilemap_set(wallMapID, 1, 5, 5)
-
-for(var _y = 1; _y < height_ -1; _y++){
-	for(var _x = 1; _x < width_ -1; _x++){
-		if (ds_grid_get(grid_, _x, _y) == FLOOR){
-			tilemap_set(wallMapID,1 , _x, _y)
-		}
-	}
 }
 

@@ -1,7 +1,7 @@
 /// @description Initiate variables
 
 
-moveSpeed = 3
+moveSpeed = 1
 
 keyRight = 0
 keyUp = 0

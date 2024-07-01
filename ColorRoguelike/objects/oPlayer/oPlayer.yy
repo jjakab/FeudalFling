@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerBase",
-    "path":"sprites/sPlayerBase/sPlayerBase.yy",
+    "name":"sPlayerTemporary",
+    "path":"sprites/sPlayerTemporary/sPlayerTemporary.yy",
   },
   "spriteMaskId":null,
   "visible":true,
