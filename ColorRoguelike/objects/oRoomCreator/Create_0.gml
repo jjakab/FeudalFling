@@ -117,7 +117,7 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 		(arrayLeftX * divisor),
 		(arrayLowerY * divisor),
 		(arrayUpperY * divisor),
-		100
+		200
 		)
 	
 }
@@ -131,7 +131,7 @@ bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[3],roomYCoord
 bridgeGap(roomXCoordinates[4],roomYCoordinates[4],roomXCoordinates[5],roomYCoordinates[5])
 bridgeGap(roomXCoordinates[5],roomYCoordinates[5],roomXCoordinates[6],roomYCoordinates[6])
 
-
+bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[6],roomYCoordinates[6])
 //createRoom(room_width,0,room_height,0,200)
 
 

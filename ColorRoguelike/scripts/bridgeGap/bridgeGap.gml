@@ -29,7 +29,7 @@ function bridgeGap(x1,y1,x2,y2){
 			tilemap_set(wallMapID,1,ceil(currentX),floor(currentY))
 			tilemap_set(wallMapID,1,ceil(currentX),ceil(currentY))
 		
-			currentY += ((yIncrement) * sign(y2 - y1))
+			currentY += ((yIncrement / 2) * sign(y2 - y1))
 		}
 	}
 	else

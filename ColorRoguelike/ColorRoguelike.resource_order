@@ -39,6 +39,7 @@
     {"name":"createRoom","order":4,"path":"scripts/createRoom/createRoom.yy",},
     {"name":"gainExp","order":1,"path":"scripts/gainExp/gainExp.yy",},
     {"name":"roomGenMacroCreator","order":3,"path":"scripts/roomGenMacroCreator/roomGenMacroCreator.yy",},
+    {"name":"sDungeonTileset","order":2,"path":"sprites/sDungeonTileset/sDungeonTileset.yy",},
     {"name":"sEnemyPentagonRed","order":1,"path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",},
     {"name":"sEnemyPentagonWhite","order":2,"path":"sprites/sEnemyPentagonWhite/sEnemyPentagonWhite.yy",},
     {"name":"sEnemySquareBlue","order":6,"path":"sprites/sEnemySquareBlue/sEnemySquareBlue.yy",},
