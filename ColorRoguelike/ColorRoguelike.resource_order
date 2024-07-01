@@ -55,6 +55,6 @@
     {"name":"sWallTileset","order":4,"path":"sprites/sWallTileset/sWallTileset.yy",},
     {"name":"sWhiteBackground","order":1,"path":"sprites/sWhiteBackground/sWhiteBackground.yy",},
     {"name":"tFloors","order":1,"path":"tilesets/tFloors/tFloors.yy",},
-    {"name":"TileSet2","order":2,"path":"tilesets/TileSet2/TileSet2.yy",},
+    {"name":"tWallTemporary","order":2,"path":"tilesets/tWallTemporary/tWallTemporary.yy",},
   ],
 }

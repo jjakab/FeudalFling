@@ -81,7 +81,7 @@
     {"id":{"name":"sWallTileset","path":"sprites/sWallTileset/sWallTileset.yy",},},
     {"id":{"name":"sWhiteBackground","path":"sprites/sWhiteBackground/sWhiteBackground.yy",},},
     {"id":{"name":"tFloors","path":"tilesets/tFloors/tFloors.yy",},},
-    {"id":{"name":"TileSet2","path":"tilesets/TileSet2/TileSet2.yy",},},
+    {"id":{"name":"tWallTemporary","path":"tilesets/tWallTemporary/tWallTemporary.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

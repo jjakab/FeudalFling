@@ -4,9 +4,19 @@
 keyRight = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 keyUp = keyboard_check(ord("W")) - keyboard_check(ord("S"))
 
-//update x position and y position based on movement
-x = x + (keyRight * moveSpeed)
-y = y - (keyUp * moveSpeed)
+//show_debug_message(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y))
+
+//Checking to see if the player will get stuck in wall when they move
+if(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y + (keyUp * moveSpeed)) == 0){
+	if(tilemap_get_at_pixel(wallMapID, x, y  + (keyUp * moveSpeed)) == 0){
+		if(tilemap_get_at_pixel(wallMapID, x + (keyRight*moveSpeed), y) == 0){
+			y = y - (keyUp * moveSpeed)
+			x = x + (keyRight * moveSpeed)
+		}
+	}
+}
+
+
 
 //create rotating circle, then increment angle
 createPlayerRotatingCircle(rotatingCircleRadiusFromPlayer,rotatingCircleCurrentAngle,rotatingCircleLifespan)

@@ -136,8 +136,8 @@ bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[6],roomYCoord
 
 
 //Loop through every value in the grid and tile non-empty cells based on bitmap
-for (var _y = 0; _y < ds_grid_height(occupiedGrid)-1;_y++) {
-	for (var _x = 0; _x < ds_grid_width(occupiedGrid)-1;_x++) {
+for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
+	for (var _x = 1; _x < ds_grid_width(occupiedGrid)-1;_x++) {
 		
 		var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == true
 		var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == true
@@ -150,7 +150,7 @@ for (var _y = 0; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 		}
 		//Create walls if necessary
 		else if(ds_grid_get(occupiedGrid,_x,_y) = false) {
-			//tilemap_set(wallMapID, _tile_index, _x+1, _y+1)
+			tilemap_set(wallMapID, _tile_index, _x+1, _y+1)
 		}
 	}
 	
