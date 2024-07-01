@@ -60,7 +60,7 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 
 	//tilemap_set(wallMapID, 1, 5, 5)
 
-	for(var _y = 1; _y < height_ -1; _y++){
+	/*for(var _y = 1; _y < height_ -1; _y++){
 		for(var _x = 1; _x < width_ -1; _x++){
 			if (ds_grid_get(grid_, _x, _y) == FLOOR){
 				//instance_create_depth(leftX + (_x * wallSize), lowerY + (_y * wallSize),0,oFloor)
@@ -68,6 +68,7 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 			}
 		}
 	}
+	*/
 
 
 }

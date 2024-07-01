@@ -23,11 +23,12 @@ function bridgeGap(x1,y1,x2,y2){
 			ds_grid_set(occupiedGrid,ceil(currentX),ceil(currentY),true)
 		
 		
-		
+			/*
 			tilemap_set(wallMapID,1,floor(currentX),floor(currentY))
 			tilemap_set(wallMapID,1,floor(currentX),ceil(currentY))
 			tilemap_set(wallMapID,1,ceil(currentX),floor(currentY))
 			tilemap_set(wallMapID,1,ceil(currentX),ceil(currentY))
+			*/
 		
 			currentY += ((yIncrement / 2) * sign(y2 - y1))
 		}
@@ -44,11 +45,12 @@ function bridgeGap(x1,y1,x2,y2){
 			ds_grid_set(occupiedGrid,ceil(currentX),ceil(currentY),true)
 		
 		
-		
+			/*
 			tilemap_set(wallMapID,1,floor(currentX),floor(currentY))
 			tilemap_set(wallMapID,1,floor(currentX),ceil(currentY))
 			tilemap_set(wallMapID,1,ceil(currentX),floor(currentY))
 			tilemap_set(wallMapID,1,ceil(currentX),ceil(currentY))
+			*/
 		
 			currentX += ((xIncrement) * sign(x2 - x1))
 		}

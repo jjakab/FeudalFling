@@ -4,7 +4,7 @@
 randomize()
 
 //Split the room based on the tile size
-divisor = 64
+divisor = 16
 
 //Declare the tilemap we're using
 wallMapID = layer_tilemap_get_id("WallTiles"); //declare the tilemap we're using
@@ -132,6 +132,31 @@ bridgeGap(roomXCoordinates[4],roomYCoordinates[4],roomXCoordinates[5],roomYCoord
 bridgeGap(roomXCoordinates[5],roomYCoordinates[5],roomXCoordinates[6],roomYCoordinates[6])
 
 bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[6],roomYCoordinates[6])
+
+
+//Loop through every value in the grid and tile non-empty cells based on bitmap
+for (var _y = 0; _y < ds_grid_height(occupiedGrid)-1;_y++) {
+	for (var _x = 0; _x < ds_grid_width(occupiedGrid)-1;_x++) {
+		
+		if(_x=12 and _y = 17) {
+				show_debug_message("test point reached")	
+			}
+		if(ds_grid_get(occupiedGrid,_x,_y) = true) {
+			
+			var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == true
+			var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == true
+			var _east_tile = ds_grid_get(occupiedGrid,_x+1,_y) == true
+			var _south_tile = ds_grid_get(occupiedGrid,_x,_y+1) == true
+			
+			var _tile_index = north * _north_tile + west * _west_tile + east * _east_tile + south * _south_tile
+			tilemap_set(wallMapID,_tile_index,_x+1,_y+1)		
+		
+		}
+	}
+	
+}
+
+
 //createRoom(room_width,0,room_height,0,200)
 
 

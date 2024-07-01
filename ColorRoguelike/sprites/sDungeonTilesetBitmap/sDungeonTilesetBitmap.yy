@@ -1,27 +1,27 @@
 {
   "$GMSprite":"",
-  "%Name":"sDungeonTileset",
+  "%Name":"sDungeonTilesetBitmap",
   "bboxMode":0,
-  "bbox_bottom":359,
-  "bbox_left":32,
-  "bbox_right":339,
-  "bbox_top":32,
+  "bbox_bottom":63,
+  "bbox_left":0,
+  "bbox_right":63,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f4c2e802-8e88-4412-819f-115e9091dd57","name":"f4c2e802-8e88-4412-819f-115e9091dd57","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d0274e15-d824-428c-a76d-69694cccead1","name":"d0274e15-d824-428c-a76d-69694cccead1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":384,
+  "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2ddc74c8-e955-491f-888e-2ac49247041b","blendMode":0,"displayName":"default","isLocked":false,"name":"2ddc74c8-e955-491f-888e-2ac49247041b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"34fcf6f9-2e78-4c9d-ab1b-f3e739b6c272","blendMode":0,"displayName":"default","isLocked":false,"name":"34fcf6f9-2e78-4c9d-ab1b-f3e739b6c272","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sDungeonTileset",
+  "name":"sDungeonTilesetBitmap",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sDungeonTileset",
+    "%Name":"sDungeonTilesetBitmap",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sDungeonTileset",
+    "name":"sDungeonTilesetBitmap",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f4c2e802-8e88-4412-819f-115e9091dd57","path":"sprites/sDungeonTileset/sDungeonTileset.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2ba8c072-da9a-4216-9794-96089f003a6a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d0274e15-d824-428c-a76d-69694cccead1","path":"sprites/sDungeonTilesetBitmap/sDungeonTilesetBitmap.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7c14ed5d-40a4-4a5a-9a85-6d652c3a5037","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":368,
+  "width":64,
 }

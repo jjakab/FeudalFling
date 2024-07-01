@@ -39,7 +39,8 @@
     {"name":"createRoom","order":4,"path":"scripts/createRoom/createRoom.yy",},
     {"name":"gainExp","order":1,"path":"scripts/gainExp/gainExp.yy",},
     {"name":"roomGenMacroCreator","order":3,"path":"scripts/roomGenMacroCreator/roomGenMacroCreator.yy",},
-    {"name":"sDungeonTileset","order":2,"path":"sprites/sDungeonTileset/sDungeonTileset.yy",},
+    {"name":"sDungeonTilesetBitmap","order":3,"path":"sprites/sDungeonTilesetBitmap/sDungeonTilesetBitmap.yy",},
+    {"name":"sDungeonTilesetFull","order":2,"path":"sprites/sDungeonTilesetFull/sDungeonTilesetFull.yy",},
     {"name":"sEnemyPentagonRed","order":1,"path":"sprites/sEnemyPentagonRed/sEnemyPentagonRed.yy",},
     {"name":"sEnemyPentagonWhite","order":2,"path":"sprites/sEnemyPentagonWhite/sEnemyPentagonWhite.yy",},
     {"name":"sEnemySquareBlue","order":6,"path":"sprites/sEnemySquareBlue/sEnemySquareBlue.yy",},
@@ -52,5 +53,6 @@
     {"name":"sPlayerBullet","order":1,"path":"sprites/sPlayerBullet/sPlayerBullet.yy",},
     {"name":"sPowerUpZone","order":2,"path":"sprites/sPowerUpZone/sPowerUpZone.yy",},
     {"name":"sWhiteBackground","order":1,"path":"sprites/sWhiteBackground/sWhiteBackground.yy",},
+    {"name":"tFloors","order":1,"path":"tilesets/tFloors/tFloors.yy",},
   ],
 }
