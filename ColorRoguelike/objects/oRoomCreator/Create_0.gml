@@ -146,11 +146,11 @@ for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 		var _tile_index = north * _north_tile + west * _west_tile + east * _east_tile + south * _south_tile
 		//Create floors
 		if(ds_grid_get(occupiedGrid,_x,_y) = true)  {
-			tilemap_set(floorMapID,_tile_index,_x+1,_y+1)
+			tilemap_set(floorMapID,_tile_index,_x,_y)
 		}
 		//Create walls if necessary
 		else if(ds_grid_get(occupiedGrid,_x,_y) = false) {
-			tilemap_set(wallMapID, _tile_index, _x+1, _y+1)
+			tilemap_set(wallMapID, _tile_index, _x, _y)
 		}
 	}
 	

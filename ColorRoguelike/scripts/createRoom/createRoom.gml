@@ -69,6 +69,8 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 		}
 	}
 	*/
+	
+	ds_grid_destroy(grid_)
 
 
 }
