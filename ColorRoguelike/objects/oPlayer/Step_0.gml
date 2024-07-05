@@ -6,15 +6,18 @@ keyUp = keyboard_check(ord("W")) - keyboard_check(ord("S"))
 
 //show_debug_message(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y))
 
+y = y - (keyUp * moveSpeed)
+x = x + (keyRight * moveSpeed)
+
 //Checking to see if the player will get stuck in wall when they move
-if(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y + (keyUp * moveSpeed)) == 0){
-	if(tilemap_get_at_pixel(wallMapID, x, y  + (keyUp * moveSpeed)) == 0){
-		if(tilemap_get_at_pixel(wallMapID, x + (keyRight*moveSpeed), y) == 0){
-			y = y - (keyUp * moveSpeed)
-			x = x + (keyRight * moveSpeed)
-		}
-	}
-}
+//if(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y + (keyUp * moveSpeed)) == 0){
+//	if(tilemap_get_at_pixel(wallMapID, x, y  + (keyUp * moveSpeed)) == 0){
+//		if(tilemap_get_at_pixel(wallMapID, x + (keyRight*moveSpeed), y) == 0){
+//			y = y - (keyUp * moveSpeed)
+//			x = x + (keyRight * moveSpeed)
+//		}
+//	}
+//}
 
 
 
