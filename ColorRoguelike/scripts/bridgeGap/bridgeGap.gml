@@ -17,10 +17,10 @@ function bridgeGap(x1,y1,x2,y2){
 		{
 		
 			//Set occupiedGrid values to true
-			ds_grid_set(occupiedGrid,floor(currentX),floor(currentY),true)
-			ds_grid_set(occupiedGrid,floor(currentX),ceil(currentY),true)
-			ds_grid_set(occupiedGrid,ceil(currentX),floor(currentY),true)
-			ds_grid_set(occupiedGrid,ceil(currentX),ceil(currentY),true)
+			ds_grid_set(occupiedGrid,floor(currentX),floor(currentY),FLOOR)
+			ds_grid_set(occupiedGrid,floor(currentX),ceil(currentY),FLOOR)
+			ds_grid_set(occupiedGrid,ceil(currentX),floor(currentY),FLOOR)
+			ds_grid_set(occupiedGrid,ceil(currentX),ceil(currentY),FLOOR)
 		
 		
 			/*
@@ -39,10 +39,10 @@ function bridgeGap(x1,y1,x2,y2){
 		{
 		
 			//Set occupiedGrid values to true
-			ds_grid_set(occupiedGrid,floor(currentX),floor(currentY),true)
-			ds_grid_set(occupiedGrid,floor(currentX),ceil(currentY),true)
-			ds_grid_set(occupiedGrid,ceil(currentX),floor(currentY),true)
-			ds_grid_set(occupiedGrid,ceil(currentX),ceil(currentY),true)
+			ds_grid_set(occupiedGrid,floor(currentX),floor(currentY),FLOOR)
+			ds_grid_set(occupiedGrid,floor(currentX),ceil(currentY),FLOOR)
+			ds_grid_set(occupiedGrid,ceil(currentX),floor(currentY),FLOOR)
+			ds_grid_set(occupiedGrid,ceil(currentX),ceil(currentY),FLOOR)
 		
 		
 			/*

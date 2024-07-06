@@ -12,7 +12,7 @@ wallMapID = layer_tilemap_get_id("WallTiles");
 
 //Make a 2d grid to represent different cells in 2D array and set every cell to false
 occupiedGrid = ds_grid_create(room_width / divisor, room_height / divisor)
-ds_grid_set_region(occupiedGrid,0,0,(room_width / divisor) - 1,(room_height / divisor) - 1,false)
+ds_grid_set_region(occupiedGrid,0,0,(room_width / divisor) - 1,(room_height / divisor) - 1, EMPTY)
 
 //Variables related to room generation
 roomXPos = 0
@@ -139,17 +139,17 @@ bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[6],roomYCoord
 for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 	for (var _x = 1; _x < ds_grid_width(occupiedGrid)-1;_x++) {
 		
-		var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == true
-		var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == true
-		var _east_tile = ds_grid_get(occupiedGrid,_x+1,_y) == true
-		var _south_tile = ds_grid_get(occupiedGrid,_x,_y+1) == true
-		var _tile_index = north * _north_tile + west * _west_tile + east * _east_tile + south * _south_tile
+		var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == FLOOR
+		var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == FLOOR
+		var _east_tile = ds_grid_get(occupiedGrid,_x+1,_y) == FLOOR
+		var _south_tile = ds_grid_get(occupiedGrid,_x,_y+1) == FLOOR
+		var _tile_index = NORTH * _north_tile + WEST * _west_tile + EAST * _east_tile + SOUTH * _south_tile
 		//Create floors
-		if(ds_grid_get(occupiedGrid,_x,_y) = true)  {
+		if(ds_grid_get(occupiedGrid,_x,_y) = FLOOR)  {
 			tilemap_set(floorMapID,_tile_index,_x,_y)
 		}
 		//Create walls if necessary
-		else if(ds_grid_get(occupiedGrid,_x,_y) = false) {
+		else if(ds_grid_get(occupiedGrid,_x,_y) = EMPTY) {
 			tilemap_set(wallMapID, 16 - _tile_index, _x, _y)
 		}
 	}

@@ -8,7 +8,7 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 
 	grid_ = ds_grid_create(width_, height_)
 	//Setting entire region to void
-	ds_grid_set_region(grid_, 0, 0, width_, height_, empty)
+	ds_grid_set_region(grid_, 0, 0, width_, height_, EMPTY)
 	//Centering controller in the middle  of grid
 	var controllerX = width_ div 2
 	var controllerY = height_ div 2
@@ -19,7 +19,7 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 	//Looping through the number of steps and moving through the grid randomly
 	repeat (stepCount) {
 		ds_grid_set(grid_, controllerX, controllerY, FLOOR) //set value of this local grid
-		ds_grid_set(occupiedGrid,controllerX + (leftX / wallSize),controllerY + (lowerY / wallSize),true) //set value of master occupiedGrid
+		ds_grid_set(occupiedGrid,controllerX + (leftX / wallSize),controllerY + (lowerY / wallSize),FLOOR) //set value of master occupiedGrid
 		
 		controllerDirection = irandom(3)
 	

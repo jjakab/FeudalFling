@@ -3,14 +3,14 @@
 function macroCreator(){
 	#macro cellWidth 16
 	#macro cellHeight 16
-	#macro wall 1
+	#macro WALL 1
 	#macro FLOOR 2
-	#macro empty -1
+	#macro EMPTY -1
 	
 	#macro wallSize 16
 	
-	#macro north 1
-	#macro west 2
-	#macro east 4
-	#macro south 8 
+	#macro NORTH 1
+	#macro WEST 2
+	#macro EAST 4
+	#macro SOUTH 8 
 }
