@@ -19,7 +19,9 @@ x = x + (keyRight * moveSpeed)
 //	}
 //}
 
+//show_debug_message(self.bbox_bottom)
 
+wallCollision(self, oRoomCreator.occupiedGrid)
 
 //create rotating circle, then increment angle
 createPlayerRotatingCircle(rotatingCircleRadiusFromPlayer,rotatingCircleCurrentAngle,rotatingCircleLifespan)

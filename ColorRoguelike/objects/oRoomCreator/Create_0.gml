@@ -150,6 +150,7 @@ for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 		}
 		//Create walls if necessary
 		else if(ds_grid_get(occupiedGrid,_x,_y) = EMPTY) {
+			ds_grid_set(occupiedGrid, _x, _y, WALL)
 			tilemap_set(wallMapID, 16 - _tile_index, _x, _y)
 		}
 	}
