@@ -7,7 +7,14 @@ keyUp = keyboard_check(ord("W")) - keyboard_check(ord("S"))
 //show_debug_message(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y))
 
 y = y - (keyUp * moveSpeed)
+
+if(wallCollision(self, oRoomCreator.occupiedGrid) > 0){
+	y = y +	(keyUp * moveSpeed)
+}
 x = x + (keyRight * moveSpeed)
+if(wallCollision(self, oRoomCreator.occupiedGrid) > 0){
+	x = x - (keyRight * moveSpeed)
+}	
 
 //Checking to see if the player will get stuck in wall when they move
 //if(tilemap_get_at_pixel(wallMapID, x + (keyRight * moveSpeed), y + (keyUp * moveSpeed)) == 0){
@@ -18,10 +25,6 @@ x = x + (keyRight * moveSpeed)
 //		}
 //	}
 //}
-
-//show_debug_message(self.bbox_bottom)
-
-wallCollision(self, oRoomCreator.occupiedGrid)
 
 //create rotating circle, then increment angle
 createPlayerRotatingCircle(rotatingCircleRadiusFromPlayer,rotatingCircleCurrentAngle,rotatingCircleLifespan)
