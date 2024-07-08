@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sWallTileset",
-    "path":"sprites/sWallTileset/sWallTileset.yy",
+    "name":"sJonahWallTileset",
+    "path":"sprites/sJonahWallTileset/sJonahWallTileset.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

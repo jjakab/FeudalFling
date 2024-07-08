@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sDungeonTilesetBitmap",
-    "path":"sprites/sDungeonTilesetBitmap/sDungeonTilesetBitmap.yy",
+    "name":"sJonahFloorTileset",
+    "path":"sprites/sJonahFloorTileset/sJonahFloorTileset.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

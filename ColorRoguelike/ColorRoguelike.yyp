@@ -80,6 +80,8 @@
     {"id":{"name":"sEnemyTriangleBulletGreen","path":"sprites/sEnemyTriangleBulletGreen/sEnemyTriangleBulletGreen.yy",},},
     {"id":{"name":"sEnemyTriangleGreen","path":"sprites/sEnemyTriangleGreen/sEnemyTriangleGreen.yy",},},
     {"id":{"name":"sEnemyTriangleWhite","path":"sprites/sEnemyTriangleWhite/sEnemyTriangleWhite.yy",},},
+    {"id":{"name":"sJonahFloorTileset","path":"sprites/sJonahFloorTileset/sJonahFloorTileset.yy",},},
+    {"id":{"name":"sJonahWallTileset","path":"sprites/sJonahWallTileset/sJonahWallTileset.yy",},},
     {"id":{"name":"sMovementBig","path":"sprites/sMovementBig/sMovementBig.yy",},},
     {"id":{"name":"sMovementSmall","path":"sprites/sMovementSmall/sMovementSmall.yy",},},
     {"id":{"name":"sPlayerTemporary","path":"sprites/sPlayerTemporary/sPlayerTemporary.yy",},},
