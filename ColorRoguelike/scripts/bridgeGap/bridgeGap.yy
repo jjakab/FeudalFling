@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"bridgeGap",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"roomGeneration",
+    "path":"folders/Scripts/roomGeneration.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
