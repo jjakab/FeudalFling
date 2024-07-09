@@ -6,9 +6,10 @@ randomize()
 //Split the room based on the tile size
 divisor = 16
 
-//Declare the tilemap we're using
-floorMapID = layer_tilemap_get_id("FloorTiles"); //declare the tilemap we're using
+//Declare the tilemaps we're using
+floorMapID = layer_tilemap_get_id("FloorTiles");
 wallMapID = layer_tilemap_get_id("WallTiles");
+cornerMapID = layer_tilemap_get_id("CornerTiles");
 
 //Make a 2d grid to represent different cells in 2D array and set every cell to false
 occupiedGrid = ds_grid_create(room_width / divisor, room_height / divisor)
@@ -150,10 +151,54 @@ for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 		}
 		//Create walls if necessary
 		else if(ds_grid_get(occupiedGrid,_x,_y) = EMPTY) {
-			ds_grid_set(occupiedGrid, _x, _y, WALL)
+			if(_tile_index > 0) ds_grid_set(occupiedGrid, _x, _y, WALL) //Only set this to WALL if surrounded by at least one floor - this will be used for corner generation
 			tilemap_set(wallMapID, 16 - _tile_index, _x, _y)
 		}
+		
+		
 	}
-	
+}
+
+
+//Now that walls have been created, we re-loop and create corners where applicable
+for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
+	for (var _x = 1; _x < ds_grid_width(occupiedGrid)-1;_x++) {
+		
+		
+		//Start off by assuming we should create a corner - if there is a floor directly surrounding this tile, reverse that assumption
+		createCorner = true;
+		if((ds_grid_get(occupiedGrid,_x,_y) == FLOOR) or
+		(ds_grid_get(occupiedGrid,_x,_y-1) == FLOOR) or
+		(ds_grid_get(occupiedGrid,_x-1,_y) == FLOOR) or
+		(ds_grid_get(occupiedGrid,_x+1,_y) == FLOOR) or
+		(ds_grid_get(occupiedGrid,_x,_y+1) == FLOOR)) {
+			createCorner = false	
+		}
+		
+		var _north_tile = ds_grid_get(occupiedGrid,_x,_y-1) == WALL
+		var _west_tile = ds_grid_get(occupiedGrid,_x-1,_y) == WALL
+		var _east_tile = ds_grid_get(occupiedGrid,_x+1,_y) == WALL
+		var _south_tile = ds_grid_get(occupiedGrid,_x,_y+1) == WALL
+		var _tile_index = NORTH * _north_tile + WEST * _west_tile + EAST * _east_tile + SOUTH * _south_tile
+		
+		//Create corner
+		if(createCorner)  {
+			
+			switch(_tile_index) {
+				case 3: { //Wall to North and West
+					if(ds_grid_get(occupiedGrid,_x-1,_y-1)==FLOOR) tilemap_set(cornerMapID,5,_x,_y) //Only set corner if there is a floor to top left
+				} break;
+				case 5: { //Wall to North and East
+					if(ds_grid_get(occupiedGrid,_x+1,_y-1)==FLOOR) tilemap_set(cornerMapID,4,_x,_y) //Only set corner if there is a floor to top right
+				} break;
+				case 10: { //Wall to South and West
+					if(ds_grid_get(occupiedGrid,_x-1,_y+1)==FLOOR) tilemap_set(cornerMapID,2,_x,_y) //Only set corner if there is a floor to bottom left
+				} break;
+				case 12: { //Wall to South and East
+					if(ds_grid_get(occupiedGrid,_x+1,_y+1)==FLOOR) tilemap_set(cornerMapID,1,_x,_y) //Only set corner if there is a floor to bottom right
+				} break;
+			}
+		}
+	}
 }
 
