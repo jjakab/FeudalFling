@@ -8,3 +8,10 @@ switch (state){
 	case PLAYERSTATES.FREE: playerStateFree(); break;
 	case PLAYERSTATES.ATTACK: playerStateAttack(); break;
 }
+
+if(mouseClicked)
+{
+	mouseAngle = point_direction(x,y,mouse_x,mouse_y)
+}
+
+

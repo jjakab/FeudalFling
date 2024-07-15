@@ -6,6 +6,16 @@ moveSpeed = 0.5
 keyRight = 0
 keyUp = 0
 
+//billiard-based movement
+mouseClicked = false
+mouseAngle = 0
+maxAimRange = 50
+
+moveDir = 0
+launchSpeed = 0
+currSpeed = 0
+fric = 0.1
+
 //rotating circle
 rotatingCircleCurrentAngle = 0
 rotatingCircleDegreesPerStep = .07
