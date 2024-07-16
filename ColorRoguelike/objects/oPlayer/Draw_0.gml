@@ -1,8 +1,6 @@
 /// @description Insert description here
 draw_self()
 
-draw_sprite(sBoomerang,0,x+30,y)
-
 if(mouseClicked)
 {
 

@@ -4,6 +4,8 @@ if enemyHealth <= 0
 	instance_destroy()	
 }
 
+//Collision for all enemy objects
+
 
 //when this is first spawned in, it has initial spawn velocity which needs to decrement over time
 spawnVelocityX = spawnVelocityX + (-sign(spawnVelocityX) * spawnVelocityDecrementX)
