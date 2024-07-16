@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"sWizardFireball",
-  "eventList":[],
+  "%Name":"oPlayerRotatingCircle",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"sWizardFireball",
+  "name":"oPlayerRotatingCircle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sFireballAttack",
-    "path":"sprites/sFireballAttack/sFireballAttack.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

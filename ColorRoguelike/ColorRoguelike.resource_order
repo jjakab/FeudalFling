@@ -30,9 +30,11 @@
   "ResourceOrderSettings":[
     {"name":"oEnemyMaster","order":1,"path":"objects/oEnemyMaster/oEnemyMaster.yy",},
     {"name":"oEnemyWizard","order":5,"path":"objects/oEnemyWizard/oEnemyWizard.yy",},
+    {"name":"oPlayerRotatingCircle","order":1,"path":"objects/oPlayerRotatingCircle/oPlayerRotatingCircle.yy",},
     {"name":"oRoomCreator","order":1,"path":"objects/oRoomCreator/oRoomCreator.yy",},
-    {"name":"sWizardFireball","order":6,"path":"objects/sWizardFireball/sWizardFireball.yy",},
+    {"name":"oWizardFireball","order":6,"path":"objects/oWizardFireball/oWizardFireball.yy",},
     {"name":"generationRoom","order":2,"path":"rooms/generationRoom/generationRoom.yy",},
+    {"name":"createPlayerRotatingCircle","order":6,"path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},
     {"name":"createRoom","order":1,"path":"scripts/createRoom/createRoom.yy",},
     {"name":"gainExp","order":1,"path":"scripts/gainExp/gainExp.yy",},
     {"name":"meleeAttack","order":4,"path":"scripts/meleeAttack/meleeAttack.yy",},

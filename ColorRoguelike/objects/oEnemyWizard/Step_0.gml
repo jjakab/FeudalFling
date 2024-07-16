@@ -15,11 +15,11 @@ if(state == "attack"){
 	alarm_set(0, 120)
 	direction = irandom(360)
 }
+
 else if (state == "run"){
 	
 	motion_set(direction, moveSpeed)
 	if(wallCollision(self, oRoomCreator.occupiedGrid) > 0){
 		direction = 360-direction
-		motion_set(direction, moveSpeed)
 	}
 }
