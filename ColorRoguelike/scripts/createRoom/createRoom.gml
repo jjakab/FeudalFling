@@ -14,7 +14,6 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 	var controllerY = height_ div 2
 	//Randomizing first direction of controller
 	var controllerDirection = irandom(3)
-	var steps = 200
 	var iteration = 0
 	//Looping through the number of steps and moving through the grid randomly
 	repeat (stepCount) {
@@ -24,7 +23,7 @@ function createRoom(rightX,leftX,upperY,lowerY,stepCount){
 		controllerDirection = irandom(3)
 	
 		//reset the controller periodically
-		if(iteration % 25 = 0)
+		if(iteration % (stepCount/4) = 0)
 		{
 			controllerX = width_ div 2
 			controllerY = height_ div 2

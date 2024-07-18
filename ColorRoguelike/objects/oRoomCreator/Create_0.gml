@@ -36,7 +36,9 @@ currentRoom = 1
 roomXCoordinates[0] = 0
 roomYCoordinates[0] = 0
 
-for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
+
+
+/*for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 {
 	//DYNAMIC ROOM GENERATION
 	/*if(currentRoom = 1) //if this is the first room, we place it at the top left
@@ -62,6 +64,8 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 		roomYPos += max(0,min(ds_grid_width(occupiedGrid),ceil(gridDistanceToSearch * sin(angleToSearch))))
 	}
 	*/
+	
+	/*
 	
 	switch(currentRoom)
 	{
@@ -114,6 +118,8 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 	}
 	*/
 	
+	
+	/*
 	//create a room at the specified position
 	createRoom(
 		(arrayRightX * divisor),
@@ -125,6 +131,8 @@ for (currentRoom = 1; currentRoom < roomCount; currentRoom++)
 	
 }
 
+
+
 bridgeGap(roomXCoordinates[1],roomYCoordinates[1],roomXCoordinates[4],roomYCoordinates[4])
 bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[5],roomYCoordinates[5])
 bridgeGap(roomXCoordinates[3],roomYCoordinates[3],roomXCoordinates[6],roomYCoordinates[6])
@@ -135,6 +143,19 @@ bridgeGap(roomXCoordinates[4],roomYCoordinates[4],roomXCoordinates[5],roomYCoord
 bridgeGap(roomXCoordinates[5],roomYCoordinates[5],roomXCoordinates[6],roomYCoordinates[6])
 
 bridgeGap(roomXCoordinates[2],roomYCoordinates[2],roomXCoordinates[6],roomYCoordinates[6])
+
+*/
+
+roomXPos = room_width / divisor / 2
+roomYPos = room_height / divisor / 2
+
+createRoom(
+		(room_width - divisor),
+		(divisor),
+		(room_height - divisor),
+		(divisor),
+		2000
+		)
 
 
 //Loop through every value in the grid and tile non-empty cells based on bitmap

@@ -12,7 +12,7 @@ function playerStateAttack(){
 	mask_index = sAttackHitbox
 	//Create a list for the enemies hit in this frame
 	var hitByAttack = ds_list_create()
-	var hits = instance_place_list(x, y, oEnemySquare, hitByAttack, false)
+	var hits = instance_place_list(x, y, oEnemyMaster, hitByAttack, false)
 	//If enemy is hit, do action
 	for(i = 0; i < hits; i++){
 		var hitID = ds_list_find_value(hitByAttack, i)
