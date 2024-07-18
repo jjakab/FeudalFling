@@ -13,13 +13,25 @@ if(state == "attack"){
 	projectile.speed = 2
 	state = "run"
 	alarm_set(0, 120)
-	direction = irandom(360)
+	angle = irandom(360)
+	xSpeed = lengthdir_x(moveSpeed, angle)
+	ySpeed = lengthdir_y(moveSpeed, angle)
 }
 
 else if (state == "run"){
-	
-	motion_set(direction, moveSpeed)
-	if(wallCollision(self, oRoomCreator.occupiedGrid) > 0){
-		direction = 360-direction
+	if(!place_meeting(x + xSpeed,y, oWall)){
+		x += xSpeed
+	}
+	else{
+		xSpeed = -xSpeed
+		x += xSpeed
+	}
+	if(!place_meeting(x, y + ySpeed, oWall)){
+		y += ySpeed
+	}
+	else{
+		ySpeed = -ySpeed
+		y += ySpeed
 	}
 }
+

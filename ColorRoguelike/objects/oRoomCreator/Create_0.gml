@@ -10,6 +10,7 @@ divisor = 16
 floorMapID = layer_tilemap_get_id("FloorTiles");
 wallMapID = layer_tilemap_get_id("WallTiles");
 cornerMapID = layer_tilemap_get_id("CornerTiles");
+instanceLayerID = layer_get_id("Instances");
 
 //Make a 2d grid to represent different cells in 2D array and set every cell to false
 occupiedGrid = ds_grid_create(room_width / divisor, room_height / divisor)
@@ -153,6 +154,8 @@ for (var _y = 1; _y < ds_grid_height(occupiedGrid)-1;_y++) {
 		else if(ds_grid_get(occupiedGrid,_x,_y) = EMPTY) {
 			if(_tile_index > 0) ds_grid_set(occupiedGrid, _x, _y, WALL) //Only set this to WALL if surrounded by at least one floor - this will be used for corner generation
 			tilemap_set(wallMapID, 16 - _tile_index, _x, _y)
+			//Creating wall objects for collisions checks
+			instance_create_layer(_x * divisor + (divisor/2) , _y * divisor + (divisor/2), instanceLayerID, oWall)
 		}
 		
 		
