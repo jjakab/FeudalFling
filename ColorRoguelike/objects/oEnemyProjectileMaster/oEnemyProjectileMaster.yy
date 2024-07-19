@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oWizardFireball",
+  "%Name":"oEnemyProjectileMaster",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oWizardFireball",
+  "name":"oEnemyProjectileMaster",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy Projectiles",
     "path":"folders/Objects/Enemies/Enemy Projectiles.yy",
   },
-  "parentObjectId":{
-    "name":"oEnemyProjectileMaster",
-    "path":"objects/oEnemyProjectileMaster/oEnemyProjectileMaster.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sFireballAttack",
-    "path":"sprites/sFireballAttack/sFireballAttack.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
