@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyMaster",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oAcidPool",
+  "eventList":[],
   "managed":true,
-  "name":"oEnemyMaster",
+  "name":"oAcidPool",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sAcidPoolCharging",
+    "path":"sprites/sAcidPoolCharging/sAcidPoolCharging.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

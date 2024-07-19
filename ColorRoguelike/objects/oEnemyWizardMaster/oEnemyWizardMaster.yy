@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyWizard",
+  "%Name":"oEnemyWizardMaster",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,13 +8,16 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyWizard",
+  "name":"oEnemyWizardMaster",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Wizards",
+    "path":"folders/Objects/Enemies/Wizards.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEnemyMaster",
+    "path":"objects/oEnemyMaster/oEnemyMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +35,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sEnemyWizard",
-    "path":"sprites/sEnemyWizard/sEnemyWizard.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
