@@ -12,9 +12,14 @@ mouseAngle = 0
 maxAimRange = 50
 
 moveDir = 0
-launchSpeed = 0
+launchCoefficient = .03 //for each pixel the mouse is from the origin, the character will be launched at this speed
 currSpeed = 0
-fric = 0.1
+fric = 0.005
+xSpeed = 0
+ySpeed = 0
+
+maxSpeedToRelaunch = 0.5
+minMouseDistance = 50
 
 //rotating circle
 rotatingCircleCurrentAngle = 0
