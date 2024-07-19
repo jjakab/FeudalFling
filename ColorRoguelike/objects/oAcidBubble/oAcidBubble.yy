@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oAcidPool",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oAcidBubble",
+  "eventList":[],
   "managed":true,
-  "name":"oAcidPool",
+  "name":"oAcidBubble",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sAcidPoolCharging",
-    "path":"sprites/sAcidPoolCharging/sAcidPoolCharging.yy",
+    "name":"sAcidBubble",
+    "path":"sprites/sAcidBubble/sAcidBubble.yy",
   },
   "spriteMaskId":null,
   "visible":true,
