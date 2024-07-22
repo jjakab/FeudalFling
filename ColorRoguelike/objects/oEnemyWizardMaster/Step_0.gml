@@ -1,4 +1,4 @@
-
+	
 if(state == "attack"){
 	
 	var player_x = oPlayer.x
@@ -56,4 +56,7 @@ else if (state == "run"){
 		ySpeed = -ySpeed
 		y += ySpeed
 	}
+}
+else if(state == "pause"){
+	
 }
