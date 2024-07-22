@@ -1,7 +1,7 @@
 timeToActivate = 120
 timeSpentActive = 180
 
-bubbleSpawnFrequency = 30
+bubbleSpawnFrequency = timeSpentActive / 12
 
 active = false
 
