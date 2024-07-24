@@ -1,7 +1,8 @@
 /// @description Initiate variables
 
 
-playerHealth = 10
+playerHealth = 100
+maxPlayerHealth = 100
 
 moveSpeed = 0.5
 

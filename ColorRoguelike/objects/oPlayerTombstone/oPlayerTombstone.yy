@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oTombstone",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oPlayerTombstone",
+  "eventList":[],
   "managed":true,
-  "name":"oTombstone",
+  "name":"oPlayerTombstone",
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerTombstone",
-    "path":"sprites/sPlayerTombstone/sPlayerTombstone.yy",
+    "name":"sTombstone",
+    "path":"sprites/sTombstone/sTombstone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

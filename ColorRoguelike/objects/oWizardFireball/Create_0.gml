@@ -1,2 +1,2 @@
 /// @description Insert description here
-damage = 2
+damage = 20
