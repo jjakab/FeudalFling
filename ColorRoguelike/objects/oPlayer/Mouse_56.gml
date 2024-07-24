@@ -4,8 +4,8 @@
 
 if(mouseClicked=true) //a dash was being charged up
 {
-	var xMouseDistance = cos(degtorad(mouseAngle)) * min( maxAimRange,distance_to_point(mouse_x,mouse_y))
-	var yMouseDistance = sin(degtorad(mouseAngle)) * min( maxAimRange,distance_to_point(mouse_x,mouse_y))
+	var xMouseDistance = launchCoefficient * cos(degtorad(mouseAngle)) * min( maxAimRange,distance_to_point(mouse_x,mouse_y))
+	var yMouseDistance = launchCoefficient * sin(degtorad(mouseAngle)) * min( maxAimRange,distance_to_point(mouse_x,mouse_y))
 	xSpeed = -xMouseDistance / 50
 	ySpeed = yMouseDistance / 50
 	

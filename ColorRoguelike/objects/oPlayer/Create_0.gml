@@ -15,7 +15,7 @@ mouseAngle = 0
 maxAimRange = 50
 
 moveDir = 0
-launchCoefficient = .9 //for each pixel the mouse is from the origin, the character will be launched at this speed
+launchCoefficient = 1.5 //for each pixel the mouse is from the origin, the character will be launched at this speed
 currSpeed = 0
 fric = 0.006
 xSpeed = 0
