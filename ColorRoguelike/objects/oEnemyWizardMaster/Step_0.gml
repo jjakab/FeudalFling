@@ -5,9 +5,7 @@ if(state == "attack"){
 	var player_y = oPlayer.y 
 	
 	if(wizardType = "fire") {
-	
-		var current_player = point_direction(x, y, player_x, player_y)
-		var current_difference = angle_difference(current_player, playerDirection)
+		
 	
 		var projectile = instance_create_layer(x, y, "FloorHazards", oWizardFireball);
 		projectile.direction = current_player;
@@ -57,6 +55,9 @@ else if (state == "run"){
 		y += ySpeed
 	}
 }
+
 else if(state == "pause"){
 	
 }
+
+event_inherited()

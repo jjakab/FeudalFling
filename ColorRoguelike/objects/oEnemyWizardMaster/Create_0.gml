@@ -1,3 +1,4 @@
+event_inherited()
 
 //Movement related variables
 xSpeed = 0.2
@@ -16,3 +17,7 @@ fireballSpeed = 2
 
 //Acid specific variables
 maxAcidRange = 50
+
+//Player location
+current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
+current_difference = angle_difference(current_player, playerDirection)
