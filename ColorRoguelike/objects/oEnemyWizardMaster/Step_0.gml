@@ -54,9 +54,28 @@ else if (state == "run"){
 		ySpeed = -ySpeed
 		y += ySpeed
 	}
+	
+	//Orient to face the correct direction
+	if(xSpeed > 0) {
+		image_xscale = 1	
+	}
+	else {
+		image_xscale = -1	
+	}
+	
+	//Once we are re-oriented, we need to move outside of a wall (since flipping the sprite may have put us inside one)
+	unstick()
+
 }
 
 else if(state == "pause"){
+	//Orient to face the correct direction
+	if(oPlayer.x > x) {
+		image_xscale = 1	
+	}
+	else {
+		image_xscale = -1	
+	}
 	
 }
 

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTombstone",
-    "path":"sprites/sTombstone/sTombstone.yy",
+    "name":"sPlayerTombstone",
+    "path":"sprites/sPlayerTombstone/sPlayerTombstone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

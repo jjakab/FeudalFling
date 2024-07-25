@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Acid Pool",
-    "path":"folders/Sprites/Enemy/Acid Pool.yy",
+    "name":"Acid Wizard",
+    "path":"folders/Sprites/Enemy/Acid Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

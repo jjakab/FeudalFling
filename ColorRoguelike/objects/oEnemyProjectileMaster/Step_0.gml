@@ -5,3 +5,4 @@ if(place_meeting(x,y,oWall))
 	//ADD AN ANIMATION HERE
 	instance_destroy()	
 }
+

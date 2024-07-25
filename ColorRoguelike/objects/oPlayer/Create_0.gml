@@ -39,6 +39,8 @@ attackDamage = 100
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")
 
+unstick()
+
 
 /*
 //state management
