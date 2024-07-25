@@ -1,4 +1,4 @@
-	
+
 if(state == "attack"){
 	
 	var player_x = oPlayer.x
@@ -10,7 +10,7 @@ if(state == "attack"){
 		var projectile = instance_create_layer(x, y, "FloorHazards", oWizardFireball);
 		projectile.direction = current_player;
 		projectile.speed = fireballSpeed
-
+		sprite_index = sEnemyFireWizard
 	}
 	
 	else if (wizardType = "acid") {
@@ -26,7 +26,7 @@ if(state == "attack"){
 			xx = player_x + lengthdir_x(dist,rot)
 			yy = player_y + lengthdir_y(dist,rot)
 		}
-		
+		sprite_index = sEnemyAcidWizard
 		instance_create_layer(xx,yy,"Instances",oAcidPool)
 		
 	}
@@ -35,7 +35,9 @@ if(state == "attack"){
 	xSpeed = lengthdir_x(moveSpeed, angle)
 	ySpeed = lengthdir_y(moveSpeed, angle)
 	state = "run"
-	alarm_set(0, standardPhaseTime)
+	var randomized = random_range(0.6, 1.0)
+	alarm_set(0, randomized * standardPhaseTime)
+	
 	
 }
 
@@ -76,6 +78,7 @@ else if(state == "pause"){
 	else {
 		image_xscale = -1	
 	}
+	
 	
 }
 

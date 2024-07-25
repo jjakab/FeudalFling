@@ -8,7 +8,7 @@ playerDirection = 0
 angle = 0
 
 //Phase timing
-state = "attack"
+state = "initialize"
 standardPhaseTime = 120
 
 //Fire-specific variables
@@ -21,3 +21,6 @@ maxAcidRange = 50
 //Player location
 current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
 current_difference = angle_difference(current_player, playerDirection)
+
+//Change to attack
+alarm_set(0, standardPhaseTime/4)

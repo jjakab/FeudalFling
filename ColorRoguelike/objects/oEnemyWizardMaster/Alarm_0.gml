@@ -1,4 +1,4 @@
-
+//Code for pause state
 state = "pause";
 alarm_set(1, standardPhaseTime/2)
 if(wizardType = "fire") {
@@ -21,4 +21,8 @@ if(wizardType = "fire") {
 	with(projectile) {
 		pairedObj = other	
 	}
+	sprite_index = sEnemyFireWizardAttack
+}
+if(wizardType = "acid"){
+	sprite_index = sEnemyAcidWizardAttack
 }
