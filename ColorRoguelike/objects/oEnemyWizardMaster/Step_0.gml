@@ -1,3 +1,11 @@
+/*
+RUN - Update position and bounce off walls if necessary. Once alarm 0 is triggered --> Go to pause state
+CHARGE - Play attacking animation. Once animation is finished --> Go to attack state
+ATTACK - Create a projectile depending on element --> Go to cooldown state
+COOLDOWN - If cooldown animation is not finished, do nothing. If it is --> Go to run state
+*/
+
+prevState = state
 
 if(state == "attack"){
 	
@@ -64,7 +72,7 @@ else if (state == "run"){
 
 }
 
-else if(state == "pause"){
+else if(state == "charge"){
 	
 	//If this is the first step of the pause state, re-orient
 	if(pauseFirstStep) {
@@ -84,7 +92,7 @@ else if(state == "pause"){
 	}
 }
 
-//if we are in the cooldown state, if the animation ends the wizard starts running again
+//if we are in the cooldown state, if the animation ends the wizard goes to the run state
 else if(state == "cooldown") {
 	if(image_index >= image_number - 1) {
 		angle = irandom(360)
@@ -97,6 +105,10 @@ else if(state == "cooldown") {
 		sprite_index = runSprite
 	
 	}
+}
+
+if (prevState != state) {
+	image_index = 0	
 }
 
 event_inherited()

@@ -1,5 +1,5 @@
-//Code for pause state
-state = "pause";
+//Code for charge state
+state = "charge";
 pauseFirstStep = true
 //alarm_set(1, standardPhaseTime/2)
 
