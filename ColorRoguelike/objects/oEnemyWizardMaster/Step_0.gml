@@ -22,19 +22,8 @@ if(state == "attack"){
 	}
 	
 	else if (wizardType = "acid") {
-		var dist,rot
-		dist = irandom(maxAcidRange)
-		rot = irandom(360)
-		xx = player_x + lengthdir_x(dist,rot)
-		yy = player_y + lengthdir_y(dist,rot)
 		
-		while (instance_place(xx,yy,oWall)) {
-			dist = irandom(maxAcidRange)
-			rot = irandom(360)
-			xx = player_x + lengthdir_x(dist,rot)
-			yy = player_y + lengthdir_y(dist,rot)
-		}
-		instance_create_layer(xx,yy,"Instances",oAcidPool)
+		//The acid pool will turn active at this point - code is in acid pool
 		
 	}
 	

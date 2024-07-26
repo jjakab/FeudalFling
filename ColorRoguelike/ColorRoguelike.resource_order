@@ -65,6 +65,7 @@
     {"name":"sDungeonTilesetBitmap","order":1,"path":"sprites/sDungeonTilesetBitmap/sDungeonTilesetBitmap.yy",},
     {"name":"sEnemyAcidWizard","order":3,"path":"sprites/sEnemyAcidWizard/sEnemyAcidWizard.yy",},
     {"name":"sEnemyAcidWizardAttack","order":4,"path":"sprites/sEnemyAcidWizardAttack/sEnemyAcidWizardAttack.yy",},
+    {"name":"sEnemyAcidWizardCooldown","order":5,"path":"sprites/sEnemyAcidWizardCooldown/sEnemyAcidWizardCooldown.yy",},
     {"name":"sEnemyFireWizard","order":4,"path":"sprites/sEnemyFireWizard/sEnemyFireWizard.yy",},
     {"name":"sEnemyFireWizardAttack","order":1,"path":"sprites/sEnemyFireWizardAttack/sEnemyFireWizardAttack.yy",},
     {"name":"sEnemyFireWizardAttackAlternate","order":8,"path":"sprites/sEnemyFireWizardAttackAlternate/sEnemyFireWizardAttackAlternate.yy",},

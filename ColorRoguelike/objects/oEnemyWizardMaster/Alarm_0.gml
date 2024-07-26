@@ -14,7 +14,7 @@ if(wizardType = "fire") {
 	//var curr_distance = point_distance(x, y, oPlayer.x, oPlayer.y)
 	var collidedObj = collision_line(x,y,x+lengthdir_x(room_width,current_player),y+lengthdir_y(room_height,current_player),oWall,false,true)
 	var curr_distance = 0
-	if(collidedObj = noone) {
+	if(collidedObj = noone) { //This should never happen
 		curr_distance = max(room_width,room_height)
 	}
 	else {
@@ -31,5 +31,22 @@ if(wizardType = "fire") {
 	
 }
 else if(wizardType = "acid"){
-
+	var dist,rot
+	var player_x = oPlayer.x
+	var player_y = oPlayer.y 
+	dist = irandom(maxAcidRange)
+	rot = irandom(360)
+	xx = player_x + lengthdir_x(dist,rot)
+	yy = player_y + lengthdir_y(dist,rot)
+		
+	while (instance_place(xx,yy,oWall)) {
+		dist = irandom(maxAcidRange)
+		rot = irandom(360)
+		xx = player_x + lengthdir_x(dist,rot)
+		yy = player_y + lengthdir_y(dist,rot)
+	}
+	acidPool = instance_create_layer(xx,yy,"Instances",oAcidPool)
+	with(acidPool) {
+		pairedObj = other	
+	}
 }
