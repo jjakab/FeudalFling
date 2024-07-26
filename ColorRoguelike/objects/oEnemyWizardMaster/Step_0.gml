@@ -87,14 +87,15 @@ else if(state == "charge"){
 		}
 		
 	}
-	if(image_index >= image_number - 1 ) {
+	
+	if(image_index >= image_number) {
 		state = "attack"
 	}
 }
 
 //if we are in the cooldown state, if the animation ends the wizard goes to the run state
 else if(state == "cooldown") {
-	if(image_index >= image_number - 1) {
+	if(image_index >= image_number ) {
 		angle = irandom(360)
 		xSpeed = lengthdir_x(moveSpeed, angle)
 		ySpeed = lengthdir_y(moveSpeed, angle)
