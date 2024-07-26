@@ -96,6 +96,8 @@
     {"id":{"name":"sEnemyAcidWizardAttack","path":"sprites/sEnemyAcidWizardAttack/sEnemyAcidWizardAttack.yy",},},
     {"id":{"name":"sEnemyFireWizard","path":"sprites/sEnemyFireWizard/sEnemyFireWizard.yy",},},
     {"id":{"name":"sEnemyFireWizardAttack","path":"sprites/sEnemyFireWizardAttack/sEnemyFireWizardAttack.yy",},},
+    {"id":{"name":"sEnemyFireWizardAttackAlternate","path":"sprites/sEnemyFireWizardAttackAlternate/sEnemyFireWizardAttackAlternate.yy",},},
+    {"id":{"name":"sEnemyFireWizardCooldown","path":"sprites/sEnemyFireWizardCooldown/sEnemyFireWizardCooldown.yy",},},
     {"id":{"name":"sFireballAttack","path":"sprites/sFireballAttack/sFireballAttack.yy",},},
     {"id":{"name":"sFireballAttackAlternative","path":"sprites/sFireballAttackAlternative/sFireballAttackAlternative.yy",},},
     {"id":{"name":"sFireballExplode","path":"sprites/sFireballExplode/sFireballExplode.yy",},},

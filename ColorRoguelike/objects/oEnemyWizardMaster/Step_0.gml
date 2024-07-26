@@ -7,10 +7,10 @@ if(state == "attack"){
 	if(wizardType = "fire") {
 		
 	
-		var projectile = instance_create_layer(x, y, "FloorHazards", oWizardFireball);
+		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "FloorHazards", oWizardFireball);
 		projectile.direction = current_player;
 		projectile.speed = fireballSpeed
-		sprite_index = sEnemyFireWizard
+
 	}
 	
 	else if (wizardType = "acid") {
@@ -26,18 +26,12 @@ if(state == "attack"){
 			xx = player_x + lengthdir_x(dist,rot)
 			yy = player_y + lengthdir_y(dist,rot)
 		}
-		sprite_index = sEnemyAcidWizard
 		instance_create_layer(xx,yy,"Instances",oAcidPool)
 		
 	}
 	
-	angle = irandom(360)
-	xSpeed = lengthdir_x(moveSpeed, angle)
-	ySpeed = lengthdir_y(moveSpeed, angle)
-	state = "run"
-	var randomized = random_range(0.6, 1.0)
-	alarm_set(0, randomized * standardPhaseTime)
-	
+	sprite_index = cooldownSprite
+	state = "cooldown"
 	
 }
 
@@ -71,15 +65,38 @@ else if (state == "run"){
 }
 
 else if(state == "pause"){
-	//Orient to face the correct direction
-	if(oPlayer.x > x) {
-		image_xscale = 1	
-	}
-	else {
-		image_xscale = -1	
-	}
 	
+	//If this is the first step of the pause state, re-orient
+	if(pauseFirstStep) {
+		pauseFirstStep = false
+		
+		//Orient to face the correct direction
+		if(oPlayer.x > x) {
+			image_xscale = 1	
+		}
+		else {
+			image_xscale = -1	
+		}
+		
+	}
+	if(image_index >= image_number - 1) {
+		state = "attack"
+	}
+}
+
+//if we are in the cooldown state, if the animation ends the wizard starts running again
+else if(state == "cooldown") {
+	if(image_index >= image_number - 1) {
+		angle = irandom(360)
+		xSpeed = lengthdir_x(moveSpeed, angle)
+		ySpeed = lengthdir_y(moveSpeed, angle)
+		state = "run"
+		var randomized = random_range(0.6, 1.0)
+		alarm_set(0, randomized * standardPhaseTime)
+		
+		sprite_index = runSprite
 	
+	}
 }
 
 event_inherited()

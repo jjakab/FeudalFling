@@ -10,6 +10,7 @@ angle = 0
 //Phase timing
 state = "initialize"
 standardPhaseTime = 120
+pauseFirstStep = true //this tracks if the player has
 
 //Fire-specific variables
 fireballSpeed = 2

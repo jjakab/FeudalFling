@@ -67,6 +67,8 @@
     {"name":"sEnemyAcidWizardAttack","order":4,"path":"sprites/sEnemyAcidWizardAttack/sEnemyAcidWizardAttack.yy",},
     {"name":"sEnemyFireWizard","order":4,"path":"sprites/sEnemyFireWizard/sEnemyFireWizard.yy",},
     {"name":"sEnemyFireWizardAttack","order":1,"path":"sprites/sEnemyFireWizardAttack/sEnemyFireWizardAttack.yy",},
+    {"name":"sEnemyFireWizardAttackAlternate","order":8,"path":"sprites/sEnemyFireWizardAttackAlternate/sEnemyFireWizardAttackAlternate.yy",},
+    {"name":"sEnemyFireWizardCooldown","order":7,"path":"sprites/sEnemyFireWizardCooldown/sEnemyFireWizardCooldown.yy",},
     {"name":"sFireballAttackAlternative","order":3,"path":"sprites/sFireballAttackAlternative/sFireballAttackAlternative.yy",},
     {"name":"sFireballExplode","order":5,"path":"sprites/sFireballExplode/sFireballExplode.yy",},
     {"name":"sFireballExplodeWall","order":6,"path":"sprites/sFireballExplodeWall/sFireballExplodeWall.yy",},

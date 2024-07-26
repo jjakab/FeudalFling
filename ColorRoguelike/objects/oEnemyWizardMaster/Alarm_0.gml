@@ -1,6 +1,13 @@
 //Code for pause state
 state = "pause";
-alarm_set(1, standardPhaseTime/2)
+pauseFirstStep = true
+//alarm_set(1, standardPhaseTime/2)
+
+
+//Set sprite based on child variable
+sprite_index = attackSprite
+
+//Elemental specific-actions
 if(wizardType = "fire") {
 	current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
 	current_difference = angle_difference(current_player, playerDirection)
@@ -21,8 +28,8 @@ if(wizardType = "fire") {
 	with(projectile) {
 		pairedObj = other	
 	}
-	sprite_index = sEnemyFireWizardAttack
+	
 }
-if(wizardType = "acid"){
-	sprite_index = sEnemyAcidWizardAttack
+else if(wizardType = "acid"){
+
 }
