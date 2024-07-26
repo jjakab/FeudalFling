@@ -79,7 +79,7 @@ else if(state == "pause"){
 		}
 		
 	}
-	if(image_index >= image_number - 1) {
+	if(image_index >= image_number - 1 ) {
 		state = "attack"
 	}
 }

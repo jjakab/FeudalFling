@@ -6,7 +6,7 @@ pauseFirstStep = true
 
 //Set sprite based on child variable
 sprite_index = attackSprite
-
+image_index = 0
 //Elemental specific-actions
 if(wizardType = "fire") {
 	current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
