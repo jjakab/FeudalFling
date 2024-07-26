@@ -89,7 +89,7 @@ else if(state == "cooldown") {
 		xSpeed = lengthdir_x(moveSpeed, angle)
 		ySpeed = lengthdir_y(moveSpeed, angle)
 		state = "run"
-		var randomized = random_range(0.6, 1.0)
+		var randomized = random_range(0.6, 1.4)
 		alarm_set(0, randomized * standardPhaseTime)
 		
 		sprite_index = runSprite

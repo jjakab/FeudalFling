@@ -1,7 +1,6 @@
-//timeToActivate = 120
+event_inherited()
+
 timeSpentActive = 180
 
 bubbleSpawnFrequency = 15
 active = false
-
-//alarm_set(0,timeToActivate)

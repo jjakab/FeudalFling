@@ -41,6 +41,8 @@ unstick()
 
 state = "still"
 
+groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
+
 
 /*
 //state management

@@ -50,6 +50,9 @@ else { //If we are not already in the idle state, go to idle state
 //Unstick in case changing/flipping the sprite put the player in a wall
 unstick()
 
+groundHitbox.x = x
+groundHitbox.y = y
+
 //If the player ran into a projectile, act accordingly
 if(place_meeting(x,y,oEnemyProjectileMaster))
 {

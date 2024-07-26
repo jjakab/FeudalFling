@@ -24,4 +24,4 @@ current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
 current_difference = angle_difference(current_player, playerDirection)
 
 //Change to attack
-alarm_set(0, standardPhaseTime/4)
+alarm_set(0, standardPhaseTime/random_range(2,4))
