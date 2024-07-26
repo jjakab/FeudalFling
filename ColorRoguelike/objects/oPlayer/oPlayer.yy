@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerTemporary",
-    "path":"sprites/sPlayerTemporary/sPlayerTemporary.yy",
+    "name":"sPlayerIdleNew",
+    "path":"sprites/sPlayerIdleNew/sPlayerIdleNew.yy",
   },
   "spriteMaskId":null,
   "visible":true,

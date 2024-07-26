@@ -1,7 +1,4 @@
 //Health bar code if desired
-
-
-draw_self();
 //var bar_width = 16;
 //var bar_height = 4;
 //var bar_x = x - bar_width / 2;
@@ -11,3 +8,5 @@ draw_self();
 //var hp_percentage = hp / max_hp;
 //draw_set_color(c_black)
 //draw_rectangle(bar_x, bar_y, bar_x + bar_width * hp_percentage, bar_y + bar_height, true);
+
+draw_self();

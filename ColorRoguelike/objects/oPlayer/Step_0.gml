@@ -1,16 +1,3 @@
-/// @description Movement, collision checks, etc.
-
-//check keyboard presses
-/*
-keyRight = keyboard_check(ord("D")) - keyboard_check(ord("A"))
-keyUp = keyboard_check(ord("W")) - keyboard_check(ord("S"))
-
-switch (state){
-	case PLAYERSTATES.FREE: playerStateFree(); break;
-	case PLAYERSTATES.ATTACK: playerStateAttack(); break;
-}*/
-
-
 //Update arrow accordingly if movement is being buffered
 if(mouseClicked)
 {
@@ -20,7 +7,6 @@ if(mouseClicked)
 //Decrement speed based on friction
 xSpeed = xSpeed * (1-fric)
 ySpeed = ySpeed * (1-fric)
-
 
 //Move and change direction if player runs into a wall
 if(!place_meeting(x + xSpeed,y, oWall)){
@@ -42,6 +28,29 @@ else{
 if(xSpeed > 0) image_xscale = 1
 else image_xscale = -1
 
+//Based on the speed of the player, change the player state and image speed
+var totSpeed = sqrt(sqr(xSpeed) + sqr(ySpeed))
+if(totSpeed > speedIdleThreshold) {
+	if(state = "still") { //If player was still, set player to running
+		sprite_index = sPlayerRunNew
+		image_index = 0
+		state = "running"
+	}
+	image_speed = totSpeed * imageSpeedCoefficient
+}
+else { //If we are not already in the idle state, go to idle state
+	if(state = "running") {
+		sprite_index = sPlayerIdleNew
+		image_index = 0
+		state = "still"
+	}
+	image_speed = 1
+}
+
+//Unstick in case changing/flipping the sprite put the player in a wall
+unstick()
+
+//If the player ran into a projectile, act accordingly
 if(place_meeting(x,y,oEnemyProjectileMaster))
 {
 	projectile = instance_place(x,y,oEnemyProjectileMaster)
@@ -50,15 +59,16 @@ if(place_meeting(x,y,oEnemyProjectileMaster))
 		instance_destroy()
 		other.playerHealth -= damage
 	}
-	//ADD CODE FOR PLAYER TAKING DAMAGE
+	
 	damaged = true
 	alarm_set(0,damageVisualWindow)
 	
 }
 
+//Die if health is zero
 if(playerHealth <= 0){
 	instance_destroy()
-	instance_create_layer(x, y, "Instances", )
+	instance_create_layer(x, y, "Instances", oTombstone)
 }
 
 

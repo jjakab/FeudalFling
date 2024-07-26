@@ -4,11 +4,6 @@
 playerHealth = 100
 maxPlayerHealth = 100
 
-moveSpeed = 0.5
-
-keyRight = 0
-keyUp = 0
-
 //billiard-based movement
 mouseClicked = false
 mouseAngle = 0
@@ -23,6 +18,9 @@ ySpeed = 0
 
 damageVisualWindow = 10
 damaged = false
+
+imageSpeedCoefficient = 1.5 //Coefficient for determining image speed based on player speed
+speedIdleThreshold = 0.25 //Minimum speed the player needs to be going to 'run'
 
 maxSpeedToRelaunch = 0.5
 minMouseDistance = 50
@@ -40,6 +38,8 @@ attackDamage = 100
 wallMapID = layer_tilemap_get_id("WallTiles")
 
 unstick()
+
+state = "still"
 
 
 /*

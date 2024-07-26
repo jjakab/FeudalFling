@@ -106,6 +106,8 @@
     {"id":{"name":"sJonahCornerTileset","path":"sprites/sJonahCornerTileset/sJonahCornerTileset.yy",},},
     {"id":{"name":"sJonahFloorTileset","path":"sprites/sJonahFloorTileset/sJonahFloorTileset.yy",},},
     {"id":{"name":"sJonahWallTileset","path":"sprites/sJonahWallTileset/sJonahWallTileset.yy",},},
+    {"id":{"name":"sPlayerIdleNew","path":"sprites/sPlayerIdleNew/sPlayerIdleNew.yy",},},
+    {"id":{"name":"sPlayerRunNew","path":"sprites/sPlayerRunNew/sPlayerRunNew.yy",},},
     {"id":{"name":"sPlayerTemporary","path":"sprites/sPlayerTemporary/sPlayerTemporary.yy",},},
     {"id":{"name":"sPlayerTombstone","path":"sprites/sPlayerTombstone/sPlayerTombstone.yy",},},
     {"id":{"name":"sTombstone","path":"sprites/sTombstone/sTombstone.yy",},},

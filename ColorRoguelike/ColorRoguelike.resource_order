@@ -76,6 +76,8 @@
     {"name":"sJonahCornerTileset","order":5,"path":"sprites/sJonahCornerTileset/sJonahCornerTileset.yy",},
     {"name":"sJonahFloorTileset","order":3,"path":"sprites/sJonahFloorTileset/sJonahFloorTileset.yy",},
     {"name":"sJonahWallTileset","order":4,"path":"sprites/sJonahWallTileset/sJonahWallTileset.yy",},
+    {"name":"sPlayerIdleNew","order":6,"path":"sprites/sPlayerIdleNew/sPlayerIdleNew.yy",},
+    {"name":"sPlayerRunNew","order":5,"path":"sprites/sPlayerRunNew/sPlayerRunNew.yy",},
     {"name":"sPlayerTombstone","order":4,"path":"sprites/sPlayerTombstone/sPlayerTombstone.yy",},
     {"name":"sTombstone","order":4,"path":"sprites/sTombstone/sTombstone.yy",},
     {"name":"sWall","order":6,"path":"sprites/sWall/sWall.yy",},

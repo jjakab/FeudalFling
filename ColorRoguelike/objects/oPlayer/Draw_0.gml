@@ -5,7 +5,7 @@ if(damaged = false)
 }
 else
 {
-	draw_sprite_ext(sPlayerTemporary,image_index,x,y,image_xscale,image_yscale,image_angle,c_red,1)
+	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_red,1)
 }
 
 if(mouseClicked)
