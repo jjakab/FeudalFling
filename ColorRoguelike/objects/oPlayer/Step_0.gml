@@ -63,9 +63,24 @@ if(place_meeting(x,y,oEnemyProjectileMaster))
 		other.playerHealth -= damage
 	}
 	
-	damaged = true
-	alarm_set(0,damageVisualWindow)
+	visuallyDamagePlayer()
+}
+
+//Check if the ground hitbox is colliding with any 
+var hitByHazard
+with(oPlayerGroundHitbox) {
 	
+	//Create list of hazards that the ground hitbox is colliding with
+	var collisionInstances = ds_list_create()
+	var collisions = instance_place_list(x,y,oGroundHazardMaster,collisionInstances,false)
+	for (i = 0; i < collisions; i++) {
+		var instanceID = ds_list_find_value(collisionInstances,i)
+		with(instanceID) {
+			hazardHitPlayer()
+		}
+	}
+	
+	ds_list_destroy(collisionInstances)
 }
 
 //Die if health is zero
