@@ -67,7 +67,6 @@ if(place_meeting(x,y,oEnemyProjectileMaster))
 }
 
 //Check if the ground hitbox is colliding with any 
-var hitByHazard
 with(oPlayerGroundHitbox) {
 	
 	//Create list of hazards that the ground hitbox is colliding with

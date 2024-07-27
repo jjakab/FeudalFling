@@ -9,8 +9,8 @@ prevState = state
 
 if(state == "attack"){
 	
-	var player_x = oPlayer.x
-	var player_y = oPlayer.y 
+	//var player_x = oPlayer.x
+	//var player_y = oPlayer.y 
 	
 	if(wizardType = "fire") {
 		
