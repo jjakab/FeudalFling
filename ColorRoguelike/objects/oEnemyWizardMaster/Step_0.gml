@@ -15,7 +15,7 @@ if(state == "attack"){
 	if(wizardType = "fire") {
 		
 	
-		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "FloorHazards", oWizardFireball);
+		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oWizardFireball);
 		projectile.direction = current_player;
 		projectile.speed = fireballSpeed
 
