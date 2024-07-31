@@ -11,8 +11,8 @@ else { //If there is a player, start charging up an attack
 	state = "charge";
 	pauseFirstStep = true
 	//alarm_set(1, standardPhaseTime/2)
-
-
+	
+	
 	//Set sprite based on child variable
 	sprite_index = attackSprite
 	image_index = 0

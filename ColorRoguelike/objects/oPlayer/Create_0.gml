@@ -19,6 +19,8 @@ ySpeed = 0
 damageVisualWindow = 10
 damaged = false
 
+noDamageWindow = 30
+
 imageSpeedCoefficient = 1.5 //Coefficient for determining image speed based on player speed
 speedIdleThreshold = 0.25 //Minimum speed the player needs to be going to 'run'
 
