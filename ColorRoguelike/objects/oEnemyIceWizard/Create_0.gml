@@ -14,7 +14,7 @@ part_system_automatic_update(_part_system, true);
 part_system_automatic_draw(_part_system, true);
 var _fps = game_get_speed(gamespeed_fps);
 
-//part_system_depth(_part_system,depth-1)
+part_system_depth(_part_system,depth-1)
 
 /* Individual snowflake particles*/
 _part_type_0 = part_type_create();
@@ -33,7 +33,7 @@ part_type_shape(_part_type_0, pt_shape_snow);
 /* Snowfall emitter */
 _part_emitter_0 = part_emitter_create(_part_system);
 part_emitter_region(_part_system, _part_emitter_0, x-sprite_width/2, x+sprite_width/2, y-sprite_height/2, y-sprite_height/2, ps_shape_ellipse, ps_distr_linear);
-var _odds = 15;
+var _odds = 8;
 if (_odds < _fps) {
     _rate =  -1 / (_odds / _fps);
 } else {

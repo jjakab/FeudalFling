@@ -59,4 +59,26 @@ else { //If there is a player, start charging up an attack
 			pairedObj = other	
 		}
 	}
+	else if (wizardType = "ice") {
+		var dist,rot
+		var player_x = oPlayer.x
+		var player_y = oPlayer.y 
+		dist = irandom(maxSnowRange)
+		rot = irandom(360)
+		xx = player_x + lengthdir_x(dist,rot)
+		yy = player_y + lengthdir_y(dist,rot)
+		
+		while (instance_place(xx,yy,oWall)) {
+			dist = irandom(maxSnowRange)
+			rot = irandom(360)
+			xx = player_x + lengthdir_x(dist,rot)
+			yy = player_y + lengthdir_y(dist,rot)
+		}
+		var hazardsDepth = layer_get_depth("FloorHazards")
+		snowTrap = instance_create_depth(xx,yy,hazardsDepth+1,oSnowTrap)
+		with(snowTrap) {
+			pairedObj = other
+			image_angle = irandom_range(0,359)
+		}
+	}
 }
