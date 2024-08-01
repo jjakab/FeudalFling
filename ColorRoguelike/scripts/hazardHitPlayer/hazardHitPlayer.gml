@@ -8,19 +8,14 @@ function hazardHitPlayer(){
 			if(object_index = oAcidPool && (instance_number(oPlayer) >= 1)) { //If this is an acid pool, damage player	
 				oPlayer.playerHealth = oPlayer.playerHealth - damage
 				visuallyDamagePlayer()
+				canDamage = false
+				alarm_set(0,noDamageWindow)
 			}
-		
-		
-			canDamage = false
-			alarm_set(0,noDamageWindow)
-		}
-	}
-	if(active){
-		if(object_index = oSnowTrap){
-			if(instance_number(oPlayer) >= 1) {
-			//Why am I not able to call xSpeed and fric directly, but can call canDamage and noDamageWindow directly?
-				oPlayer.xSpeed = oPlayer.xSpeed * (1-(oPlayer.fric * 3))
-				oPlayer.ySpeed = oPlayer.ySpeed * (1-(oPlayer.fric * 3))
+			else if(object_index = oSnowTrap){
+				if(instance_number(oPlayer) >= 1) {
+					oPlayer.xSpeed = oPlayer.xSpeed * (1-(oPlayer.fric * slowCoefficient))
+					oPlayer.ySpeed = oPlayer.ySpeed * (1-(oPlayer.fric * slowCoefficient))
+				}
 			}
 		}
 	}
