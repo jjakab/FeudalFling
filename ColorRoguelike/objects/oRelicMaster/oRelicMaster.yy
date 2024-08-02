@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayerGroundHitbox",
+  "%Name":"oRelicMaster",
   "eventList":[],
   "managed":true,
-  "name":"oPlayerGroundHitbox",
+  "name":"oRelicMaster",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Relics",
+    "path":"folders/Objects/Relics.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sPlayerGroundHitbox",
-    "path":"sprites/sPlayerGroundHitbox/sPlayerGroundHitbox.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

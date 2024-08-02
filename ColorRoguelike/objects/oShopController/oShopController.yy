@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayerGroundHitbox",
-  "eventList":[],
+  "%Name":"oShopController",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":82,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oPlayerGroundHitbox",
+  "name":"oShopController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Control",
+    "path":"folders/Objects/Control.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sPlayerGroundHitbox",
-    "path":"sprites/sPlayerGroundHitbox/sPlayerGroundHitbox.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

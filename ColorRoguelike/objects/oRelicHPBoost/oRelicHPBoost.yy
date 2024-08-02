@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayerGroundHitbox",
+  "%Name":"oRelicHPBoost",
   "eventList":[],
   "managed":true,
-  "name":"oPlayerGroundHitbox",
+  "name":"oRelicHPBoost",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Relics",
+    "path":"folders/Objects/Relics.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerGroundHitbox",
-    "path":"sprites/sPlayerGroundHitbox/sPlayerGroundHitbox.yy",
+    "name":"sHpBoost",
+    "path":"sprites/sHpBoost/sHpBoost.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
