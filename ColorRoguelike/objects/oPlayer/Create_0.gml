@@ -1,8 +1,9 @@
-/// @description Initiate variables
-
-
-playerHealth = 100
-maxPlayerHealth = 100
+//Global variables likely to change when relics are picked up, grouped for convenience
+playerHealth = global.playerHealth
+maxPlayerHealth = global.maxPlayerHealth
+attackDamage = global.attackDamage
+fric = global.fric
+launchCoefficient = global.launchCoefficient //for each pixel the mouse is from the origin, the character will be launched at this speed
 
 //billiard-based movement
 mouseClicked = false
@@ -10,9 +11,7 @@ mouseAngle = 0
 maxAimRange = 50
 
 moveDir = 0
-launchCoefficient = 1.5 //for each pixel the mouse is from the origin, the character will be launched at this speed
 currSpeed = 0
-fric = 0.006
 xSpeed = 0
 ySpeed = 0
 
@@ -34,7 +33,7 @@ rotatingCircleRadiusFromPlayer = 65
 rotatingCircleLifespan = 15
 
 //melee attack
-attackDamage = 100
+attackDamage = global.attackDamage
 
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")

@@ -6,7 +6,6 @@ function createRelicList(){
 	//Go through all the objects (keep increasing obj_index until it doesn't exist)
 
 	while (object_exists(objIndex)) {
-		show_debug_message(objIndex)
 		if (object_get_parent(objIndex) == oRelicMaster) {
 			ds_list_add(relics, objIndex); //add to the list
 		}

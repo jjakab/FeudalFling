@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oRelicMaster",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oShield",
+  "eventList":[],
   "managed":true,
-  "name":"oRelicMaster",
+  "name":"oShield",
   "overriddenProperties":[],
   "parent":{
     "name":"Relics",
     "path":"folders/Objects/Relics.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sShield",
+    "path":"sprites/sShield/sShield.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

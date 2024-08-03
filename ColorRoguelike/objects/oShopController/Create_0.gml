@@ -13,8 +13,12 @@ instanceLayerID = layer_get_id("Instances");
 
 relics = createRelicList()
 
+randomize()
 //Spawning items in
 for(i = 0; i <numItems; i++){
-	instance_create_layer(currentXPlace, ySpawn,instanceLayerID, ds_list_find_value(relics, 0))
+	relicPicker = irandom_range(0, ds_list_size(relics)-1)
+	show_debug_message(relicPicker)
+	instance_create_layer(currentXPlace, ySpawn,instanceLayerID, ds_list_find_value(relics, relicPicker))
 	currentXPlace += additive
+	
 }
