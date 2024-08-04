@@ -4,9 +4,10 @@ function createRelicList(){
 	var relics = ds_list_create()
 	var objIndex = 0; //current object index to check
 	//Go through all the objects (keep increasing obj_index until it doesn't exist)
-
 	while (object_exists(objIndex)) {
-		if (object_get_parent(objIndex) == oRelicMaster) {
+		//Check if object is a relic and whether or not the player already owns it
+		//TODO: Check if object is stackable, if so, make it available to the list
+		if (object_get_parent(objIndex) == oRelicMaster && (is_undefined(ds_map_find_value(global.relicsOwned, objIndex)))) {
 			ds_list_add(relics, objIndex); //add to the list
 		}
 		objIndex++; //go to the next index

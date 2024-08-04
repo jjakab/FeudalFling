@@ -1,14 +1,14 @@
 {
   "$GMRoom":"",
   "%Name":"rShop",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rShop/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_29C9A49C","path":"rooms/rShop/rShop.yy",},
-    {"name":"inst_79E8E7BC","path":"rooms/rShop/rShop.yy",},
     {"name":"inst_4E34B1B7","path":"rooms/rShop/rShop.yy",},
+    {"name":"inst_79E8E7BC","path":"rooms/rShop/rShop.yy",},
   ],
   "isDnd":false,
   "layers":[
