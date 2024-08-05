@@ -59,6 +59,8 @@
     {"name":"oWizardFireballExplodeAlternate","order":4,"path":"objects/oWizardFireballExplodeAlternate/oWizardFireballExplodeAlternate.yy",},
     {"name":"oWizardFlash","order":2,"path":"objects/oWizardFlash/oWizardFlash.yy",},
     {"name":"generationRoom","order":2,"path":"rooms/generationRoom/generationRoom.yy",},
+    {"name":"rBasicRoom1","order":5,"path":"rooms/rBasicRoom1/rBasicRoom1.yy",},
+    {"name":"rBasicRoomMaster","order":4,"path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},
     {"name":"rShop","order":3,"path":"rooms/rShop/rShop.yy",},
     {"name":"createPlayerRotatingCircle","order":6,"path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},
     {"name":"createRelicList","order":11,"path":"scripts/createRelicList/createRelicList.yy",},

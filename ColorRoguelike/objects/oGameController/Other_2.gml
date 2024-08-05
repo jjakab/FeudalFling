@@ -19,5 +19,3 @@ global.level = 0
 
 //Generate random seeds
 randomize()
-
-instance_create_layer(room_width/2, room_height/2, layer_get_id("Instances"), oPlayer)

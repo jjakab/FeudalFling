@@ -87,6 +87,8 @@
     {"id":{"name":"oWizardFlash","path":"objects/oWizardFlash/oWizardFlash.yy",},},
     {"id":{"name":"generationRoom","path":"rooms/generationRoom/generationRoom.yy",},},
     {"id":{"name":"rBase","path":"rooms/rBase/rBase.yy",},},
+    {"id":{"name":"rBasicRoom1","path":"rooms/rBasicRoom1/rBasicRoom1.yy",},},
+    {"id":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"bridgeGap","path":"scripts/bridgeGap/bridgeGap.yy",},},
     {"id":{"name":"createPlayerRotatingCircle","path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},},
@@ -148,9 +150,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rBasicRoom1","path":"rooms/rBasicRoom1/rBasicRoom1.yy",},},
     {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"generationRoom","path":"rooms/generationRoom/generationRoom.yy",},},
     {"roomId":{"name":"rBase","path":"rooms/rBase/rBase.yy",},},
+    {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

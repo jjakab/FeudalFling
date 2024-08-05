@@ -2,6 +2,12 @@
 
 //Player global variables 
 global.maxPlayerHealth = 100
+global.playerHealth = 100
+
+global.attackDamage = 100
+
+global.launchCoefficient = 1.5
+global.fric = 0.006
 
 global.exp = 0
 global.expNextLevel = 10
