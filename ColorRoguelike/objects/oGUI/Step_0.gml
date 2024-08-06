@@ -1,0 +1,1 @@
+numHearts = global.maxPlayerHealth / hpPerHeart

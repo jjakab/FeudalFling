@@ -1,4 +1,4 @@
 /// @description Insert description here
 event_inherited()
-damage = 20
+damage = 2
 projType = "fireball"

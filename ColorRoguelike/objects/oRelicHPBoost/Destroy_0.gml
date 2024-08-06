@@ -1,4 +1,4 @@
-//When destroyed, grant player 10 hp
-global.maxPlayerHealth += 10
-global.playerHealth += 10
+//When destroyed, grant player 4 hp
+global.maxPlayerHealth += 4
+global.playerHealth += 4
 updatePlayer()

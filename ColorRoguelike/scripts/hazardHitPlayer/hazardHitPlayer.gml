@@ -6,7 +6,7 @@ function hazardHitPlayer(){
 	if(canDamage) {
 		if(active) { //Proceed if this hazard is not in the charge state
 			if(object_index = oAcidPool && (instance_number(oPlayer) >= 1)) { //If this is an acid pool, damage player	
-				oPlayer.playerHealth = oPlayer.playerHealth - damage
+				global.playerHealth -= damage
 				visuallyDamagePlayer()
 				canDamage = false
 				alarm_set(0,noDamageWindow)

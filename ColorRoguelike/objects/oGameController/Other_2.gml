@@ -3,8 +3,8 @@
 //PROBLEM
 //For some reason, this isn't initializing variables before ShopController access them, but does work if put in Create method
 
-global.maxPlayerHealth = 100
-global.playerHealth = 100
+global.maxPlayerHealth = 20
+global.playerHealth = 20
 
 global.launchCoefficient = 1.5
 global.fric = 0.006

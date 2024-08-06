@@ -1,6 +1,4 @@
 //Global variables likely to change when relics are picked up, grouped for convenience
-playerHealth = global.playerHealth
-maxPlayerHealth = global.maxPlayerHealth
 attackDamage = global.attackDamage
 fric = global.fric
 launchCoefficient = global.launchCoefficient //for each pixel the mouse is from the origin, the character will be launched at this speed

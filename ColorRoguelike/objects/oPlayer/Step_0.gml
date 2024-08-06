@@ -60,7 +60,7 @@ if(place_meeting(x,y,oEnemyProjectileMaster))
 	with(projectile)
 	{
 		instance_destroy()
-		other.playerHealth -= damage
+		global.playerHealth -= damage
 	}
 	
 	visuallyDamagePlayer()
@@ -83,7 +83,7 @@ with(oPlayerGroundHitbox) {
 }
 
 //Die if health is zero
-if(playerHealth <= 0){
+if(global.playerHealth <= 0){
 	instance_destroy()
 	instance_create_layer(x, y, "Instances", oTombstone)
 }

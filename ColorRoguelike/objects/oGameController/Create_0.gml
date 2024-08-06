@@ -1,8 +1,8 @@
 /// @description Initialize variables
 
 //Player global variables 
-global.maxPlayerHealth = 100
-global.playerHealth = 100
+global.maxPlayerHealth = 20
+global.playerHealth = 20
 
 global.attackDamage = 100
 
