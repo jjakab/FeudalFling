@@ -46,7 +46,7 @@ groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
 firstHitNegate = false
 relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 for(i = 0; i < array_length(relicsOwned); i++){
-	objName = object_get_name(relicsOwned[j])
+	objName = object_get_name(relicsOwned[i])
 	if(objName = oRelicShield){
 		firstHitNegate = true
 	}
