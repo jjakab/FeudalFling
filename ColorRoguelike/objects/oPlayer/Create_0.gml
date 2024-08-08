@@ -35,7 +35,6 @@ attackDamage = global.attackDamage
 
 //variables related to wind essence
 windEssence = false //does the player have the wind essence relic?
-shootWindEssence = false //track whether a wind essence needs to be shot
 windEssenceDelay = 30 //how long after max launch should wind essence be created
 windEssenceSpeedThreshold = 1.2 //minimum speed threshold for wind essence
 
