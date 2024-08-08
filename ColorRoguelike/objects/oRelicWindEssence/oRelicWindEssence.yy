@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oRelicHpRestore",
-  "eventList":[],
+  "%Name":"oRelicWindEssence",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oRelicHpRestore",
+  "name":"oRelicWindEssence",
   "overriddenProperties":[],
   "parent":{
-    "name":"Health and Shields",
-    "path":"folders/Objects/Relics/Health and Shields.yy",
+    "name":"Offensive",
+    "path":"folders/Objects/Relics/Offensive.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",
@@ -31,13 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHpRestore",
-    "path":"sprites/sHpRestore/sHpRestore.yy",
+    "name":"sWindEssence",
+    "path":"sprites/sWindEssence/sWindEssence.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "relic",
-    "stackable",
-  ],
   "visible":true,
 }

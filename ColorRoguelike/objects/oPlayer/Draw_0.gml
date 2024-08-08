@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Draw player and arrow
 if(damaged = false)
 {
 	draw_self()	

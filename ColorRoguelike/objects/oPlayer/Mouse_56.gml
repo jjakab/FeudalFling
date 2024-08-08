@@ -4,6 +4,13 @@
 
 if(mouseClicked=true) //a dash was being charged up
 {
+	//Check if a wind essence needs to be shot
+	if(distance_to_point(mouse_x,mouse_y) > maxAimRange) {
+		if(windEssence) {
+			alarm_set(1,windEssenceDelay)
+		}
+	}
+	
 	var xMouseDistance = launchCoefficient * cos(degtorad(mouseAngle)) * min( maxAimRange,distance_to_point(mouse_x,mouse_y))
 	var yMouseDistance = launchCoefficient * sin(degtorad(mouseAngle)) * min( maxAimRange,distance_to_point(mouse_x,mouse_y))
 	xSpeed = -xMouseDistance / 50

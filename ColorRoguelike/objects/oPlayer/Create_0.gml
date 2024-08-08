@@ -33,6 +33,12 @@ rotatingCircleLifespan = 15
 //melee attack
 attackDamage = global.attackDamage
 
+//variables related to wind essence
+windEssence = false //does the player have the wind essence relic?
+shootWindEssence = false //track whether a wind essence needs to be shot
+windEssenceDelay = 30 //how long after max launch should wind essence be created
+windEssenceSpeedThreshold = 1.2 //minimum speed threshold for wind essence
+
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")
 
@@ -44,11 +50,16 @@ groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
 
 //If player has Shield relic, give them a block against the first hit of each room.
 firstHitNegate = false
+windEssence = false
+
 relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 for(i = 0; i < array_length(relicsOwned); i++){
 	objName = object_get_name(relicsOwned[i])
 	if(objName = oRelicShield){
 		firstHitNegate = true
+	}
+	if(objName = oRelicWindEssence) {
+		windEssence = true	
 	}
 }
 

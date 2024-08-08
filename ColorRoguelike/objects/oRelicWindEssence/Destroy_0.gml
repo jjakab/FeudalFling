@@ -1,0 +1,1 @@
+oPlayer.windEssence = true
