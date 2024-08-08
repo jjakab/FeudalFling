@@ -42,14 +42,10 @@ state = "still"
 
 groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
 
+//If player has Shield relic, give them a block against the first hit of each room.
+firstHitNegate = false
+//if(ds_map_exists(global.relicsOwned, oRelicShield.object_index)){
+//	firstHitNegate = true
+//}
 
-/*
-//state management
-enum PLAYERSTATES{
-	FREE,
-	ATTACK
-}
-
-state = PLAYERSTATES.FREE
-enemiesHit = ds_list_create()
-*/
+//if player has a hp restore relic, restore half an hp heart if hp isn't full

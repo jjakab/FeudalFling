@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oRelicHpBoost",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oRelicHpRestore",
+  "eventList":[],
   "managed":true,
-  "name":"oRelicHpBoost",
+  "name":"oRelicHpRestore",
   "overriddenProperties":[],
   "parent":{
     "name":"Relics",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHpBoost",
-    "path":"sprites/sHpBoost/sHpBoost.yy",
+    "name":"sHpRestore",
+    "path":"sprites/sHpRestore/sHpRestore.yy",
   },
   "spriteMaskId":null,
   "tags":[

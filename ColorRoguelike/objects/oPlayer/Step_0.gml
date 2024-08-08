@@ -57,13 +57,18 @@ groundHitbox.y = y
 if(place_meeting(x,y,oEnemyProjectileMaster))
 {
 	projectile = instance_place(x,y,oEnemyProjectileMaster)
+	projDamage = projectile.damage;
 	with(projectile)
 	{
-		instance_destroy()
-		global.playerHealth -= damage
+		instance_destroy();
 	}
-	
-	visuallyDamagePlayer()
+	if(firstHitNegate = true){
+		firstHitNegate = false
+	}
+	else{
+		global.playerHealth -= projDamage
+		visuallyDamagePlayer()
+	}
 }
 
 //Check if the ground hitbox is colliding with any 
@@ -87,7 +92,3 @@ if(global.playerHealth <= 0){
 	instance_destroy()
 	instance_create_layer(x, y, "Instances", oTombstone)
 }
-
-
-
-

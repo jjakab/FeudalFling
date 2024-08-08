@@ -14,6 +14,10 @@ global.expNextLevel = 10
 global.level = 0
 
 global.relicsOwned = ds_map_create()
-//Generate random seeds
+global.relicStackable = ds_list_create()
 
+ds_list_add(global.relicStackable,"oRelicHpBoost")
+ds_list_add(global.relicStackable, "oRelicHpEmpty")
+
+//Generate random seeds
 randomize()

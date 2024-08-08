@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oShield",
+  "%Name":"oRelicHpEmpty",
   "eventList":[],
   "managed":true,
-  "name":"oShield",
+  "name":"oRelicHpEmpty",
   "overriddenProperties":[],
   "parent":{
     "name":"Relics",
@@ -31,9 +31,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sShield",
-    "path":"sprites/sShield/sShield.yy",
+    "name":"sHpEmpty",
+    "path":"sprites/sHpEmpty/sHpEmpty.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+    "stackable",
+  ],
   "visible":true,
 }
