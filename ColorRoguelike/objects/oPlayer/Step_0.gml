@@ -77,7 +77,7 @@ with(oPlayerGroundHitbox) {
 	//Create list of hazards that the ground hitbox is colliding with
 	var collisionInstances = ds_list_create()
 	var collisions = instance_place_list(x,y,oGroundHazardMaster,collisionInstances,false)
-	for (i = 0; i < collisions; i++) {
+	for (i = 0; i < ds_list_size(collisionInstances); i++) {
 		var instanceID = ds_list_find_value(collisionInstances,i)
 		with(instanceID) {
 			hazardHitPlayer()
