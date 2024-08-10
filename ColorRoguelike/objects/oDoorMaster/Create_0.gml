@@ -12,4 +12,4 @@ activated = false
 
 
 //Declare the room that this door leads to - this will be overwritten by child object
-targetRoom = rBasicRoom1 //
+targetRoom = rBasicRoom2_1

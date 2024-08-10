@@ -1,3 +1,3 @@
 event_inherited()
 
-targetRoom = rBasicRoom1
+targetRoom = rBasicRoom2_1
