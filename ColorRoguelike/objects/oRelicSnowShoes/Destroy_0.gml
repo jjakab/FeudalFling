@@ -1,0 +1,1 @@
+global.snowSlowCoefficient = 1.5

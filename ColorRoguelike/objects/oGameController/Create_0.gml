@@ -9,6 +9,9 @@ global.attackDamage = 100
 global.launchCoefficient = 1.5
 global.fric = 0.006
 
+//Other global variables
+global.snowSlowCoefficient = 5
+
 global.exp = 0
 global.expNextLevel = 10
 global.level = 0
