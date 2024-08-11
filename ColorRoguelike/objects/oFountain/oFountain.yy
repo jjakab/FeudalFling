@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oRightWall",
+  "%Name":"oFountain",
   "eventList":[],
   "managed":true,
-  "name":"oRightWall",
+  "name":"oFountain",
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
     "path":"folders/Objects/Terrain.yy",
   },
-  "parentObjectId":{
-    "name":"oWall",
-    "path":"objects/oWall/oWall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sRightWall",
-    "path":"sprites/sRightWall/sRightWall.yy",
-  },
-  "spriteMaskId":{
-    "name":"sRightWall",
-    "path":"sprites/sRightWall/sRightWall.yy",
-  },
-  "visible":false,
+  "spriteId":null,
+  "spriteMaskId":null,
+  "visible":true,
 }

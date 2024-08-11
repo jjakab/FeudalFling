@@ -35,5 +35,5 @@
     "path":"sprites/sLeftWall/sLeftWall.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
