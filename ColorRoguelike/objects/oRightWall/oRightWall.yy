@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oFloor",
+  "%Name":"oRightWall",
   "eventList":[],
   "managed":true,
-  "name":"oFloor",
+  "name":"oRightWall",
   "overriddenProperties":[],
   "parent":{
     "name":"Terrain",
     "path":"folders/Objects/Terrain.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oWall",
+    "path":"objects/oWall/oWall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"sRightWall",
+    "path":"sprites/sRightWall/sRightWall.yy",
+  },
+  "spriteMaskId":{
+    "name":"sRightWall",
+    "path":"sprites/sRightWall/sRightWall.yy",
+  },
   "visible":true,
 }
