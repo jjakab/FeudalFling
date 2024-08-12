@@ -8,7 +8,8 @@ function createRelicList(){
 		//Check if object is a relic and whether or not the player already owns it
 		//TODO: Check if object is stackable, if so, make it available to the list
 		if (object_get_parent(objIndex) == oRelicMaster && (is_undefined(ds_map_find_value(global.relicsOwned, objIndex)))) {
-			ds_list_add(relics, objIndex); //add to the list
+			ds_list_add(relics, object_get_name(objIndex)); //add to the list
+			show_debug_message(object_get_name(objIndex))
 		}
 		objIndex++; //go to the next index
 	}

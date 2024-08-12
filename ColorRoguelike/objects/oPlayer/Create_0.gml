@@ -51,16 +51,14 @@ groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
 firstHitNegate = false
 windEssence = false
 
-relicsOwned = ds_map_keys_to_array(global.relicsOwned)
-for(i = 0; i < array_length(relicsOwned); i++){
-	objName = object_get_name(relicsOwned[i])
-	if(objName = oRelicShield){
-		firstHitNegate = true
-	}
-	if(objName = oRelicWindEssence) {
-		windEssence = true	
-	}
-}
 
+relicsOwned = ds_map_keys_to_array(global.relicsOwned)
+//Doing checks for player relics
+if(array_contains(relicsOwned, "oRelicShield")){
+	firstHitNegate = true
+}
+if(array_contains(relicsOwned, "oRelicWindEssence")){
+	windEssence = true
+}
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full

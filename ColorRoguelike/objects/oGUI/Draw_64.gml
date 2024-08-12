@@ -26,6 +26,8 @@ for (var i = 1; i <= numHearts; i++) {
 itemsOwned = ds_map_keys_to_array(global.relicsOwned)
 var spr
 for (var j = 0; j < array_length(itemsOwned); j++) {
-	spr = object_get_sprite(itemsOwned[j])
+	var objName = itemsOwned[j]
+	var objIndex = asset_get_index(objName)
+	spr = object_get_sprite(objIndex)
 	draw_sprite_ext(spr,0,relicDrawStartX + (relicDrawXInterval * (j - 1)),relicDrawStartY,2,2,0,c_white,1)
 }

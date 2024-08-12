@@ -46,11 +46,11 @@
     {"$GMFolder":"","%Name":"Acid Wizard","folderPath":"folders/Sprites/Enemy/Acid Wizard.yy","name":"Acid Wizard","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fire Wizard","folderPath":"folders/Sprites/Enemy/Fire Wizard.yy","name":"Fire Wizard","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Ice Wizard","folderPath":"folders/Sprites/Enemy/Ice Wizard.yy","name":"Ice Wizard","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Terrain","folderPath":"folders/Sprites/Terrain.yy","name":"Terrain","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GUI","folderPath":"folders/Sprites/GUI.yy","name":"GUI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Weapons","folderPath":"folders/Sprites/Player/Weapons.yy","name":"Weapons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Relics","folderPath":"folders/Sprites/Relics.yy","name":"Relics","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Terrain","folderPath":"folders/Sprites/Terrain.yy","name":"Terrain","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Transitions","folderPath":"folders/Sprites/Transitions.yy","name":"Transitions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -189,9 +189,9 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
+    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
-    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
