@@ -48,6 +48,7 @@
   "ResourceOrderSettings":[
     {"name":"oAcidPool","order":1,"path":"objects/oAcidPool/oAcidPool.yy",},
     {"name":"oDoorCombat","order":2,"path":"objects/oDoorCombat/oDoorCombat.yy",},
+    {"name":"oDoorHealing","order":4,"path":"objects/oDoorHealing/oDoorHealing.yy",},
     {"name":"oDoorHitbox","order":1,"path":"objects/oDoorHitbox/oDoorHitbox.yy",},
     {"name":"oDoorShop","order":3,"path":"objects/oDoorShop/oDoorShop.yy",},
     {"name":"oEnemyAcidWizard","order":2,"path":"objects/oEnemyAcidWizard/oEnemyAcidWizard.yy",},
@@ -100,6 +101,7 @@
     {"name":"sAttackState","order":1,"path":"sprites/sAttackState/sAttackState.yy",},
     {"name":"sDoorBasic","order":1,"path":"sprites/sDoorBasic/sDoorBasic.yy",},
     {"name":"sDoorCombat","order":5,"path":"sprites/sDoorCombat/sDoorCombat.yy",},
+    {"name":"sDoorHealing","order":9,"path":"sprites/sDoorHealing/sDoorHealing.yy",},
     {"name":"sDoorHitbox","order":6,"path":"sprites/sDoorHitbox/sDoorHitbox.yy",},
     {"name":"sDoorShop","order":7,"path":"sprites/sDoorShop/sDoorShop.yy",},
     {"name":"sDoorShop2","order":8,"path":"sprites/sDoorShop2/sDoorShop2.yy",},
