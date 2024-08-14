@@ -32,6 +32,7 @@
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Basic Combat Rooms","folderPath":"folders/Rooms/Basic Combat Rooms.yy","name":"Basic Combat Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"enemyStates","folderPath":"folders/Scripts/enemyStates.yy","name":"enemyStates","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"wizardStates","folderPath":"folders/Scripts/enemyStates/wizardStates.yy","name":"wizardStates","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -106,6 +107,7 @@
     {"id":{"name":"oWizardFlash","path":"objects/oWizardFlash/oWizardFlash.yy",},},
     {"id":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"id":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
+    {"id":{"name":"rBasicRoom2_3","path":"rooms/rBasicRoom2_3/rBasicRoom2_3.yy",},},
     {"id":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"bridgeGap","path":"scripts/bridgeGap/bridgeGap.yy",},},
@@ -194,6 +196,7 @@
     {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
+    {"roomId":{"name":"rBasicRoom2_3","path":"rooms/rBasicRoom2_3/rBasicRoom2_3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

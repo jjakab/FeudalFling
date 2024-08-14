@@ -221,8 +221,8 @@
   ],
   "name":"rBasicRoom2_1",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Basic Combat Rooms",
+    "path":"folders/Rooms/Basic Combat Rooms.yy",
   },
   "parentRoom":{
     "name":"rBasicRoomMaster",
