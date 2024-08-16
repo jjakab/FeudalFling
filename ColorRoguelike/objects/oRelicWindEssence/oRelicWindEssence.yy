@@ -37,5 +37,8 @@
     "path":"sprites/sWindEssence/sWindEssence.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+  ],
   "visible":true,
 }

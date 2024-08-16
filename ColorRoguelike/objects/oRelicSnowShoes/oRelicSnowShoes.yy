@@ -37,5 +37,8 @@
     "path":"sprites/sSnowShoes/sSnowShoes.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+  ],
   "visible":true,
 }
