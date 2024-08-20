@@ -26,5 +26,7 @@ maxSnowRange = 75
 current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
 current_difference = angle_difference(current_player, playerDirection)
 
+goldDropped = 20
+
 //Change to attack
 alarm_set(0, standardPhaseTime/random_range(2,4))

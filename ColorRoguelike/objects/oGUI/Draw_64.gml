@@ -23,6 +23,12 @@ for (var i = 1; i <= numHearts; i++) {
 	}
 }
 
+//Drawing gold owned
+draw_sprite_ext(sGoldOwned,0,goldDrawStartX, goldDrawStartY, 2,2,0,c_white,1)
+var goldAmount = string(global.goldOwned)
+draw_text(goldAmountDrawStartX, goldDrawStartY, goldAmount)
+
+
 itemsOwned = ds_map_keys_to_array(global.relicsOwned)
 var spr
 for (var j = 0; j < array_length(itemsOwned); j++) {

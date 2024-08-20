@@ -120,6 +120,7 @@
     {"name":"sFireballExplode","order":5,"path":"sprites/sFireballExplode/sFireballExplode.yy",},
     {"name":"sFireballExplodeWall","order":6,"path":"sprites/sFireballExplodeWall/sFireballExplodeWall.yy",},
     {"name":"sFullHeart","order":2,"path":"sprites/sFullHeart/sFullHeart.yy",},
+    {"name":"sGoldOwned","order":3,"path":"sprites/sGoldOwned/sGoldOwned.yy",},
     {"name":"sHalfHeart","order":1,"path":"sprites/sHalfHeart/sHalfHeart.yy",},
     {"name":"sHpEmpty","order":3,"path":"sprites/sHpEmpty/sHpEmpty.yy",},
     {"name":"sHpRestore","order":2,"path":"sprites/sHpRestore/sHpRestore.yy",},

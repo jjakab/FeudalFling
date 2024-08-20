@@ -10,3 +10,7 @@ healthDrawStartY = view_get_hport(0) - 50
 relicDrawStartX = 300
 relicDrawXInterval = 28
 relicDrawStartY = healthDrawStartY
+
+goldDrawStartX = 220
+goldDrawStartY = view_get_hport(0) - 50
+goldAmountDrawStartX = 250

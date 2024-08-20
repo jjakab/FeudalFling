@@ -6,8 +6,8 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_2EB240A_1","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},
     {"name":"inst_4B90AF0","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},
+    {"name":"inst_2EB240A_1","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},
     {"name":"inst_F254B77","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},
   ],
   "isDnd":false,

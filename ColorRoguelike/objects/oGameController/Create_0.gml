@@ -22,5 +22,7 @@ global.relicStackable = ds_list_create()
 ds_list_add(global.relicStackable,"oRelicHpBoost")
 ds_list_add(global.relicStackable, "oRelicHpEmpty")
 
+global.goldOwned = 100
+
 //Generate random seeds
 randomize()

@@ -158,6 +158,7 @@
     {"id":{"name":"sFireballExplode","path":"sprites/sFireballExplode/sFireballExplode.yy",},},
     {"id":{"name":"sFireballExplodeWall","path":"sprites/sFireballExplodeWall/sFireballExplodeWall.yy",},},
     {"id":{"name":"sFullHeart","path":"sprites/sFullHeart/sFullHeart.yy",},},
+    {"id":{"name":"sGoldOwned","path":"sprites/sGoldOwned/sGoldOwned.yy",},},
     {"id":{"name":"sHalfHeart","path":"sprites/sHalfHeart/sHalfHeart.yy",},},
     {"id":{"name":"sHpBoost","path":"sprites/sHpBoost/sHpBoost.yy",},},
     {"id":{"name":"sHpEmpty","path":"sprites/sHpEmpty/sHpEmpty.yy",},},
@@ -192,8 +193,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
+    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
     {"roomId":{"name":"rBasicRoom2_3","path":"rooms/rBasicRoom2_3/rBasicRoom2_3.yy",},},
