@@ -5,16 +5,18 @@ function createRelicList(){
 	//Newer method of pulling all relics using tags
 	var allRelics = tag_get_asset_ids("relic", asset_object);
 	for(i = 0; i < array_length(allRelics); i++){
-		//This throws an error here but doesn't cause any errors as long as the asset we're receiving is an object
-		//This means that if we tag anything that isn't an object as a Relic it will crash, but will be fine otherwise
-		currName = object_get_name(allRelics[i])
-		//Check to see if relic is owned
-		if(is_undefined(ds_map_find_value(global.relicsOwned, currName))){
-			ds_list_add(relics, allRelics[i]); 
-		}
-		//If relic is not owned but stackable, add it anyway
-		else if(asset_has_any_tag(allRelics[i], "stackable")){
-			ds_list_add(relics, allRelics[i]);
+		if(object_is_ancestor(allRelics[i],oRelicMaster)) {
+			//This throws an error here but doesn't cause any errors as long as the asset we're receiving is an object
+			//This means that if we tag anything that isn't an object as a Relic it will crash, but will be fine otherwise
+			currName = object_get_name(allRelics[i])
+			//Check to see if relic is owned
+			if(is_undefined(ds_map_find_value(global.relicsOwned, currName))){
+				ds_list_add(relics, allRelics[i]); 
+			}
+			//If relic is not owned but stackable, add it anyway
+			else if(asset_has_any_tag(allRelics[i], "stackable")){
+				ds_list_add(relics, allRelics[i]);
+			}
 		}
 	}
 	

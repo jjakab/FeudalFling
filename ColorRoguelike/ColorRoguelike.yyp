@@ -107,7 +107,6 @@
     {"id":{"name":"oWizardFlash","path":"objects/oWizardFlash/oWizardFlash.yy",},},
     {"id":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"id":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
-    {"id":{"name":"rBasicRoom2_3","path":"rooms/rBasicRoom2_3/rBasicRoom2_3.yy",},},
     {"id":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
     {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"id":{"name":"bridgeGap","path":"scripts/bridgeGap/bridgeGap.yy",},},
@@ -195,9 +194,8 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
     {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
-    {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
-    {"roomId":{"name":"rBasicRoom2_3","path":"rooms/rBasicRoom2_3/rBasicRoom2_3.yy",},},
+    {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
