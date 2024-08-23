@@ -103,7 +103,6 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oWizardFireball","path":"objects/oWizardFireball/oWizardFireball.yy",},},
     {"id":{"name":"oWizardFireballExplode","path":"objects/oWizardFireballExplode/oWizardFireballExplode.yy",},},
-    {"id":{"name":"oWizardFireballExplodeAlternate","path":"objects/oWizardFireballExplodeAlternate/oWizardFireballExplodeAlternate.yy",},},
     {"id":{"name":"oWizardFlash","path":"objects/oWizardFlash/oWizardFlash.yy",},},
     {"id":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"id":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},

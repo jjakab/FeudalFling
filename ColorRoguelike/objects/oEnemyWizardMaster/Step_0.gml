@@ -18,6 +18,7 @@ if(state == "attack"){
 		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oWizardFireball);
 		projectile.direction = current_player;
 		projectile.speed = fireballSpeed
+		projectile.projDirection = current_player;
 
 	}
 	

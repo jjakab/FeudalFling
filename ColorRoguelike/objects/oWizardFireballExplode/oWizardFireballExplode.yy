@@ -2,8 +2,7 @@
   "$GMObject":"",
   "%Name":"oWizardFireballExplode",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oWizardFireballExplode",
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFireballExplode",
-    "path":"sprites/sFireballExplode/sFireballExplode.yy",
+    "name":"sFireballExplodeWall",
+    "path":"sprites/sFireballExplodeWall/sFireballExplodeWall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
