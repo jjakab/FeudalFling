@@ -1,3 +1,3 @@
 event_inherited()
 
-targetRoom = rShop
+targetRoom = rShop2_1

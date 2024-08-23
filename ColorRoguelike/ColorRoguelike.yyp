@@ -65,6 +65,8 @@
   "name":"ColorRoguelike",
   "resources":[
     {"id":{"name":"fLevelFont","path":"fonts/fLevelFont/fLevelFont.yy",},},
+    {"id":{"name":"fPixelFont12","path":"fonts/fPixelFont12/fPixelFont12.yy",},},
+    {"id":{"name":"fPixelFont18","path":"fonts/fPixelFont18/fPixelFont18.yy",},},
     {"id":{"name":"oAcidBubble","path":"objects/oAcidBubble/oAcidBubble.yy",},},
     {"id":{"name":"oAcidPool","path":"objects/oAcidPool/oAcidPool.yy",},},
     {"id":{"name":"oDoorCombat","path":"objects/oDoorCombat/oDoorCombat.yy",},},
@@ -107,7 +109,7 @@
     {"id":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"id":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
     {"id":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
-    {"id":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
+    {"id":{"name":"rShop2_1","path":"rooms/rShop2_1/rShop2_1.yy",},},
     {"id":{"name":"bridgeGap","path":"scripts/bridgeGap/bridgeGap.yy",},},
     {"id":{"name":"createPlayerRotatingCircle","path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},},
     {"id":{"name":"createRelicList","path":"scripts/createRelicList/createRelicList.yy",},},
@@ -191,8 +193,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rShop2_1","path":"rooms/rShop2_1/rShop2_1.yy",},},
     {"roomId":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
-    {"roomId":{"name":"rShop","path":"rooms/rShop/rShop.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
     {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
   ],

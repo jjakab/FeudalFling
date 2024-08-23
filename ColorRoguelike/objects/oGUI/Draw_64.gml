@@ -26,7 +26,10 @@ for (var i = 1; i <= numHearts; i++) {
 //Drawing gold owned
 draw_sprite_ext(sGoldOwned,0,goldDrawStartX, goldDrawStartY, 2,2,0,c_white,1)
 var goldAmount = string(global.goldOwned)
-draw_text(goldAmountDrawStartX, goldDrawStartY, goldAmount)
+draw_set_color(c_white)
+draw_set_valign(fa_top)
+draw_set_font(fPixelFont18)
+draw_text(goldAmountDrawStartX, goldDrawStartY+4, goldAmount)
 
 
 itemsOwned = ds_map_keys_to_array(global.relicsOwned)
@@ -36,4 +39,12 @@ for (var j = 0; j < array_length(itemsOwned); j++) {
 	var objIndex = asset_get_index(objName)
 	spr = object_get_sprite(objIndex)
 	draw_sprite_ext(spr,0,relicDrawStartX + (relicDrawXInterval * (j - 1)),relicDrawStartY,2,2,0,c_white,1)
+	
+	//Check if this is stackable, and if so draw the # of stacks
+	if(asset_has_tags(itemsOwned[j],"stackable")) {
+		var numStacks = ds_map_find_value(global.relicsOwned,itemsOwned[j])
+		draw_set_color(c_yellow)
+		draw_set_font(fPixelFont12)
+		draw_text(relicDrawStartX + (relicDrawXInterval * (j - 1)) + 20, relicDrawStartY + 18,string(numStacks))
+	}
 }
