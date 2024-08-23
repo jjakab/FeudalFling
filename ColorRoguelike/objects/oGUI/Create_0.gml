@@ -10,7 +10,7 @@ healthDrawStartY = view_get_hport(0) - 50
 
 //Variables related to drawing relics
 relicDrawStartX = 360
-relicDrawXInterval = 28
+relicDrawXInterval = 32
 relicDrawStartY = healthDrawStartY
 
 
@@ -20,5 +20,5 @@ goldDrawStartY = view_get_hport(0) - 50
 goldAmountDrawStartX = 250
 
 //General draw settings
-draw_set_font(fPixelFont18)
+draw_set_font(fPixelFont24)
 

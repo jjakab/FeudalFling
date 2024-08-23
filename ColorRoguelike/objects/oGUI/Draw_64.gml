@@ -28,8 +28,8 @@ draw_sprite_ext(sGoldOwned,0,goldDrawStartX, goldDrawStartY, 2,2,0,c_white,1)
 var goldAmount = string(global.goldOwned)
 draw_set_color(c_white)
 draw_set_valign(fa_top)
-draw_set_font(fPixelFont18)
-draw_text(goldAmountDrawStartX, goldDrawStartY+4, goldAmount)
+draw_set_font(fPixelFont24)
+draw_text(goldAmountDrawStartX, goldDrawStartY-2, goldAmount)
 
 
 itemsOwned = ds_map_keys_to_array(global.relicsOwned)

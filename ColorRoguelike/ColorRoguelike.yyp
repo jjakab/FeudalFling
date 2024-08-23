@@ -66,7 +66,7 @@
   "resources":[
     {"id":{"name":"fLevelFont","path":"fonts/fLevelFont/fLevelFont.yy",},},
     {"id":{"name":"fPixelFont12","path":"fonts/fPixelFont12/fPixelFont12.yy",},},
-    {"id":{"name":"fPixelFont18","path":"fonts/fPixelFont18/fPixelFont18.yy",},},
+    {"id":{"name":"fPixelFont24","path":"fonts/fPixelFont24/fPixelFont24.yy",},},
     {"id":{"name":"oAcidBubble","path":"objects/oAcidBubble/oAcidBubble.yy",},},
     {"id":{"name":"oAcidPool","path":"objects/oAcidPool/oAcidPool.yy",},},
     {"id":{"name":"oDoorCombat","path":"objects/oDoorCombat/oDoorCombat.yy",},},

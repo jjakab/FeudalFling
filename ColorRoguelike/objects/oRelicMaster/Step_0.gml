@@ -3,6 +3,10 @@ if(place_meeting(x, y, oPlayer)){
 	show_debug_message("Relic hit")
 	//Check if the player currently holds any of this type of relic, and add 1 to the relics owned mapping
 	var objName = object_get_name(object_index)
+	
+	//Certain relics are consolidated after being picked up
+	if(objName == "oRelicHpEmpty") objName = "oRelicHpBoost"
+	
 	var relicTypeHeld = ds_map_find_value(global.relicsOwned, objName)
 	if(is_undefined(relicTypeHeld)){
 		ds_map_add(global.relicsOwned, objName, 1)

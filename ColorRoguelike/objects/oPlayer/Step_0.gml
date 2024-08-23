@@ -8,6 +8,37 @@ if(mouseClicked)
 xSpeed = xSpeed * (1-fric)
 ySpeed = ySpeed * (1-fric)
 
+with(groundHitbox) {
+	var startingX = x
+	var startingY = y
+	
+	var hitboxXSpeed = other.xSpeed
+	var hitboxYSpeed = other.ySpeed
+	
+	if(!place_meeting(x + other.xSpeed,y, oWall)){
+		x += other.xSpeed
+	}
+	else{
+		other.xSpeed = -other.xSpeed
+		x += other.xSpeed
+	}
+	
+	other.x += (x - startingX)
+	
+	if(!place_meeting(x, y + other.ySpeed, oWall)){
+		y += other.ySpeed
+	}
+	else{
+		other.ySpeed = -other.ySpeed
+		y += other.ySpeed
+	}
+	
+	other.y += (y - startingY)
+	
+}
+
+//Use the groundHitbox as a collision detector for movement
+/*
 //Move and change direction if player runs into a wall
 if(!place_meeting(x + xSpeed,y, oWall)){
 	x += xSpeed
@@ -23,6 +54,8 @@ else{
 	ySpeed = -ySpeed
 	y += ySpeed
 }
+
+*/
 
 //Set sprite direction based on xSpeed
 if(xSpeed > 0) image_xscale = 1
@@ -48,7 +81,15 @@ else { //If we are not already in the idle state, go to idle state
 }
 
 //Unstick in case changing/flipping the sprite put the player in a wall
-unstick()
+with(groundHitbox) {
+	startingX = x
+	startingY = y
+	
+	unstick()
+	
+	other.x += (x - startingX)
+	other.y += (y - startingY)
+}
 
 groundHitbox.x = x
 groundHitbox.y = y

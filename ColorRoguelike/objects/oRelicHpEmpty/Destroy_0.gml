@@ -1,0 +1,1 @@
+global.maxPlayerHealth += 4
