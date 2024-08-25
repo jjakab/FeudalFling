@@ -37,6 +37,7 @@
     {"name":"Acid Wizard","order":1,"path":"folders/Sprites/Enemy/Acid Wizard.yy",},
     {"name":"Fire Wizard","order":2,"path":"folders/Sprites/Enemy/Fire Wizard.yy",},
     {"name":"Ice Wizard","order":5,"path":"folders/Sprites/Enemy/Ice Wizard.yy",},
+    {"name":"Shop","order":9,"path":"folders/Sprites/Shop.yy",},
     {"name":"GUI","order":2,"path":"folders/Sprites/GUI.yy",},
     {"name":"Player","order":1,"path":"folders/Sprites/Player.yy",},
     {"name":"Weapons","order":3,"path":"folders/Sprites/Player/Weapons.yy",},
