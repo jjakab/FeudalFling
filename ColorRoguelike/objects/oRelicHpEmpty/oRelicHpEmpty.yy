@@ -40,6 +40,7 @@
   "tags":[
     "relic",
     "stackable",
+    "common",
   ],
   "visible":true,
 }

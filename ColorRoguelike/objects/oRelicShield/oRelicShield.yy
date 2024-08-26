@@ -37,6 +37,7 @@
   "spriteMaskId":null,
   "tags":[
     "relic",
+    "common",
   ],
   "visible":true,
 }

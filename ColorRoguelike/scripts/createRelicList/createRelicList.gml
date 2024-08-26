@@ -1,7 +1,9 @@
-//Script to create a list of all obtainable relics to populate the Shop
+//Script to create a map that contains item rarity -> relic object indexes
 function createRelicList(){
-	var relics = ds_list_create()
-	
+	var commonRelics = ds_list_create()
+	var uncommonRelics = ds_list_create()
+	var rareRelics = ds_list_create()
+	var relicsMap = ds_map_create()
 	//Newer method of pulling all relics using tags
 	var allRelics = tag_get_asset_ids("relic", asset_object);
 	for(i = 0; i < array_length(allRelics); i++){
@@ -9,16 +11,29 @@ function createRelicList(){
 			//This throws an error here but doesn't cause any errors as long as the asset we're receiving is an object
 			//This means that if we tag anything that isn't an object as a Relic it will crash, but will be fine otherwise
 			currName = object_get_name(allRelics[i])
-			//Check to see if relic is owned
-			if(is_undefined(ds_map_find_value(global.relicsOwned, currName))){
-				ds_list_add(relics, allRelics[i]); 
-			}
-			//If relic is not owned but stackable, add it anyway
-			else if(asset_has_any_tag(allRelics[i], "stackable")){
-				ds_list_add(relics, allRelics[i]);
+			//Check to see if relic is owned or if relic is stackable
+			if(is_undefined(ds_map_find_value(global.relicsOwned, currName)) || asset_has_any_tag(allRelics[i], "stackable")){
+				//Adding all common relics
+				if(asset_has_tags(allRelics[i], "common")){
+					ds_list_add(commonRelics, allRelics[i])
+				}
+				//Adding all uncommon relics
+				if(asset_has_tags(allRelics[i], "uncommon")){
+					ds_list_add(uncommonRelics, allRelics[i])
+				}
+				//Adding all rare relics
+				if(asset_has_tags(allRelics[i], "rare")){
+					ds_list_add(rareRelics, allRelics[i])
+				}
 			}
 		}
 	}
+	//Adding all relic lists to map
+	ds_map_add(relicsMap, "common", commonRelics)
+	ds_map_add(relicsMap, "uncommon", uncommonRelics)
+	ds_map_add(relicsMap, "rare", rareRelics)
+	return relicsMap
+	
 	
 	//Below comment is another viable solution, talk with Jonah
 	
@@ -35,6 +50,5 @@ function createRelicList(){
 	//	//}
 	//	objIndex++; //go to the next index
 	//}
-	
-	return relics
+
 }
