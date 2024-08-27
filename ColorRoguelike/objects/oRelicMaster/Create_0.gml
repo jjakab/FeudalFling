@@ -9,3 +9,5 @@ goldRatio = random_range(0.8, 1.2)
 beginningString = ""
 statString = ""
 endingString = ""
+
+drawString = ""

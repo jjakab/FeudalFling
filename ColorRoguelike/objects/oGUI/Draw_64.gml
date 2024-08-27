@@ -1,3 +1,5 @@
+draw_set_halign(fa_left)
+
 //Loop through every heart
 for (var i = 1; i <= numHearts; i++) {
 

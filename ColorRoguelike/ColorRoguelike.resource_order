@@ -50,6 +50,7 @@
   "ResourceOrderSettings":[
     {"name":"fPixelFont12","order":2,"path":"fonts/fPixelFont12/fPixelFont12.yy",},
     {"name":"fPixelFont24","order":1,"path":"fonts/fPixelFont24/fPixelFont24.yy",},
+    {"name":"fPixelFont6","order":3,"path":"fonts/fPixelFont6/fPixelFont6.yy",},
     {"name":"oAcidPool","order":1,"path":"objects/oAcidPool/oAcidPool.yy",},
     {"name":"oDoorCombat","order":2,"path":"objects/oDoorCombat/oDoorCombat.yy",},
     {"name":"oDoorHealing","order":4,"path":"objects/oDoorHealing/oDoorHealing.yy",},
