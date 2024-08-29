@@ -3,7 +3,7 @@
 //Number of items being placed into the shop
 numItems = irandom_range(3,4)
 //Placing the items an even distance from each other
-ySpawn = 120
+ySpawn = 180
 xLeftLimit = 160
 xRightLimit = 380
 additive = (xRightLimit - xLeftLimit) / (numItems -1)

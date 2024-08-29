@@ -13,4 +13,7 @@ else {
 	drawString = beginningString	
 }
 
-draw_text_ext(x,y-50,drawString,8,64)
+var yHeight = y - (string_width(drawString) / 3)
+
+draw_set_color(c_white)
+draw_text_ext(x,yHeight,drawString,10,76)
