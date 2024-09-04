@@ -178,7 +178,7 @@
     {"id":{"name":"sRedFountainTop","path":"sprites/sRedFountainTop/sRedFountainTop.yy",},},
     {"id":{"name":"sRightWall","path":"sprites/sRightWall/sRightWall.yy",},},
     {"id":{"name":"sShield","path":"sprites/sShield/sShield.yy",},},
-    {"id":{"name":"sShopCaptionLeft","path":"sprites/sShopCaptionLeft/sShopCaptionLeft.yy",},},
+    {"id":{"name":"sShopCaptionBottom","path":"sprites/sShopCaptionBottom/sShopCaptionBottom.yy",},},
     {"id":{"name":"sSnowShoes","path":"sprites/sSnowShoes/sSnowShoes.yy",},},
     {"id":{"name":"sSnowTrapActive","path":"sprites/sSnowTrapActive/sSnowTrapActive.yy",},},
     {"id":{"name":"sSnowTrapCharging","path":"sprites/sSnowTrapCharging/sSnowTrapCharging.yy",},},
