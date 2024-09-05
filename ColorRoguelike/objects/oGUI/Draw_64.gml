@@ -46,7 +46,8 @@ for (var j = 0; j < array_length(itemsOwned); j++) {
 	if(asset_has_tags(itemsOwned[j],"stackable")) {
 		var numStacks = ds_map_find_value(global.relicsOwned,itemsOwned[j])
 		draw_set_color(c_yellow)
+		draw_set_valign(fa_top)
 		draw_set_font(fPixelFont12)
-		draw_text(relicDrawStartX + (relicDrawXInterval * (j - 1)) + 20, relicDrawStartY + 18,string(numStacks))
+		draw_text(relicDrawStartX + (relicDrawXInterval * (j - 1)) + 20, relicDrawStartY + 8,string(numStacks))
 	}
 }
