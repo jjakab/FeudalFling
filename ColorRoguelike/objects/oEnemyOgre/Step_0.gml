@@ -4,6 +4,8 @@ event_inherited()
 
 var player = oPlayer
 var distToPlayer = point_distance(x, y, player.x, player.y)
+
+//Basic state, chases after player slowly.
 if(state="amble"){
 		var dir = point_direction(x, y, player.x, player.y)
 		if(distToPlayer > slamRange){
@@ -16,7 +18,7 @@ if(state="amble"){
 		}
 		else{
 			state = "charging"	
-			alarm_set(0,5)
+			alarm_set(0,1)
 		}
 		if( lengthdir_x(xSpeed, dir) > 0) {
 			image_xscale = 1	
@@ -28,13 +30,16 @@ if(state="amble"){
 
 if(state="charging"){
 	if(image_index >= image_number) {
-		alarm_set(1,1)
-		state = "cooldown"
+		state="cooldown"
 		instance_destroy(slamID)
+		explodeID = instance_create_layer(x, y, "Instances", oOgreExplode)
+		//Set the ogre to go a cooldown sprite for a bit, after the explode animation is over.
+		alarm_set(1, explodeAnimationTime)
+		//Set the ogre back to ambling once its done with cooldown
+		alarm_set(2, cooldownAnimationTime)
 	}
 }
 
-if(state="cooldown"){
-	
-}
+if(state = "cooldown"){
 		
+}
