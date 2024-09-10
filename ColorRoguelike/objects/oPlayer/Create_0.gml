@@ -12,6 +12,7 @@ moveDir = 0
 currSpeed = 0
 xSpeed = 0
 ySpeed = 0
+hitSpeedThreshold = 0.5
 
 damageVisualWindow = 10
 damaged = false
@@ -32,6 +33,9 @@ rotatingCircleLifespan = 15
 
 //melee attack
 attackDamage = global.attackDamage
+
+//Create list of enemies hit per charge
+enemyHitList = ds_list_create()
 
 //variables related to wind essence
 windEssence = false //does the player have the wind essence relic?

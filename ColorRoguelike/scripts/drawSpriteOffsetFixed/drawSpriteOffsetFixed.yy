@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"drawSpriteOffsetFixed",
   "isCompatibility":false,
   "isDnD":false,

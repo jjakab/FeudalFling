@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"roomGenMacroCreator",
   "isCompatibility":false,
   "isDnD":false,

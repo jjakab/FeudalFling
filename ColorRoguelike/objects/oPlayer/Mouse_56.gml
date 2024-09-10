@@ -16,7 +16,13 @@ if(mouseClicked=true) //a dash was being charged up
 	xSpeed = -xMouseDistance / 50
 	ySpeed = yMouseDistance / 50
 	
-	mouseClicked = false	
+	mouseClicked = false
+	
+	//Create a list of enemy instance IDs and set whether they've been damaged this charge to false
+	
+	ds_list_destroy(enemyHitList)
+	enemyHitList = ds_list_create()
+	
 }
 mouseClicked = false
 moveDir = mouseAngle

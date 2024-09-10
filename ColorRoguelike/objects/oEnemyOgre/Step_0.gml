@@ -2,11 +2,15 @@
 // You can write your code in this editor
 event_inherited()
 
+
+
 var player = oPlayer
 var distToPlayer = point_distance(x, y, player.x, player.y)
 
 //Basic state, chases after player slowly.
 if(state="amble"){
+	
+
 		var dir = point_direction(x, y, player.x, player.y)
 		if(distToPlayer > slamRange){
 			if(!place_meeting(x+lengthdir_x(xSpeed, dir),y, oWall)){
@@ -26,6 +30,7 @@ if(state="amble"){
 		else {
 			image_xscale = -1	
 		}
+		
 }
 
 if(state="charging"){

@@ -3,7 +3,7 @@
 event_inherited()
 
 
-hp=100000
+hp=300
 state = "amble"; // Initial state
 slamCooldown = 5; // Time to pause after slamming
 slamRange = 50; // Distance for the slam to trigger
