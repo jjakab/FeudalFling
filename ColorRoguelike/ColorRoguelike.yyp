@@ -209,11 +209,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rStartingRoom2_0","path":"rooms/rStartingRoom2_0/rStartingRoom2_0.yy",},},
     {"roomId":{"name":"rBasicRoom2_1","path":"rooms/rBasicRoom2_1/rBasicRoom2_1.yy",},},
     {"roomId":{"name":"rShop2_1","path":"rooms/rShop2_1/rShop2_1.yy",},},
     {"roomId":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
-    {"roomId":{"name":"rStartingRoom2_0","path":"rooms/rStartingRoom2_0/rStartingRoom2_0.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
