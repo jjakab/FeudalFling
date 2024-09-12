@@ -88,6 +88,7 @@
     {"name":"rBasicRoom2_2","order":1,"path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},
     {"name":"rBasicRoomMaster","order":1,"path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},
     {"name":"rShop2_1","order":3,"path":"rooms/rShop2_1/rShop2_1.yy",},
+    {"name":"rStartingRoom2_0","order":5,"path":"rooms/rStartingRoom2_0/rStartingRoom2_0.yy",},
     {"name":"createPlayerRotatingCircle","order":6,"path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},
     {"name":"createRelicList","order":11,"path":"scripts/createRelicList/createRelicList.yy",},
     {"name":"createRoom","order":1,"path":"scripts/createRoom/createRoom.yy",},

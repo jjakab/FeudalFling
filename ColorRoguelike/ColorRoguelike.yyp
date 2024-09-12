@@ -63,7 +63,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"ColorRoguelike",
   "resources":[
@@ -118,6 +118,7 @@
     {"id":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
     {"id":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
     {"id":{"name":"rShop2_1","path":"rooms/rShop2_1/rShop2_1.yy",},},
+    {"id":{"name":"rStartingRoom2_0","path":"rooms/rStartingRoom2_0/rStartingRoom2_0.yy",},},
     {"id":{"name":"bridgeGap","path":"scripts/bridgeGap/bridgeGap.yy",},},
     {"id":{"name":"createPlayerRotatingCircle","path":"scripts/createPlayerRotatingCircle/createPlayerRotatingCircle.yy",},},
     {"id":{"name":"createRelicList","path":"scripts/createRelicList/createRelicList.yy",},},
@@ -212,6 +213,7 @@
     {"roomId":{"name":"rShop2_1","path":"rooms/rShop2_1/rShop2_1.yy",},},
     {"roomId":{"name":"rBasicRoom2_2","path":"rooms/rBasicRoom2_2/rBasicRoom2_2.yy",},},
     {"roomId":{"name":"rBasicRoomMaster","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},},
+    {"roomId":{"name":"rStartingRoom2_0","path":"rooms/rStartingRoom2_0/rStartingRoom2_0.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
