@@ -17,6 +17,7 @@ explodeID = 0;
 explodeAnimationTime = 30;
 cooldownAnimationTime = 180;
 
+//Variables related to drawing ZZs
 zzDrawLeft = false
 zzXModInitial = -20
 zzDrawHeightMod = 1
