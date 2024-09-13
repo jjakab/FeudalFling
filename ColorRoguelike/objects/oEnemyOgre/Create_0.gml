@@ -16,3 +16,8 @@ explodeID = 0;
 //Animation times for the alarms
 explodeAnimationTime = 30;
 cooldownAnimationTime = 180;
+
+zzDrawLeft = false
+zzXModInitial = -20
+zzDrawHeightMod = 1
+zzDrawHeightInterval = 20

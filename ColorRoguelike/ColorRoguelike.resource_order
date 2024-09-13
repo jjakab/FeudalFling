@@ -128,6 +128,7 @@
     {"name":"sEnemyOgreCharge","order":1,"path":"sprites/sEnemyOgreCharge/sEnemyOgreCharge.yy",},
     {"name":"sEnemyOgreChargeState","order":5,"path":"sprites/sEnemyOgreChargeState/sEnemyOgreChargeState.yy",},
     {"name":"sEnemyOgreCooldown","order":4,"path":"sprites/sEnemyOgreCooldown/sEnemyOgreCooldown.yy",},
+    {"name":"sEnemyOgreCooldownAlternate","order":6,"path":"sprites/sEnemyOgreCooldownAlternate/sEnemyOgreCooldownAlternate.yy",},
     {"name":"sEnemyOgreExplode","order":3,"path":"sprites/sEnemyOgreExplode/sEnemyOgreExplode.yy",},
     {"name":"sEnemyOgreSlam","order":2,"path":"sprites/sEnemyOgreSlam/sEnemyOgreSlam.yy",},
     {"name":"sFireballAttackAlternative","order":3,"path":"sprites/sFireballAttackAlternative/sFireballAttackAlternative.yy",},

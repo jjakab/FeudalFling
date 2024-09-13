@@ -63,7 +63,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.1.152",
+    "IDEVersion":"2024.6.0.157",
   },
   "name":"ColorRoguelike",
   "resources":[
@@ -166,6 +166,7 @@
     {"id":{"name":"sEnemyOgreCharge","path":"sprites/sEnemyOgreCharge/sEnemyOgreCharge.yy",},},
     {"id":{"name":"sEnemyOgreChargeState","path":"sprites/sEnemyOgreChargeState/sEnemyOgreChargeState.yy",},},
     {"id":{"name":"sEnemyOgreCooldown","path":"sprites/sEnemyOgreCooldown/sEnemyOgreCooldown.yy",},},
+    {"id":{"name":"sEnemyOgreCooldownAlternate","path":"sprites/sEnemyOgreCooldownAlternate/sEnemyOgreCooldownAlternate.yy",},},
     {"id":{"name":"sEnemyOgreExplode","path":"sprites/sEnemyOgreExplode/sEnemyOgreExplode.yy",},},
     {"id":{"name":"sEnemyOgreSlam","path":"sprites/sEnemyOgreSlam/sEnemyOgreSlam.yy",},},
     {"id":{"name":"sFireballAttack","path":"sprites/sFireballAttack/sFireballAttack.yy",},},
