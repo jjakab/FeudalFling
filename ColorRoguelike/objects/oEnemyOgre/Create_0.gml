@@ -21,4 +21,4 @@ cooldownAnimationTime = 180;
 zzDrawLeft = false
 zzXModInitial = -20
 zzDrawHeightMod = 1
-zzDrawHeightInterval = 20
+zzDrawHeightInterval = 25

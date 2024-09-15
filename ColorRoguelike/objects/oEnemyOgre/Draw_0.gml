@@ -14,4 +14,4 @@ if(state == "cooldown") {
 	draw_sprite_ext(sEnemyOgreCooldown,0,x+xMod,y+zzDrawHeightMod,1,1,0,c_white,1)
 }
 
-draw_sprite(sNewPlayerIdle,0,x+100,y)
+draw_sprite(sNewPlayerIdleOutline,0,x+100,y)

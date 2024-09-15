@@ -3,6 +3,6 @@
 hp = 200
 max_hp = 100
 
-hurtTime = 10 // How many frames should this show as damaged
+hurtTime = 15 // How many frames should this show as damaged
 
 goldDropped = 20
