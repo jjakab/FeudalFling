@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Sprites/Terrain.yy",
+    "name":"Decorations",
+    "path":"folders/Sprites/Terrain/Decorations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

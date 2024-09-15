@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Here we set the ogre to a cooldown sprite once it's done with its slam attack
 sprite_index = sEnemyOgreCooldownAlternate
 image_index = 1
 alarm_set(3,zzDrawHeightInterval)

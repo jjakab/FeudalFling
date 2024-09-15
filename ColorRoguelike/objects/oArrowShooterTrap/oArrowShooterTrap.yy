@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oWall",
-  "eventList":[],
+  "%Name":"oArrowShooterTrap",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oWall",
+  "name":"oArrowShooterTrap",
   "overriddenProperties":[],
   "parent":{
-    "name":"Walls",
-    "path":"folders/Objects/Terrain/Walls.yy",
+    "name":"Traps",
+    "path":"folders/Objects/Terrain/Traps.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWall",
-    "path":"sprites/sWall/sWall.yy",
+    "name":"sArrowTrap",
+    "path":"sprites/sArrowTrap/sArrowTrap.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

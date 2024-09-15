@@ -9,8 +9,6 @@ var distToPlayer = point_distance(x, y, player.x, player.y)
 
 //Basic state, chases after player slowly.
 if(state="amble"){
-	
-
 		var dir = point_direction(x, y, player.x, player.y)
 		if(distToPlayer > slamRange){
 			if(!place_meeting(x+lengthdir_x(xSpeed, dir),y, oWall)){
@@ -20,9 +18,12 @@ if(state="amble"){
 				y += lengthdir_y(ySpeed, dir)
 			}
 		}
+		//Swap the state into charging if player gets close enough
 		else{
 			state = "charging"	
-			alarm_set(0,1)
+			sprite_index = sEnemyOgreCharge
+			image_index = 0
+			slamID = instance_create_layer(x, y, "Instances", oOgreSlam)
 		}
 		if( lengthdir_x(xSpeed, dir) > 0) {
 			image_xscale = 1	
@@ -30,7 +31,6 @@ if(state="amble"){
 		else {
 			image_xscale = -1	
 		}
-		
 }
 
 if(state="charging"){

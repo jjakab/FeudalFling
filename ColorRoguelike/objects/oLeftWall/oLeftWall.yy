@@ -6,8 +6,8 @@
   "name":"oLeftWall",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Objects/Terrain.yy",
+    "name":"Walls",
+    "path":"folders/Objects/Terrain/Walls.yy",
   },
   "parentObjectId":{
     "name":"oWall",

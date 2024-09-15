@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyMaster",
+  "%Name":"oArrowTrap",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyMaster",
+  "name":"oArrowTrap",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Enemy Projectiles",
+    "path":"folders/Objects/Enemies/Enemy Projectiles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEnemyProjectileMaster",
+    "path":"objects/oEnemyProjectileMaster/oEnemyProjectileMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sArrowProjectile",
+    "path":"sprites/sArrowProjectile/sArrowProjectile.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Relics",
-    "path":"folders/Sprites/Relics.yy",
+    "name":"Rare",
+    "path":"folders/Sprites/Relics/Rare.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
