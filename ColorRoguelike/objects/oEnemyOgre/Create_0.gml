@@ -1,5 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+//STATES
+//Amble - Ogre will slowly walk towards player, until he reaches a certain radius of the player
+//Charging - Ogre will charge up his slam
+//Cooldown - Ogre will be in a cooldown sprite after his slam
+
 event_inherited()
 
 

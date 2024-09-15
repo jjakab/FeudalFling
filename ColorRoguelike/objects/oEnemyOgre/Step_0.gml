@@ -10,6 +10,7 @@ var distToPlayer = point_distance(x, y, player.x, player.y)
 //Basic state, chases after player slowly.
 if(state="amble"){
 		var dir = point_direction(x, y, player.x, player.y)
+		//Check to see if player is within ogre trigger range
 		if(distToPlayer > slamRange){
 			if(!place_meeting(x+lengthdir_x(xSpeed, dir),y, oWall)){
 				x += lengthdir_x(xSpeed, dir)
