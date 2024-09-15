@@ -1,1 +1,0 @@
-arrow_direction = 180
