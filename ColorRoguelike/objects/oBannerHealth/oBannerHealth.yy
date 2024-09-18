@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oOgreSlam",
+  "%Name":"oBannerHealth",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oOgreSlam",
+  "name":"oBannerHealth",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ogre",
-    "path":"folders/Objects/Enemies/Ogre.yy",
+    "name":"Stats",
+    "path":"folders/Objects/Stats.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oBannerMaster",
+    "path":"objects/oBannerMaster/oBannerMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyOgreSlam",
-    "path":"sprites/sEnemyOgreSlam/sEnemyOgreSlam.yy",
+    "name":"sHealthBanner",
+    "path":"sprites/sHealthBanner/sHealthBanner.yy",
   },
   "spriteMaskId":null,
   "visible":true,

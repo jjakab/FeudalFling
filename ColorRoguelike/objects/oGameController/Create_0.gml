@@ -9,6 +9,10 @@ global.attackDamage = 100
 global.launchCoefficient = 1.5
 global.fric = 0.006
 
+//Stat variables
+global.healthStat = 0
+global.healthStatMax = 5
+
 //Other global variables
 global.snowSlowCoefficient = 5
 

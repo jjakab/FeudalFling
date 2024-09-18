@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oOgreSlam",
+  "%Name":"oBannerMaster",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oOgreSlam",
+  "name":"oBannerMaster",
   "overriddenProperties":[],
   "parent":{
-    "name":"Ogre",
-    "path":"folders/Objects/Enemies/Ogre.yy",
+    "name":"Stats",
+    "path":"folders/Objects/Stats.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sEnemyOgreSlam",
-    "path":"sprites/sEnemyOgreSlam/sEnemyOgreSlam.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
