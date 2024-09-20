@@ -9,6 +9,8 @@ nodeInitialX = 80
 nodeXIncrement = 20
 nodeInitialY = 4
 
+maxNodes = 5 //This is the maximum # of nodes that can be drawn
+
 //Sprites for nodes - these will be overwritten
 emptyNodeSprite = sHealthNodeEmpty
 fullNodeSprite = sHealthNodeFull
