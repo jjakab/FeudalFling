@@ -11,6 +11,12 @@ function hazardHitPlayer(){
 				canDamage = false
 				alarm_set(0,noDamageWindow)
 			}
+			if(object_index = oSpikeTrap && (instance_number(oPlayer) >= 1)) {
+				global.playerHealth -= damage
+				visuallyDamagePlayer()
+				canDamage = false
+				alarm_set(0,noDamageWindow)
+			}
 			else if(object_index = oSnowTrap){
 				if(instance_number(oPlayer) >= 1) {
 					oPlayer.xSpeed = oPlayer.xSpeed * (1-(oPlayer.fric * slowCoefficient))

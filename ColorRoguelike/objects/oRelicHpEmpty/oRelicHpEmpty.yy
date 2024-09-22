@@ -2,15 +2,15 @@
   "$GMObject":"",
   "%Name":"oRelicHpEmpty",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oRelicHpEmpty",
   "overriddenProperties":[],
   "parent":{
-    "name":"Health and Shields",
-    "path":"folders/Objects/Relics/Health and Shields.yy",
+    "name":"Common",
+    "path":"folders/Objects/Relics/Common.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",

@@ -6,8 +6,8 @@
   "name":"oRelicHpRestore",
   "overriddenProperties":[],
   "parent":{
-    "name":"Health and Shields",
-    "path":"folders/Objects/Relics/Health and Shields.yy",
+    "name":"Common",
+    "path":"folders/Objects/Relics/Common.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",

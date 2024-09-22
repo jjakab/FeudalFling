@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oRelicWindEssence",
+  "%Name":"oSpikeTrap",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oRelicWindEssence",
+  "name":"oSpikeTrap",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rare",
-    "path":"folders/Objects/Relics/Rare.yy",
+    "name":"Traps",
+    "path":"folders/Objects/Terrain/Traps.yy",
   },
   "parentObjectId":{
-    "name":"oRelicMaster",
-    "path":"objects/oRelicMaster/oRelicMaster.yy",
+    "name":"oGroundHazardMaster",
+    "path":"objects/oGroundHazardMaster/oGroundHazardMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,13 +35,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWindEssence",
-    "path":"sprites/sWindEssence/sWindEssence.yy",
+    "name":"sSpikeTrapDefault",
+    "path":"sprites/sSpikeTrapDefault/sSpikeTrapDefault.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "relic",
-    "uncommon",
-  ],
   "visible":true,
 }
