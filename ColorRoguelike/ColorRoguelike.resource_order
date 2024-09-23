@@ -164,6 +164,7 @@
     {"name":"sHealth7","order":8,"path":"sprites/sHealth7/sHealth7.yy",},
     {"name":"sHealth8","order":7,"path":"sprites/sHealth8/sHealth8.yy",},
     {"name":"sHealth9","order":9,"path":"sprites/sHealth9/sHealth9.yy",},
+    {"name":"sHealthArrow","order":11,"path":"sprites/sHealthArrow/sHealthArrow.yy",},
     {"name":"sHealthBanner","order":3,"path":"sprites/sHealthBanner/sHealthBanner.yy",},
     {"name":"sHealthNodeEmpty","order":1,"path":"sprites/sHealthNodeEmpty/sHealthNodeEmpty.yy",},
     {"name":"sHealthNodeFull","order":2,"path":"sprites/sHealthNodeFull/sHealthNodeFull.yy",},

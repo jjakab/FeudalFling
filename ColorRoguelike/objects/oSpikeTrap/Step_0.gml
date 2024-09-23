@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 if(instance_exists(oPlayer)){
 	if(place_meeting(x,y, oPlayer) && (sprite_index != sSpikeTrapAttack)){
 		sprite_index = sSpikeTrapAttack

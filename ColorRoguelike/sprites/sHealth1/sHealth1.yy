@@ -23,7 +23,7 @@
   ],
   "name":"sHealth1",
   "nineSlice":null,
-  "origin":0,
+  "origin":2,
   "parent":{
     "name":"Numbers",
     "path":"folders/Sprites/Stats/Health/Numbers.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":7,
     "yorigin":0,
   },
   "swatchColours":null,

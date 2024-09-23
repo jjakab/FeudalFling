@@ -6,10 +6,10 @@ trackingMaxVar = "healthStatMax"
 emptyNodeSprite = sHealthNodeEmpty
 fullNodeSprite = sHealthNodeFull
 
-//Declare an array of number sprites
-numSpritesMap = ds_map_create()
-
+// Populate array of number sprites - this is created in master
 for (var i = 0; i < 10; i++) {
 	ds_map_add(numSpritesMap,i,asset_get_index("sHealth" + string(i)))
 }
+
+arrowSprite = sHealthArrow
 

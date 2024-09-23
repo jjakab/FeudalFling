@@ -207,6 +207,7 @@
     {"id":{"name":"sHealth7","path":"sprites/sHealth7/sHealth7.yy",},},
     {"id":{"name":"sHealth8","path":"sprites/sHealth8/sHealth8.yy",},},
     {"id":{"name":"sHealth9","path":"sprites/sHealth9/sHealth9.yy",},},
+    {"id":{"name":"sHealthArrow","path":"sprites/sHealthArrow/sHealthArrow.yy",},},
     {"id":{"name":"sHealthBanner","path":"sprites/sHealthBanner/sHealthBanner.yy",},},
     {"id":{"name":"sHealthNodeEmpty","path":"sprites/sHealthNodeEmpty/sHealthNodeEmpty.yy",},},
     {"id":{"name":"sHealthNodeFull","path":"sprites/sHealthNodeFull/sHealthNodeFull.yy",},},

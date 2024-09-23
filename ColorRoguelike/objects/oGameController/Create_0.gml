@@ -10,7 +10,7 @@ global.launchCoefficient = 1.5
 global.fric = 0.006
 
 //Stat variables
-global.healthStat = 0
+global.healthStat = 530
 global.healthStatMax = 5
 global.speedStat = 0
 global.speedStatMax = 5
