@@ -1,4 +1,6 @@
 draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,image_angle,c_white,image_alpha) //Always draw self
+draw_sprite_ext(textSprite,0,x + 8, y + 5, image_xscale,image_yscale,image_angle,c_white,image_alpha)
+
 
 if(alarm_get(0) <= 0) {
 	
@@ -12,7 +14,7 @@ if(alarm_get(0) <= 0) {
 		
 		//Find the corresponding digit sprite
 		var drawSprite = (ds_map_find_value(numSpritesMap,upgradedDigitArr[i]))
-		draw_sprite_ext(drawSprite,0,drawX,drawY,image_xscale,image_yscale,image_angle,c_white,0.7) //Draw it
+		draw_sprite_ext(drawSprite,0,drawX,drawY,image_xscale,image_yscale,image_angle,c_white,image_alpha) //Draw it
 		
 		//Decrement the draw location
 		drawX -= (sprite_get_width(drawSprite) + 1)
@@ -21,7 +23,7 @@ if(alarm_get(0) <= 0) {
 	
 	//Draw the arrow
 	drawSprite = arrowSprite
-	draw_sprite_ext(drawSprite,0,drawX,drawY,image_xscale,image_yscale,image_angle,c_white,0.7) //Draw it
+	draw_sprite_ext(drawSprite,0,drawX,drawY,image_xscale,image_yscale,image_angle,c_white,image_alpha) //Draw it
 	drawX -= (sprite_get_width(drawSprite) + 1)
 	
 	
@@ -30,11 +32,10 @@ if(alarm_get(0) <= 0) {
 		
 		//Find the corresponding digit sprite
 		var drawSprite = (ds_map_find_value(numSpritesMap,currDigitArr[i]))
-		draw_sprite_ext(drawSprite,0,drawX,drawY,image_xscale,image_yscale,image_angle,c_white,0.7) //Draw it
+		draw_sprite_ext(drawSprite,0,drawX,drawY,image_xscale,image_yscale,image_angle,c_white,image_alpha) //Draw it
 		
 		drawX -= (sprite_get_width(drawSprite) + 1)
 		
 	}
-	
 	
 }

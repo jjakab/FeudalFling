@@ -1,5 +1,4 @@
 currentVal = variable_global_get(trackingVar)
-maxVal = variable_global_get(trackingMaxVar)
 
 //Upgraded value is equal to current value + 1
 upgradedVal = currentVal + 1

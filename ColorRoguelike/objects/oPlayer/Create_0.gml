@@ -7,6 +7,9 @@ launchCoefficient = global.launchCoefficient //for each pixel the mouse is from 
 mouseClicked = false
 mouseAngle = 0
 maxAimRange = 50
+mouseClickedX = 0
+mouseClickedY = 0
+dashCooldown = 60
 
 moveDir = 0
 currSpeed = 0
@@ -54,7 +57,6 @@ groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
 //If player has Shield relic, give them a block against the first hit of each room.
 firstHitNegate = false
 windEssence = false
-
 
 relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 //Doing checks for player relics

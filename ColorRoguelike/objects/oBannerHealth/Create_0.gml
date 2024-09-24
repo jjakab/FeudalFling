@@ -1,10 +1,6 @@
 event_inherited()
 
 trackingVar = "healthStat" //Determines which variable this is testing - GLOBAL is automatically appended when this is read
-trackingMaxVar = "healthStatMax"
-
-emptyNodeSprite = sHealthNodeEmpty
-fullNodeSprite = sHealthNodeFull
 
 // Populate array of number sprites - this is created in master
 for (var i = 0; i < 10; i++) {
@@ -12,4 +8,4 @@ for (var i = 0; i < 10; i++) {
 }
 
 arrowSprite = sHealthArrow
-
+textSprite = sHealthText

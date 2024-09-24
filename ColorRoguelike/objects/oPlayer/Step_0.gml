@@ -1,7 +1,7 @@
 //Update arrow accordingly if movement is being buffered
 if(mouseClicked)
 {
-	mouseAngle = point_direction(x,y,mouse_x,mouse_y)
+	mouseAngle = point_direction(mouseClickedX,mouseClickedY,mouse_x,mouse_y)
 }
 
 //Decrement speed based on friction
@@ -36,26 +36,6 @@ with(groundHitbox) {
 	other.y += (y - startingY)
 	
 }
-
-//Use the groundHitbox as a collision detector for movement
-/*
-//Move and change direction if player runs into a wall
-if(!place_meeting(x + xSpeed,y, oWall)){
-	x += xSpeed
-}
-else{
-	xSpeed = -xSpeed
-	x += xSpeed
-}
-if(!place_meeting(x, y + ySpeed, oWall)){
-	y += ySpeed
-}
-else{
-	ySpeed = -ySpeed
-	y += ySpeed
-}
-
-*/
 
 //Set sprite direction based on xSpeed
 if(xSpeed > 0) image_xscale = 1
