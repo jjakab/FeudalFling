@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oBannerSpeed",
+  "%Name":"oBannerSpeedNew",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBannerSpeed",
+  "name":"oBannerSpeedNew",
   "overriddenProperties":[],
   "parent":{
     "name":"Stats",
@@ -32,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sSpeedBanner",
+    "path":"sprites/sSpeedBanner/sSpeedBanner.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

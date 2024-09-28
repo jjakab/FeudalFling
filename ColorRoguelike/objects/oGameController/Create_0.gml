@@ -10,14 +10,10 @@ global.launchCoefficient = 1.5
 global.fric = 0.006
 
 //Stat variables
-global.healthStat = 530
-global.healthStatMax = 5
+global.healthStat = 0
 global.speedStat = 0
-global.speedStatMax = 5
 global.cooldownStat = 0
-global.cooldownStatMax = 5
 global.damageStat = 0
-global.damageStatMax = 5
 
 //Other global variables
 global.snowSlowCoefficient = 5
