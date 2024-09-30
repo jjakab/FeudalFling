@@ -15,18 +15,21 @@ global.speedStat = 0
 global.cooldownStat = 0
 global.damageStat = 0
 
+//Stat increase variables
+global.healthIncrease = 1
+global.speedIncrease = 1
+global.cooldownIncrease = 1
+global.damageIncrease = 1
+
 //Other global variables
 global.snowSlowCoefficient = 5
+global.healthGain = true
 
 global.exp = 0
 global.expNextLevel = 10
 global.level = 0
 
 global.relicsOwned = ds_map_create()
-global.relicStackable = ds_list_create()
-
-ds_list_add(global.relicStackable,"oRelicHpBoost")
-ds_list_add(global.relicStackable, "oRelicHpEmpty")
 
 global.goldOwned = 100
 

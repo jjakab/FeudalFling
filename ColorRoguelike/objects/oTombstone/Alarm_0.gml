@@ -1,0 +1,1 @@
+robbable = true

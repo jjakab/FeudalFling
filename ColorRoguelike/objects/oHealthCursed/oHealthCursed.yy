@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oTombstone",
+  "%Name":"oHealthCursed",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oTombstone",
+  "name":"oHealthCursed",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Objects/Terrain.yy",
+    "name":"Uncommon",
+    "path":"folders/Objects/Relics/Uncommon.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,9 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sTombstone",
-    "path":"sprites/sTombstone/sTombstone.yy",
+    "name":"sHealthCursed",
+    "path":"sprites/sHealthCursed/sHealthCursed.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+    "uncommon",
+  ],
   "visible":true,
 }
