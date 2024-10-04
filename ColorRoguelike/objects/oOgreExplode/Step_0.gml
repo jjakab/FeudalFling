@@ -1,11 +1,11 @@
-/// @description Insert description here
-// You can write your code in this editor
+//If this collides with the player
 if(instance_place(x, y, oPlayer)){
+	
+	//Only damage player if they have not yet been damaged
 	if(canDamage = true){
 		global.playerHealth -= 10
+		visuallyDamagePlayer()
+		canDamage = false
 	}
-	
-	canDamage = false
-	alarm_set(0,20)
-	alarm_set(1, noDamageWindow)
+
 }

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"createRelicList",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
 event_inherited()
 
 //Basic state, chases after player slowly.
@@ -22,7 +20,7 @@ if(state="amble"){
 			
 			//Change to charging state
 			state = "charging"	
-			sprite_index = sEnemyOgreCharge
+			sprite_index = sEnemyOgreChargeState
 			image_index = 0
 			
 			//Set a timer to transition to the cooldown state

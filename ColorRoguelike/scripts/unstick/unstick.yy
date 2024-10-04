@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"unstick",
   "isCompatibility":false,
   "isDnD":false,

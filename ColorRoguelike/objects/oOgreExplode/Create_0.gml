@@ -1,5 +1,1 @@
-/// @description Insert description here
-// You can write your code in this editor
-alarm_set(0,30)
-noDamageWindow = 200
-canDamage = true
+canDamage = true // Starts off being able to damage the player

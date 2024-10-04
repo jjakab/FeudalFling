@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"createPlayerRotatingCircle",
   "isCompatibility":false,
   "isDnD":false,

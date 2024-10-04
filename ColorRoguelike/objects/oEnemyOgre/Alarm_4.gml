@@ -1,5 +1,9 @@
 //Transition from the charging state to the cooldown state
 
+//First we create the ogre slam
+instance_create_layer(x + (8 * sign(image_xscale)), y + 13, "Instances",oOgreExplode)
+
+
 state="cooldown"
 //instance_destroy(slamID)
 //explodeID = instance_create_layer(x, y, "Instances", oOgreExplode)

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"meleeAttack",
   "isCompatibility":false,
   "isDnD":false,

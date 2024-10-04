@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"visuallyDamagePlayer",
   "isCompatibility":false,
   "isDnD":false,
