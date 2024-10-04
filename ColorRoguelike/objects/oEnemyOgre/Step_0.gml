@@ -18,10 +18,18 @@ if(state="amble"){
 		}
 		//Swap the state into charging if player gets close enough
 		else{
+			
+			
+			//Change to charging state
 			state = "charging"	
 			sprite_index = sEnemyOgreCharge
 			image_index = 0
-			slamID = instance_create_layer(x, y, "Instances", oOgreSlam)
+			
+			//Set a timer to transition to the cooldown state
+			alarm_set(4,chargeAnimationTime)
+			
+			
+			//slamID = instance_create_layer(x, y, "Instances", oOgreSlam)
 		}
 		if( lengthdir_x(xSpeed, dir) > 0) {
 			image_xscale = 1	
@@ -33,17 +41,24 @@ if(state="amble"){
 }
 
 if(state="charging"){
-	if(image_index >= image_number) {
-		state="cooldown"
-		instance_destroy(slamID)
-		explodeID = instance_create_layer(x, y, "Instances", oOgreExplode)
-		//Set the ogre to go a cooldown sprite for a bit, after the explode animation is over.
-		alarm_set(1, explodeAnimationTime)
-		//Set the ogre back to ambling once its done with cooldown
-		alarm_set(2, cooldownAnimationTime)
+	//Increment the state of the club depending on the stage of the swing
+	
+	//During the first stage, the ogre rotates his club up 40 degrees
+	if(alarm_get(4) > chargeAnimationTime - swingInterval) {
+		var angleIncrement = (swingInterval) / 100
+		weaponYCurr -= (5 / (swingInterval))
 	}
+	else { //During the second stage, the ogre swings his club down to the floor
+		var angleIncrement = -((chargeAnimationTime - swingInterval)/7)
+		weaponYCurr += (5 / (chargeAnimationTime - swingInterval))
+		
+		
+	}
+	
+	weaponAngle += (angleIncrement * sign(image_xscale))
+	
 }
 
 if(state = "cooldown"){
-	
+	weaponAngle = 0
 }

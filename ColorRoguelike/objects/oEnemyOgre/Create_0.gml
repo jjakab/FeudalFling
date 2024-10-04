@@ -17,6 +17,8 @@ ySpeed = 0.3;
 slamID = 0;
 explodeID = 0;
 //Animation times for the alarms
+chargeAnimationTime = 90;
+swingInterval = 60 //Stage in charge animation at which the ogre swings the club down
 explodeAnimationTime = 30;
 cooldownAnimationTime = 180;
 
@@ -25,3 +27,14 @@ zzDrawLeft = false
 zzXModInitial = -20
 zzDrawHeightMod = 1
 zzDrawHeightInterval = 25
+
+//Variables related to drawing weapon
+weaponSprite = sWoodenClubAlternate
+
+weaponXInitial = 0
+weaponYInitial = 8
+
+weaponXCurr = weaponXInitial
+weaponYCurr = weaponYInitial
+weaponAngle = 0
+
