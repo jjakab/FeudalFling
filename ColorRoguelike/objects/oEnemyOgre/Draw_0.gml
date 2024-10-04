@@ -1,14 +1,15 @@
 //If hurt timer is active, draw blended red, otherwise draw normally
+var drawColor = c_white
+
 if(alarm_get(11) > 0) {
-	
-	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,c_red,1)
-}
-else {
-	draw_self()
+	drawColor = c_red
 }
 
+
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,image_angle,drawColor,1)
+
 //Draw the ogre's weapon
-draw_sprite_ext(weaponSprite,0,x + (weaponXCurr * sign(image_xscale)), y + weaponYCurr, image_xscale, image_yscale,weaponAngle,c_white,1)
+draw_sprite_ext(weaponSprite,0,x + (weaponXCurr * sign(image_xscale)), y + weaponYCurr, image_xscale, image_yscale,weaponAngle,drawColor,1)
 
 //Additional effects based on ogre state
 
