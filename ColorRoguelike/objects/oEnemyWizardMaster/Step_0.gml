@@ -13,12 +13,23 @@ if(state == "attack"){
 	//var player_y = oPlayer.y 
 	
 	if(wizardType = "fire") {
-		
 	
 		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oWizardFireball);
 		projectile.direction = current_player;
 		projectile.speed = fireballSpeed
 		projectile.projDirection = current_player;
+		
+		if(elite) {
+			for (var i = 0; i < 2; i++) {
+			
+				var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oWizardFireball);
+				var firedDirection = current_player - (eliteFireballSpread / 2) + (eliteFireballSpread * i)
+				projectile.direction = firedDirection
+				projectile.speed = fireballSpeed
+				projectile.projDirection = firedDirection;
+			
+			}
+		}
 
 	}
 	

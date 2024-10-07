@@ -69,6 +69,6 @@ if(array_contains(relicsOwned, "oRelicWindEssence")){
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full
 if(array_contains(relicsOwned, "oRelicHpRestore") && global.playerHealth != global.maxPlayerHealth && global.healthGain = true){
-	global.playerHealth += 2
+	global.playerHealth += min(global.maxPlayerHealth - global.playerHealth, 2)
 }
 

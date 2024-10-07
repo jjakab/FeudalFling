@@ -14,7 +14,7 @@ pauseFirstStep = true //this tracks if the player has
 
 //Fire-specific variables
 fireballSpeed = 2
-
+eliteFireballSpread = 30 //degree spread of three fired fireballs
 
 //Acid specific variables
 maxAcidRange = 50
@@ -27,6 +27,8 @@ current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
 current_difference = angle_difference(current_player, playerDirection)
 
 goldDropped = 20
+
+elite = false //Start off by assuming this is not elite
 
 //Change to attack
 alarm_set(0, standardPhaseTime/random_range(2,4))

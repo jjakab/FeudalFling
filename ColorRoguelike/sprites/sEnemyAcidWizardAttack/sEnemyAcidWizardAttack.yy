@@ -32,7 +32,7 @@
   "origin":9,
   "parent":{
     "name":"Acid Wizard",
-    "path":"folders/Sprites/Enemy/Acid Wizard.yy",
+    "path":"folders/Sprites/Enemy/Wizards/Acid Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

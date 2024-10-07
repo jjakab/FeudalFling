@@ -6,7 +6,7 @@
   "bbox_left":2,
   "bbox_right":13,
   "bbox_top":6,
-  "collisionKind":1,
+  "collisionKind":4,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
@@ -35,7 +35,7 @@
   "origin":9,
   "parent":{
     "name":"Acid Wizard",
-    "path":"folders/Sprites/Enemy/Acid Wizard.yy",
+    "path":"folders/Sprites/Enemy/Wizards/Acid Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

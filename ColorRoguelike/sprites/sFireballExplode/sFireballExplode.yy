@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Fire Wizard",
-    "path":"folders/Sprites/Enemy/Fire Wizard.yy",
+    "path":"folders/Sprites/Enemy/Wizards/Fire Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

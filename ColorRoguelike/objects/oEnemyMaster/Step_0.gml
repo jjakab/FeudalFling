@@ -33,6 +33,8 @@ if(place_meeting(x, y, oPlayer)){
 			// If the player has already hit this enemy, we do nothing
 		}
 	//If the player is not moving fast enough, we do nothing
-		
+	
+	
+	
 	}
 }

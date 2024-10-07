@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Ice Wizard",
-    "path":"folders/Sprites/Enemy/Ice Wizard.yy",
+    "path":"folders/Sprites/Enemy/Wizards/Ice Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

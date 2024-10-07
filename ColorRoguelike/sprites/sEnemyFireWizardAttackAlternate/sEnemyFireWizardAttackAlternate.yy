@@ -6,7 +6,7 @@
   "bbox_left":2,
   "bbox_right":15,
   "bbox_top":6,
-  "collisionKind":1,
+  "collisionKind":4,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
@@ -51,7 +51,7 @@
   "origin":9,
   "parent":{
     "name":"Fire Wizard",
-    "path":"folders/Sprites/Enemy/Fire Wizard.yy",
+    "path":"folders/Sprites/Enemy/Wizards/Fire Wizard.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
