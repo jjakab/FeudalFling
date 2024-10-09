@@ -54,7 +54,10 @@ else { //If there is a player, start charging up an attack
 			xx = player_x + lengthdir_x(dist,rot)
 			yy = player_y + lengthdir_y(dist,rot)
 		}
-		acidPool = instance_create_layer(xx,yy,"FloorHazards",oAcidPool)
+		
+		var spawnInstance = oAcidPool //Spawn a normal acid pool if this is a normal wizard
+		if(elite) spawnInstance = oAcidPoolLarge //If this is an elite wizard, spawn a large pool instead
+		acidPool = instance_create_layer(xx,yy,"FloorHazards",spawnInstance)
 		with(acidPool) {
 			pairedObj = other	
 		}
@@ -74,8 +77,12 @@ else { //If there is a player, start charging up an attack
 			xx = player_x + lengthdir_x(dist,rot)
 			yy = player_y + lengthdir_y(dist,rot)
 		}
+		
 		var hazardsDepth = layer_get_depth("FloorHazards")
-		snowTrap = instance_create_depth(xx,yy,hazardsDepth+1,oSnowTrap)
+		var snowSpawnInstance = oSnowTrap //If this is a normal wizard, we spawn a normal trap
+		if(elite) snowSpawnInstance = oSnowTrapLarge
+		
+		snowTrap = instance_create_depth(xx,yy,hazardsDepth+1,snowSpawnInstance)
 		with(snowTrap) {
 			pairedObj = other
 			image_angle = irandom_range(0,359)

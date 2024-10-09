@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFireballAttackAlternative",
-    "path":"sprites/sFireballAttackAlternative/sFireballAttackAlternative.yy",
+    "name":"sFireballAttack",
+    "path":"sprites/sFireballAttack/sFireballAttack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

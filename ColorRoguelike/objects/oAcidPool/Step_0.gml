@@ -11,7 +11,7 @@ if(!instance_exists(pairedObj))
 }
 else {
 	if(pairedObj.state == "attack") {
-		sprite_index = sAcidPoolActive
+		sprite_index = activeSprite
 		active = true
 
 		alarm_set(1,timeSpentActive)

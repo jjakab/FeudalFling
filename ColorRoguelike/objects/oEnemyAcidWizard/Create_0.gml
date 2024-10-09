@@ -2,5 +2,5 @@ event_inherited()
 
 wizardType = "acid"
 runSprite = sEnemyAcidWizard
-attackSprite = sEnemyAcidWizardAttackAlternate
+attackSprite = sEnemyAcidWizardAttack
 cooldownSprite = sEnemyAcidWizardCooldown

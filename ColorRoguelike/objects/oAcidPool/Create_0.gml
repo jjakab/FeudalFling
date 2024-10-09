@@ -7,3 +7,5 @@ damage = 2
 
 bubbleSpawnFrequency = 15
 active = false
+
+activeSprite = sAcidPoolActive
