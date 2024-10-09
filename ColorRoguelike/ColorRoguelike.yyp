@@ -177,6 +177,7 @@
     {"id":{"name":"sAttackLine","path":"sprites/sAttackLine/sAttackLine.yy",},},
     {"id":{"name":"sAttackState","path":"sprites/sAttackState/sAttackState.yy",},},
     {"id":{"name":"sCrown","path":"sprites/sCrown/sCrown.yy",},},
+    {"id":{"name":"sCrownAlternate","path":"sprites/sCrownAlternate/sCrownAlternate.yy",},},
     {"id":{"name":"sDoorBasic","path":"sprites/sDoorBasic/sDoorBasic.yy",},},
     {"id":{"name":"sDoorCombat","path":"sprites/sDoorCombat/sDoorCombat.yy",},},
     {"id":{"name":"sDoorHealing","path":"sprites/sDoorHealing/sDoorHealing.yy",},},

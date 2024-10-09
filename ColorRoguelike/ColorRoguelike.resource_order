@@ -138,6 +138,7 @@
     {"name":"sAttackLine","order":2,"path":"sprites/sAttackLine/sAttackLine.yy",},
     {"name":"sAttackState","order":1,"path":"sprites/sAttackState/sAttackState.yy",},
     {"name":"sCrown","order":3,"path":"sprites/sCrown/sCrown.yy",},
+    {"name":"sCrownAlternate","order":4,"path":"sprites/sCrownAlternate/sCrownAlternate.yy",},
     {"name":"sDoorBasic","order":1,"path":"sprites/sDoorBasic/sDoorBasic.yy",},
     {"name":"sDoorCombat","order":5,"path":"sprites/sDoorCombat/sDoorCombat.yy",},
     {"name":"sDoorHealing","order":9,"path":"sprites/sDoorHealing/sDoorHealing.yy",},
