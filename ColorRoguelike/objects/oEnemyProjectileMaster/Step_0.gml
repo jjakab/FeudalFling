@@ -54,3 +54,20 @@ if(place_meeting(x,y,oWall))
 	instance_destroy()	
 }
 
+//Code for deciding which enemies to damage
+for(var i = 0; i < ds_list_size(enemies); i++){
+	//Go through each enemy in the damageable list
+	currObj = ds_list_find_value(enemies, i)
+	var instanceHit = instance_place(x, y, currObj)
+	if(instanceHit != noone){
+		//If player, call separate script
+		if(currObj = oPlayer.object_index){
+			damagePlayer(damage)
+			instance_destroy()
+		}
+		else{
+			instanceHit.hp -= damage
+			instance_destroy()
+		}
+	}
+}

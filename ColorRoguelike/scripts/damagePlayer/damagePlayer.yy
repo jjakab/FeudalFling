@@ -1,12 +1,12 @@
 {
   "$GMScript":"",
-  "%Name":"meleeAttack",
+  "%Name":"damagePlayer",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"meleeAttack",
+  "name":"damagePlayer",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"playerRelated",
+    "path":"folders/Scripts/playerRelated.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

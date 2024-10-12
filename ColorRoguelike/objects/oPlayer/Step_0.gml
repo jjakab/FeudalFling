@@ -74,24 +74,6 @@ with(groundHitbox) {
 groundHitbox.x = x
 groundHitbox.y = y
 
-//If the player ran into a projectile, act accordingly
-if(place_meeting(x,y,oEnemyProjectileMaster))
-{
-	projectile = instance_place(x,y,oEnemyProjectileMaster)
-	projDamage = projectile.damage;
-	with(projectile)
-	{
-		instance_destroy();
-	}
-	if(firstHitNegate = true){
-		firstHitNegate = false
-	}
-	else{
-		global.playerHealth -= projDamage
-		visuallyDamagePlayer()
-	}
-}
-
 //Check if the ground hitbox is colliding with any 
 with(oPlayerGroundHitbox) {
 	
