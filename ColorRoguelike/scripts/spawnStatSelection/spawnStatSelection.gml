@@ -5,6 +5,4 @@ function spawnStatSelection(){
 	instance_create_depth(xLoc,60,-1000,oBannerHealth)
 	instance_create_depth(xLoc,100,-1000,oBannerSpeed)
 	
-	
-
 }

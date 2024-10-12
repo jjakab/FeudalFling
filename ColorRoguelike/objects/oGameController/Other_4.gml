@@ -5,3 +5,5 @@ if(instance_number(oEnemyMaster) > 0) {
 else { //If there are no enemies, we don't want to spawn the stat selection
 	roomEmpty = true
 }	
+
+show_debug_message("# of gameControllers: " + string(instance_number(oGameController)))
