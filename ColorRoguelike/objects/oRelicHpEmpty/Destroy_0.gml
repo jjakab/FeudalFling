@@ -1,1 +1,1 @@
-global.maxPlayerHealth += 4
+healPlayer(0,4)

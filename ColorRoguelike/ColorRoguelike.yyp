@@ -155,6 +155,7 @@
     {"id":{"name":"damagePlayer","path":"scripts/damagePlayer/damagePlayer.yy",},},
     {"id":{"name":"enemyProjectileList","path":"scripts/enemyProjectileList/enemyProjectileList.yy",},},
     {"id":{"name":"hazardHitPlayer","path":"scripts/hazardHitPlayer/hazardHitPlayer.yy",},},
+    {"id":{"name":"healPlayer","path":"scripts/healPlayer/healPlayer.yy",},},
     {"id":{"name":"roomGenMacroCreator","path":"scripts/roomGenMacroCreator/roomGenMacroCreator.yy",},},
     {"id":{"name":"spawnStatSelection","path":"scripts/spawnStatSelection/spawnStatSelection.yy",},},
     {"id":{"name":"unstick","path":"scripts/unstick/unstick.yy",},},

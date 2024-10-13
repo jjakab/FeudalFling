@@ -119,6 +119,7 @@
     {"name":"createRoom","order":1,"path":"scripts/createRoom/createRoom.yy",},
     {"name":"damagePlayer","order":3,"path":"scripts/damagePlayer/damagePlayer.yy",},
     {"name":"enemyProjectileList","order":15,"path":"scripts/enemyProjectileList/enemyProjectileList.yy",},
+    {"name":"healPlayer","order":4,"path":"scripts/healPlayer/healPlayer.yy",},
     {"name":"roomGenMacroCreator","order":2,"path":"scripts/roomGenMacroCreator/roomGenMacroCreator.yy",},
     {"name":"spawnStatSelection","order":13,"path":"scripts/spawnStatSelection/spawnStatSelection.yy",},
     {"name":"unstick","order":8,"path":"scripts/unstick/unstick.yy",},

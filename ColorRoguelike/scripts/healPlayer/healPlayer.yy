@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"healPlayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"healPlayer",
+  "parent":{
+    "name":"playerRelated",
+    "path":"folders/Scripts/playerRelated.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
