@@ -6,3 +6,5 @@ beginningString = "Gain 1 heart"
 
 hp = 5
 stackable = true
+
+relicTitle = "Full Heart"

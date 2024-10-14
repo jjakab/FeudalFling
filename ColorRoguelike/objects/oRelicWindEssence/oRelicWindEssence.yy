@@ -40,7 +40,7 @@
   "spriteMaskId":null,
   "tags":[
     "relic",
-    "uncommon",
+    "rare",
   ],
   "visible":true,
 }
