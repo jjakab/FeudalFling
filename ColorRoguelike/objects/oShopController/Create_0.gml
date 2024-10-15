@@ -22,7 +22,7 @@ for(i = 0; i <numItems; i++){
 	if(itemRarity = 10){
 		var rareRelics = ds_map_find_value(relicsMap, "rare")
 		if(ds_list_size(rareRelics) > 0){
-			relicPicker = irandom_range(0, ds_list_size(relics)-1)
+			relicPicker = irandom_range(0, ds_list_size(rareRelics)-1)
 			var objIndex = ds_list_find_value(rareRelics, relicPicker)
 			instance_create_layer(currentXPlace, ySpawn,instanceLayerID, objIndex)
 			ds_list_delete(rareRelics, relicPicker)

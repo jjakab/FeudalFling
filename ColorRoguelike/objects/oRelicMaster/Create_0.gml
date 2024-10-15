@@ -26,7 +26,7 @@ rarityColor = c_white
 switch(rarity)
 {
 	case "Uncommon": rarityColor = c_green break;
-	case "Rare": rarityColor = c_blue break;
+	case "Rare": rarityColor = c_aqua break;
 }
 	
 	
