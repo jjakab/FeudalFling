@@ -19,7 +19,7 @@ var yHeight = y - 10 //Starting y location of main text
 
 var yOffset = 5 //How far below text should the background start
 
-var width = 260 //Width of main text
+var width = 300 //Width of main text
 var sep = 30 //Separation of main text
 
 //Determine how far vertically the middle section needs to be scaled
