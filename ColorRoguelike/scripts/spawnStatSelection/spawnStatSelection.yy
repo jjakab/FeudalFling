@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"spawnStatSelection",
   "isCompatibility":false,
   "isDnD":false,

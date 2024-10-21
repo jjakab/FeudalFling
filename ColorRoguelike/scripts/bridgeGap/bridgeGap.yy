@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"bridgeGap",
   "isCompatibility":false,
   "isDnD":false,

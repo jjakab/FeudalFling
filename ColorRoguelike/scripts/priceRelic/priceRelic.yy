@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"priceRelic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"priceRelic",
+  "parent":{
+    "name":"shopRelated",
+    "path":"folders/Scripts/shopRelated.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

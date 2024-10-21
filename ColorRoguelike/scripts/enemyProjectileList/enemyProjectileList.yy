@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"enemyProjectileList",
   "isCompatibility":false,
   "isDnD":false,

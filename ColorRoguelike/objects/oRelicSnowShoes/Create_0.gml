@@ -1,6 +1,6 @@
 event_inherited()
 
-beginningString = "Get slowed "
+beginningString = "Get slowed"
 statString = "70%"
 endingString = " less by snow traps"
 
