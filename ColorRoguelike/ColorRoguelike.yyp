@@ -225,6 +225,7 @@
     {"id":{"name":"sHealthArrow","path":"sprites/sHealthArrow/sHealthArrow.yy",},},
     {"id":{"name":"sHealthBanner","path":"sprites/sHealthBanner/sHealthBanner.yy",},},
     {"id":{"name":"sHealthCursed","path":"sprites/sHealthCursed/sHealthCursed.yy",},},
+    {"id":{"name":"sHealthCursedAlternate","path":"sprites/sHealthCursedAlternate/sHealthCursedAlternate.yy",},},
     {"id":{"name":"sHealthText","path":"sprites/sHealthText/sHealthText.yy",},},
     {"id":{"name":"sHpBoost","path":"sprites/sHpBoost/sHpBoost.yy",},},
     {"id":{"name":"sHpEmpty","path":"sprites/sHpEmpty/sHpEmpty.yy",},},

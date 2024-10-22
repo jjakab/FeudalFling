@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited()
 
-beginningString = "Gain 1 heart"
+beginningString = "Heal and gain 1 max heart"
 
 hp = 5
 stackable = true

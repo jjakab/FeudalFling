@@ -1,4 +1,4 @@
 event_inherited()
 
-beginningString = "Heal 1 heart"
+beginningString = "Gain 1 maximum heart"
 relicTitle = "Empty Heart"

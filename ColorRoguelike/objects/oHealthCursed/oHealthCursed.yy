@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHealthCursed",
-    "path":"sprites/sHealthCursed/sHealthCursed.yy",
+    "name":"sHealthCursedAlternate",
+    "path":"sprites/sHealthCursedAlternate/sHealthCursedAlternate.yy",
   },
   "spriteMaskId":null,
   "tags":[

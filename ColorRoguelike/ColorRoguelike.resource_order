@@ -181,6 +181,7 @@
     {"name":"sHealth9","order":9,"path":"sprites/sHealth9/sHealth9.yy",},
     {"name":"sHealthArrow","order":3,"path":"sprites/sHealthArrow/sHealthArrow.yy",},
     {"name":"sHealthCursed","order":2,"path":"sprites/sHealthCursed/sHealthCursed.yy",},
+    {"name":"sHealthCursedAlternate","order":4,"path":"sprites/sHealthCursedAlternate/sHealthCursedAlternate.yy",},
     {"name":"sHealthText","order":2,"path":"sprites/sHealthText/sHealthText.yy",},
     {"name":"sHpEmpty","order":1,"path":"sprites/sHpEmpty/sHpEmpty.yy",},
     {"name":"sHpRestore","order":2,"path":"sprites/sHpRestore/sHpRestore.yy",},
