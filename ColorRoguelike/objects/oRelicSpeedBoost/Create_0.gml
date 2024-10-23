@@ -1,5 +1,5 @@
 event_inherited()
 
-relicTitle = "Swift Soles"
+relicTitle = "Fleet Fruit"
 
 beginningString = "Gain 2 speed"

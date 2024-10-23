@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"gainGold",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gainGold",
+  "parent":{
+    "name":"playerRelated",
+    "path":"folders/Scripts/playerRelated.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

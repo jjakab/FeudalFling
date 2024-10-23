@@ -24,6 +24,7 @@ global.damageIncrease = 1
 //Other global variables
 global.snowSlowCoefficient = 5
 global.healthGain = true
+global.goldGain = 1 //Coefficient for gaining gold
 
 global.exp = 0
 global.expNextLevel = 10

@@ -1,0 +1,1 @@
+gainGold(10)

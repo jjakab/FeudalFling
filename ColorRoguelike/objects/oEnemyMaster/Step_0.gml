@@ -24,7 +24,7 @@ if(place_meeting(x, y, oPlayer)){
 						//Create tombstone animation
 						instance_create_layer(x, y, "Instances",oTombstone)
 						//Add gold to player 
-						global.goldOwned += goldDropped
+						gainGold(goldDropped)
 					}
 				}
 			

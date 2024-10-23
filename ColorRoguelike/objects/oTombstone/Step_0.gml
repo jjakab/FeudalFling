@@ -6,6 +6,6 @@ if (image_index >= image_number - 1) {
 }
 
 if(instance_place(x, y, oPlayer) && array_contains(relicsOwned, "oTombRaider") && robbable = true){
-	global.goldOwned += 10
+	gainGold(goldGiven)
 	robbable = false
 }
