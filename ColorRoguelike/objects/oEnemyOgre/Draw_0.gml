@@ -25,4 +25,10 @@ else if(state == "cooldown") {
 	draw_sprite_ext(sEnemyOgreCooldown,0,x+xMod,y+zzDrawHeightMod,1,1,0,c_white,1)
 }
 
+//Draw poison if applicable
+if(poisoned) {
+	draw_sprite(sPoisonDrop,0,x,(y - sprite_height/2))
+}
+
+
 

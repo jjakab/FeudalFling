@@ -18,3 +18,9 @@ else {
 	draw_self()
 }
 
+//Draw poison if applicable
+if(poisoned) {
+	draw_sprite(sPoisonDrop,0,x,(y - sprite_height/2))
+}
+
+

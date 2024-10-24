@@ -25,6 +25,8 @@ global.damageIncrease = 1
 global.snowSlowCoefficient = 5
 global.healthGain = true
 global.goldGain = 1 //Coefficient for gaining gold
+global.poisonedBlade = false //Poisoned blade
+global.trapSpeed = 1 //Coefficient for how fast traps work
 
 global.exp = 0
 global.expNextLevel = 10

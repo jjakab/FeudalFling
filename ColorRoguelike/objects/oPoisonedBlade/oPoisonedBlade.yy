@@ -1,21 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oSpikeTrap",
+  "%Name":"oPoisonedBlade",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oSpikeTrap",
+  "name":"oPoisonedBlade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Traps",
-    "path":"folders/Objects/Terrain/Traps.yy",
+    "name":"Rare",
+    "path":"folders/Objects/Relics/Rare.yy",
   },
   "parentObjectId":{
-    "name":"oGroundHazardMaster",
-    "path":"objects/oGroundHazardMaster/oGroundHazardMaster.yy",
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,9 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSpikeTrapDefault",
-    "path":"sprites/sSpikeTrapDefault/sSpikeTrapDefault.yy",
+    "name":"sPoisonedBlade",
+    "path":"sprites/sPoisonedBlade/sPoisonedBlade.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+    "rare",
+  ],
   "visible":true,
 }

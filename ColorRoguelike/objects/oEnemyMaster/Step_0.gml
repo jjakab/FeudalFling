@@ -19,12 +19,13 @@ if(place_meeting(x, y, oPlayer)){
 					show_debug_message("Enemy hit")
 					hp = hp - oPlayer.attackDamage
 					alarm_set(11,hurtTime)
-					if(hp <= 0){
-						instance_destroy()	
-						//Create tombstone animation
-						instance_create_layer(x, y, "Instances",oTombstone)
-						//Add gold to player 
-						gainGold(goldDropped)
+					
+					//Poison enemy if applicable
+					if(global.poisonedBlade) {
+						if(not(poisoned)) {
+							poisoned = true
+							alarm_set(10,poisonDelay)
+						}
 					}
 				}
 			
@@ -37,4 +38,14 @@ if(place_meeting(x, y, oPlayer)){
 	
 	
 	}
+}
+
+
+//Kill enemy if applicable
+if(hp <= 0){
+	instance_destroy()	
+	//Create tombstone animation
+	instance_create_layer(x, y, "Instances",oTombstone)
+	//Add gold to player 
+	gainGold(goldDropped)
 }
