@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Ice Wizard",
-    "path":"folders/Sprites/Enemy/Wizards/Ice Wizard.yy",
+    "name":"Snow Trap",
+    "path":"folders/Sprites/Enemy/Wizards/Ice Wizard/Snow Trap.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

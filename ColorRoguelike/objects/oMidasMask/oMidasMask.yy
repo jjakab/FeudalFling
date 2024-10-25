@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oMidasMitts",
+  "%Name":"oMidasMask",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oMidasMitts",
+  "name":"oMidasMask",
   "overriddenProperties":[],
   "parent":{
-    "name":"Uncommon",
-    "path":"folders/Objects/Relics/Uncommon.yy",
+    "name":"Rare",
+    "path":"folders/Objects/Relics/Rare.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",
@@ -34,13 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMidasMitts",
-    "path":"sprites/sMidasMitts/sMidasMitts.yy",
+    "name":"sMidasMask",
+    "path":"sprites/sMidasMask/sMidasMask.yy",
   },
   "spriteMaskId":null,
   "tags":[
     "relic",
-    "uncommon",
+    "rare",
   ],
   "visible":true,
 }

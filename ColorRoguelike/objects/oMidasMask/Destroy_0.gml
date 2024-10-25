@@ -1,0 +1,1 @@
+global.goldGain = global.goldGain * 1.5

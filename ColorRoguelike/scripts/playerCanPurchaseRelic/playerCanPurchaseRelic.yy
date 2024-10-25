@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"playerCanPurchaseRelic",
   "isCompatibility":false,
   "isDnD":false,

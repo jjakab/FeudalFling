@@ -1,4 +1,4 @@
-if(mouseClicked=true) //a dash was being charged up
+if(mouseClicked) //a dash was being charged up
 {
 	
 	//Check if the dash conditions are satisfied before launching the player
@@ -13,8 +13,15 @@ if(mouseClicked=true) //a dash was being charged up
 			}
 		}
 	
-		var xMouseDistance = launchCoefficient * cos(degtorad(mouseAngle)) * min( maxAimRange,point_distance(mouse_x,mouse_y,mouseClickedX,mouseClickedY))
-		var yMouseDistance = launchCoefficient * sin(degtorad(mouseAngle)) * min( maxAimRange,point_distance(mouse_x,mouse_y,mouseClickedX,mouseClickedY))
+		var tempLaunchCoefficient = launchCoefficient
+		
+		//If the player has a credit card, manipulate the launch coefficient based on negative gold
+		if(global.creditCardOwned){
+			tempLaunchCoefficient *= min(1,max(0.2,(400+global.goldOwned)/400)) //At -400 gold, dash speed will reach a minimum of 20%
+		}
+	
+		var xMouseDistance = tempLaunchCoefficient * cos(degtorad(mouseAngle)) * min( maxAimRange,point_distance(mouse_x,mouse_y,mouseClickedX,mouseClickedY))
+		var yMouseDistance = tempLaunchCoefficient * sin(degtorad(mouseAngle)) * min( maxAimRange,point_distance(mouse_x,mouse_y,mouseClickedX,mouseClickedY))
 		xSpeed = -xMouseDistance / 50
 		ySpeed = yMouseDistance / 50
 	

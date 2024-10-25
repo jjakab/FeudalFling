@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oMidasMitts",
+  "%Name":"oCreditCard",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oMidasMitts",
+  "name":"oCreditCard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Uncommon",
-    "path":"folders/Objects/Relics/Uncommon.yy",
+    "name":"Rare",
+    "path":"folders/Objects/Relics/Rare.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",
@@ -34,13 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMidasMitts",
-    "path":"sprites/sMidasMitts/sMidasMitts.yy",
+    "name":"sCreditCard",
+    "path":"sprites/sCreditCard/sCreditCard.yy",
   },
   "spriteMaskId":null,
   "tags":[
     "relic",
-    "uncommon",
+    "rare",
   ],
   "visible":true,
 }
