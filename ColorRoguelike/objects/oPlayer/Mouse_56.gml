@@ -12,6 +12,15 @@ if(mouseClicked) //a dash was being charged up
 				alarm_set(1,windEssenceDelay)
 			}
 		}
+		
+		//Check if player has Harkon's Blade
+		if(global.harkonsBlade) {
+			
+			//Make sure the player isn't in the shop - if they aren't, subtract 2 health
+			if(not(string_copy(room_get_name(room),1,5)="rShop")) {
+				global.playerHealth -=2
+			}
+		}
 	
 		var tempLaunchCoefficient = launchCoefficient
 		
@@ -31,9 +40,9 @@ if(mouseClicked) //a dash was being charged up
 		alarm_set(2,dashCooldown)
 	
 		//Create a list of enemy instance IDs and set whether they've been damaged this charge to false
-	
 		ds_list_destroy(enemyHitList)
 		enemyHitList = ds_list_create()
+		
 	}
 	
 }

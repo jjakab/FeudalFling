@@ -12,7 +12,13 @@ if(place_meeting(x, y, oPlayer)){
 			//Check if this enemy has already been hit
 			if(ds_list_find_index(enemyHitList,other.id) = -1) { //This instance has not already been hit by the charge
 				
+				//Add them to the list that's been hit
 				ds_list_add(enemyHitList,other.id)
+				
+				//If the player has Harkon's Blade, they heal upon succesfully hitting an enemy
+				if(global.harkonsBlade) {
+					global.playerHealth +=4			
+				}
 				
 				//If they have not been hit by the charge and the player is moving sufficiently fast enough, hit them
 				with(other) {

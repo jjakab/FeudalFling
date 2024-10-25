@@ -43,7 +43,7 @@ enemyHitList = ds_list_create()
 //variables related to wind essence
 windEssence = false //does the player have the wind essence relic?
 windEssenceDelay = 30 //how long after max launch should wind essence be created
-windEssenceSpeedThreshold = 1.2 //minimum speed threshold for wind essence
+windEssenceSpeedThreshold = 0 //minimum speed threshold for wind essence
 
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")
