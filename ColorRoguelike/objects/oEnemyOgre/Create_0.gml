@@ -38,3 +38,11 @@ weaponXCurr = weaponXInitial
 weaponYCurr = weaponYInitial
 weaponAngle = 0
 
+path = path_add()
+gridSize = 16
+gridWidth = room_width div gridSize
+gridHeight = room_height div gridSize
+
+
+pathGrid = mp_grid_create(112, 64, gridWidth, gridHeight, gridSize, gridSize)
+mp_grid_add_instances(pathGrid, oWall, false)
