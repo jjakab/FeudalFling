@@ -3,6 +3,7 @@ function createRelicList(){
 	var commonRelics = ds_list_create()
 	var uncommonRelics = ds_list_create()
 	var rareRelics = ds_list_create()
+	var cursedRelics = ds_list_create()
 	var relicsMap = ds_map_create()
 	//Newer method of pulling all relics using tags
 	var allRelics = tag_get_asset_ids("relic", asset_object);
@@ -25,6 +26,9 @@ function createRelicList(){
 				if(asset_has_tags(allRelics[i], "rare")){
 					ds_list_add(rareRelics, allRelics[i])
 				}
+				if(asset_has_tags(allRelics[i], "cursed")){
+					ds_list_add(cursedRelics, allRelics[i])	
+				}
 			}
 		}
 	}
@@ -32,6 +36,7 @@ function createRelicList(){
 	ds_map_add(relicsMap, "common", commonRelics)
 	ds_map_add(relicsMap, "uncommon", uncommonRelics)
 	ds_map_add(relicsMap, "rare", rareRelics)
+	ds_map_add(relicsMap, "cursed", cursedRelics)
 	return relicsMap
 	
 	

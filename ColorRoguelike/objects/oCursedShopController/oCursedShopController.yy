@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oHealthCursed",
+  "%Name":"oCursedShopController",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oHealthCursed",
+  "name":"oCursedShopController",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cursed",
-    "path":"folders/Objects/Relics/Cursed.yy",
+    "name":"Control",
+    "path":"folders/Objects/Control.yy",
   },
   "parentObjectId":{
-    "name":"oRelicMaster",
-    "path":"objects/oRelicMaster/oRelicMaster.yy",
+    "name":"oShopController",
+    "path":"objects/oShopController/oShopController.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,14 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sHealthCursedAlternate",
-    "path":"sprites/sHealthCursedAlternate/sHealthCursedAlternate.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
-  "tags":[
-    "relic",
-    "cursed",
-  ],
   "visible":true,
 }

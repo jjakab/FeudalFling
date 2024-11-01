@@ -9,8 +9,8 @@
   "name":"oHarkonsBlade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Rare",
-    "path":"folders/Objects/Relics/Rare.yy",
+    "name":"Cursed",
+    "path":"folders/Objects/Relics/Cursed.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",
@@ -40,7 +40,7 @@
   "spriteMaskId":null,
   "tags":[
     "relic",
-    "rare",
+    "cursed",
   ],
   "visible":true,
 }

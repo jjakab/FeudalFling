@@ -8,6 +8,7 @@ xLeftLimit = 60
 xRightLimit = 346
 additive = (xRightLimit - xLeftLimit) / (numItems -1)
 currentXPlace = xLeftLimit
+cursed = "true"
 
 instanceLayerID = layer_get_id("Instances");
 relicsMap = createRelicList()
@@ -19,6 +20,23 @@ for(i = 0; i <numItems; i++){
 	var itemRarity = irandom_range(1, 10)
 	show_debug_message("Number of items is" + string(numItems))
 	show_debug_message(itemRarity)
+	if(cursed == "true"){
+		itemRarity = 11	
+	}
+	if(itemRarity = 11){
+		var cursedRelics = ds_map_find_value(relicsMap, "cursed")
+		if(ds_list_size(cursedRelics) > 0){
+			relicPicker = irandom_range(0, ds_list_size(cursedRelics)-1)
+			var objIndex = ds_list_find_value(cursedRelics, relicPicker)
+			instance_create_layer(currentXPlace, ySpawn,instanceLayerID, objIndex)
+			ds_list_delete(cursedRelics, relicPicker)
+			currentXPlace += additive
+		}
+		//Set item rarity to uncommon if rare relics all taken
+		else{
+			itemRarity = 10	
+		}
+	}
 	if(itemRarity = 10){
 		var rareRelics = ds_map_find_value(relicsMap, "rare")
 		if(ds_list_size(rareRelics) > 0){
