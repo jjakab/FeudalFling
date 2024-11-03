@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"hazardHitPlayer",
   "isCompatibility":false,
   "isDnD":false,

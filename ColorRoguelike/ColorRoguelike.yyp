@@ -194,6 +194,7 @@
     {"id":{"name":"sAttackState","path":"sprites/sAttackState/sAttackState.yy",},},
     {"id":{"name":"sBatEnemy","path":"sprites/sBatEnemy/sBatEnemy.yy",},},
     {"id":{"name":"sBomberJacket","path":"sprites/sBomberJacket/sBomberJacket.yy",},},
+    {"id":{"name":"sBowIdle","path":"sprites/sBowIdle/sBowIdle.yy",},},
     {"id":{"name":"sBowLoading","path":"sprites/sBowLoading/sBowLoading.yy",},},
     {"id":{"name":"sBowPullback","path":"sprites/sBowPullback/sBowPullback.yy",},},
     {"id":{"name":"sBowShoot","path":"sprites/sBowShoot/sBowShoot.yy",},},

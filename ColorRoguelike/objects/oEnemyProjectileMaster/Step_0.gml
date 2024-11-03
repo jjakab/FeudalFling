@@ -62,6 +62,11 @@ if(place_meeting(x,y,oWall))
 			image_index = 0
 			speed = 0
 			
+			//Move arrow backwards until it is not hitting the wall
+			while(place_meeting(x,y,oWall)) {
+				x -= sign(round(cos(degtorad(image_angle))))
+				y += sign(round(sin(degtorad(image_angle))))
+			}
 		}
 		destroy = false //We don't want to destroy the arrow immediately
 	}

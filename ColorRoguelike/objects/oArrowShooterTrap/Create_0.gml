@@ -4,7 +4,7 @@
 timeLow = 200
 timeHigh = 300
 
-timeBetweenShots = irandom_range(timeLow, timeHigh)
+timeBetweenShots = irandom_range(timeLow, timeHigh) * global.trapSpeed
 alarm_set(1, timeBetweenShots)
 
 //Starts off in an idle animation

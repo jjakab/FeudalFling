@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"updatePlayer",
   "isCompatibility":false,
   "isDnD":false,

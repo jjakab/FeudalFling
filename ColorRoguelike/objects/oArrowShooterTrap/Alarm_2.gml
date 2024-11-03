@@ -1,4 +1,6 @@
 ///@description Start loading the bow
 
-//This will be set when were are in the loading state
-image_speed = 5
+//When the loading state begins, this alarm triggers - set sprite to loading state and speed accordingly
+sprite_index = sBowLoading
+image_index = 0
+image_speed = 5 * global.trapSpeed

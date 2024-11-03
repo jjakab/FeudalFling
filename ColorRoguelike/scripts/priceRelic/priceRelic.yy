@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"priceRelic",
   "isCompatibility":false,
   "isDnD":false,
