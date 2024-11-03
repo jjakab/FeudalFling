@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":5,
   "parent":{
-    "name":"Traps",
-    "path":"folders/Sprites/Terrain/Traps.yy",
+    "name":"Crossbow",
+    "path":"folders/Sprites/Terrain/Traps/Crossbow.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,6 +5,7 @@ stackable = false
 rarity = "Common"
 if(asset_has_tags(object_index,"uncommon")) rarity = "Uncommon"
 else if (asset_has_tags(object_index,"rare")) rarity = "Rare"
+else if (asset_has_tags(object_index,"cursed")) rarity = "Cursed"
 
 goldCost = priceRelic()
 
@@ -33,6 +34,7 @@ switch(rarity)
 {
 	case "Uncommon": rarityColor = c_green break;
 	case "Rare": rarityColor = c_aqua break;
+	case "Cursed": rarityColor = c_red break;
 }
 	
 	

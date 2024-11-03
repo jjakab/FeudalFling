@@ -85,7 +85,7 @@ else { //If there is a player, start charging up an attack
 		snowTrap = instance_create_depth(xx,yy,hazardsDepth+1,snowSpawnInstance)
 		with(snowTrap) {
 			pairedObj = other
-			image_angle = irandom_range(0,359)
+			//image_angle = irandom_range(0,359)
 		}
 	}
 }

@@ -1,3 +1,11 @@
+
+
 //Slightly randomize the timing of the arrow shots
-timeBetweenShots = irandom_range(300, 500)
-alarm_set(0, timeBetweenShots)
+timeLow = 200
+timeHigh = 300
+
+timeBetweenShots = irandom_range(timeLow, timeHigh)
+alarm_set(1, timeBetweenShots)
+
+//Starts off in an idle animation
+image_speed = 0

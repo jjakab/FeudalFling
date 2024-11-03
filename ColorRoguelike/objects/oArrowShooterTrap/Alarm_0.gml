@@ -5,3 +5,5 @@ var arrow = instance_create_layer(x, y, "Instances", oArrowTrap)
 arrow.direction = image_angle
 arrow.speed = 3.5 * global.trapSpeed
 arrow.image_angle = image_angle
+
+

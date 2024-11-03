@@ -3,6 +3,8 @@
 if(place_meeting(x,y,oWall))
 {
 	
+	var destroy = true //Start off by assuming we will destroy whatever projectile this is
+	
 	if(projType = "fireball"){
 		//instance_create_layer(x, y, "Instances", oWizardFireballExplode);
 	
@@ -51,7 +53,20 @@ if(place_meeting(x,y,oWall))
 		}
 	}
 	
-	instance_destroy()	
+	
+	if(projType = "arrow") {
+		
+		//If this has not impacted yet, set the sprite accordingly and stop the arrow
+		if(sprite_index = sArrowProjectile) {
+			sprite_index = sArrowProjectileImpact
+			image_index = 0
+			speed = 0
+			
+		}
+		destroy = false //We don't want to destroy the arrow immediately
+	}
+	
+	if(destroy) instance_destroy()	
 }
 
 //Code for deciding which enemies to damage
