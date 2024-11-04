@@ -55,6 +55,7 @@
     {"$GMFolder":"","%Name":"Fire Wizard","folderPath":"folders/Sprites/Enemy/Wizards/Fire Wizard.yy","name":"Fire Wizard","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Ice Wizard","folderPath":"folders/Sprites/Enemy/Wizards/Ice Wizard.yy","name":"Ice Wizard","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Snow Trap","folderPath":"folders/Sprites/Enemy/Wizards/Ice Wizard/Snow Trap.yy","name":"Snow Trap","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"NPC","folderPath":"folders/Sprites/NPC.yy","name":"NPC","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GUI","folderPath":"folders/Sprites/GUI.yy","name":"GUI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"New Player","folderPath":"folders/Sprites/Player/New Player.yy","name":"New Player","resourceType":"GMFolder","resourceVersion":"2.0",},
