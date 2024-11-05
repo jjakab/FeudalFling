@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"healPlayer",
+  "%Name":"healthStatIncrease",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"healPlayer",
+  "name":"healthStatIncrease",
   "parent":{
     "name":"Stats",
     "path":"folders/Scripts/playerRelated/Stats.yy",

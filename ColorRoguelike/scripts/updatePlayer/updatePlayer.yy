@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"updatePlayer",
   "parent":{
-    "name":"playerRelated",
-    "path":"folders/Scripts/playerRelated.yy",
+    "name":"Stats",
+    "path":"folders/Scripts/playerRelated/Stats.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
