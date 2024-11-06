@@ -303,6 +303,7 @@
     {"id":{"name":"sTombRobber","path":"sprites/sTombRobber/sTombRobber.yy",},},
     {"id":{"name":"sTombRobberAlternate","path":"sprites/sTombRobberAlternate/sTombRobberAlternate.yy",},},
     {"id":{"name":"sTombstone","path":"sprites/sTombstone/sTombstone.yy",},},
+    {"id":{"name":"sTombstoneMoney","path":"sprites/sTombstoneMoney/sTombstoneMoney.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
     {"id":{"name":"sWindEssence","path":"sprites/sWindEssence/sWindEssence.yy",},},
     {"id":{"name":"sWoodenClub","path":"sprites/sWoodenClub/sWoodenClub.yy",},},

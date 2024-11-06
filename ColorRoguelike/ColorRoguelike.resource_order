@@ -247,6 +247,7 @@
     {"name":"sTombRobber","order":3,"path":"sprites/sTombRobber/sTombRobber.yy",},
     {"name":"sTombRobberAlternate","order":5,"path":"sprites/sTombRobberAlternate/sTombRobberAlternate.yy",},
     {"name":"sTombstone","order":4,"path":"sprites/sTombstone/sTombstone.yy",},
+    {"name":"sTombstoneMoney","order":10,"path":"sprites/sTombstoneMoney/sTombstoneMoney.yy",},
     {"name":"sWall","order":2,"path":"sprites/sWall/sWall.yy",},
     {"name":"sWoodenClub","order":7,"path":"sprites/sWoodenClub/sWoodenClub.yy",},
     {"name":"sWoodenClubAlternate","order":8,"path":"sprites/sWoodenClubAlternate/sWoodenClubAlternate.yy",},

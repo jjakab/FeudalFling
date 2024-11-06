@@ -8,7 +8,7 @@ xLeftLimit = 60
 xRightLimit = 346
 additive = (xRightLimit - xLeftLimit) / (numItems -1)
 currentXPlace = xLeftLimit
-cursed = "true"
+cursed = false
 
 instanceLayerID = layer_get_id("Instances");
 relicsMap = createRelicList()

@@ -1,3 +1,3 @@
-cursed = "true"
-
 event_inherited()
+
+cursed = "true"
