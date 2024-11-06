@@ -74,7 +74,7 @@ with(groundHitbox) {
 groundHitbox.x = x
 groundHitbox.y = y
 
-//Check if the ground hitbox is colliding with any 
+//Check if the ground hitbox is colliding with any hazards
 with(oPlayerGroundHitbox) {
 	
 	//Create list of hazards that the ground hitbox is colliding with

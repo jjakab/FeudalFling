@@ -1,11 +1,12 @@
 
 if(instance_exists(oPlayer)){
-	if(place_meeting(x,y, oPlayer) && (sprite_index != sSpikeTrapAttack)){
-		sprite_index = sSpikeTrapAttack
+	if(place_meeting(x,y, oPlayer) && starting = false){
 		image_index = 0	
-		alarm_set(0, irandom_range(220,250))
+		image_speed = global.trapSpeed
+		starting = true
+		alarm_set(1, irandom_range(220,250))
 	}
-	if(sprite_index = sSpikeTrapAttack && image_index >= image_number){
+	if(image_index >= image_number){
 		image_speed = 0
 		active = true
 	}
