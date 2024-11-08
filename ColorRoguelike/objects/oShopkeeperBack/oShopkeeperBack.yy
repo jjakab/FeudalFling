@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oCooldownBoost",
+  "%Name":"oShopkeeperBack",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCooldownBoost",
+  "name":"oShopkeeperBack",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common",
-    "path":"folders/Objects/Relics/Common.yy",
+    "name":"Shopkeeper",
+    "path":"folders/Objects/NPC/Shopkeeper.yy",
   },
   "parentObjectId":{
-    "name":"oRelicMaster",
-    "path":"objects/oRelicMaster/oRelicMaster.yy",
+    "name":"oWall",
+    "path":"objects/oWall/oWall.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,13 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCooldownBoost",
-    "path":"sprites/sCooldownBoost/sCooldownBoost.yy",
+    "name":"sShopkeeperBack",
+    "path":"sprites/sShopkeeperBack/sShopkeeperBack.yy",
   },
   "spriteMaskId":null,
-  "tags":[
-    "relic",
-    "common",
-  ],
   "visible":true,
 }
