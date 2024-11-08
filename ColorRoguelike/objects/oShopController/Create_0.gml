@@ -12,6 +12,7 @@ cursed = false
 
 instanceLayerID = layer_get_id("Instances");
 relicsMap = createRelicList()
+relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 
 randomize()
 //Spawning items in

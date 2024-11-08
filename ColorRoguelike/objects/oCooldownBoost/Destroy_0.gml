@@ -1,0 +1,1 @@
+oPlayer.dashCooldown -= 0.2

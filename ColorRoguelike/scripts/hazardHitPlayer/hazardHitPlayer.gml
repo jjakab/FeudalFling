@@ -1,9 +1,10 @@
 function hazardHitPlayer(){
-
+	var relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 	//If this has not recently affected the player, we can proceed
 	if(canDamage) {
 		if(active) { //Proceed if this hazard is not in the charge state
-			if((object_index = oAcidPool or object_index = oAcidPoolLarge) && (instance_number(oPlayer) >= 1)) { //If this is an acid pool, damage player	
+			if((object_index = oAcidPool or object_index = oAcidPoolLarge) && (instance_number(oPlayer) >= 1)
+			&& (!array_contains(relicsOwned, oAcidShoes))) { //If this is an acid pool, damage player	
 				global.playerHealth -= damage
 				visuallyDamagePlayer()
 				canDamage = false
