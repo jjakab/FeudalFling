@@ -8,6 +8,7 @@ global.attackDamage = 100
 
 global.launchCoefficient = 1.5
 global.fric = 0.006
+global.dashCooldown = 60
 
 //Stat variables
 global.healthStat = 0

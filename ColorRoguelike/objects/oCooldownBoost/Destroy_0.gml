@@ -1,1 +1,2 @@
-oPlayer.dashCooldown -= 0.2
+global.dashCooldown -= 20
+oPlayer.dashCooldown = global.dashCooldown

@@ -2,6 +2,7 @@
 attackDamage = global.attackDamage
 fric = global.fric
 launchCoefficient = global.launchCoefficient //for each pixel the mouse is from the origin, the character will be launched at this speed
+dashCooldown = global.dashCooldown
 
 //billiard-based movement
 mouseClicked = false
@@ -9,7 +10,6 @@ mouseAngle = 0
 maxAimRange = 50
 mouseClickedX = 0
 mouseClickedY = 0
-dashCooldown = 60
 
 moveDir = 0
 currSpeed = 0
