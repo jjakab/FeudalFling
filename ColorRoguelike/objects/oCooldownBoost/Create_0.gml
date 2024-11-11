@@ -1,3 +1,3 @@
 event_inherited()
 relicTitle = "Stopwatch"
-beginningString = "Reduce cooldown between dashes"
+beginningString = "Gain 2 Cooldown"
