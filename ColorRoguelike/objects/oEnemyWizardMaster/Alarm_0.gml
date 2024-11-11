@@ -18,10 +18,10 @@ else { //If there is a player, start charging up an attack
 	image_index = 0
 	//Elemental specific-actions
 	if(wizardType = "fire") {
-		current_player = point_direction(x, y, oPlayer.x, oPlayer.y)
-		current_difference = angle_difference(current_player, playerDirection)
+		current_player_fire = point_direction(x, y, oPlayer.x, oPlayer.y)
+		current_difference_fire = angle_difference(current_player_fire, playerDirection)
 		//var curr_distance = point_distance(x, y, oPlayer.x, oPlayer.y)
-		var collidedObj = collision_line(x,y,x+lengthdir_x(room_width,current_player),y+lengthdir_y(room_height,current_player),oWall,false,true)
+		var collidedObj = collision_line(x,y,x+lengthdir_x(room_width,current_player_fire),y+lengthdir_y(room_height,current_player_fire),oWall,false,true)
 		var curr_distance = 0
 		if(collidedObj = noone) { //This should never happen
 			curr_distance = max(room_width,room_height)
@@ -30,9 +30,9 @@ else { //If there is a player, start charging up an attack
 			curr_distance = point_distance(x,y,collidedObj.x,collidedObj.y)
 		}
 	
-		var projectile = instance_create_layer(x, y, "Instances", oWizardFlash);
-		projectile.image_angle = current_difference;
-		projectile.image_xscale = curr_distance/sprite_get_width(sAttackLine)
+		var projectile = instance_create_layer(x, y, "Instances", oFireWizardFlash);
+		projectile.image_angle = current_difference_fire;
+		projectile.image_xscale = curr_distance/sprite_get_width(sFireAttackLine)
 	
 		with(projectile) {
 			pairedObj = other	
@@ -86,6 +86,20 @@ else { //If there is a player, start charging up an attack
 		with(snowTrap) {
 			pairedObj = other
 			//image_angle = irandom_range(0,359)
+		}
+	}
+	else if(wizardType = "lightning"){
+		current_player_lightning = point_direction(x, y, oPlayer.x, oPlayer.y)
+		current_difference_lightning = angle_difference(current_player_lightning, playerDirection)
+		var collidedObj = collision_line(x,y,x+lengthdir_x(room_width,current_player_lightning),y+lengthdir_y(room_height,current_player_lightning),oWall,false,true)
+		if(collidedObj != noone) { //This should never happen
+			lightning_distance = point_distance(x,y,collidedObj.x,collidedObj.y)
+		}
+		var projectile = instance_create_layer(x, y, "Instances", oLightningWizardFlash);
+		projectile.image_angle = current_difference_lightning;
+		projectile.image_xscale = lightning_distance/sprite_get_width(sLightningAttackLine)
+		with(projectile) {
+			pairedObj = other	
 		}
 	}
 }

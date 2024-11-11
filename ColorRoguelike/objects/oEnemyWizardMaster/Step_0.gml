@@ -15,15 +15,15 @@ if(state == "attack"){
 	if(wizardType = "fire") {
 	
 		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oWizardFireball);
-		projectile.direction = current_player;
+		projectile.direction = current_player_fire;
 		projectile.speed = fireballSpeed
-		projectile.projDirection = current_player;
+		projectile.projDirection = current_player_fire;
 		
 		if(elite) {
 			for (var i = 0; i < 2; i++) {
 			
 				var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oWizardFireball);
-				var firedDirection = current_player - (eliteFireballSpread / 2) + (eliteFireballSpread * i)
+				var firedDirection = current_player_fire - (eliteFireballSpread / 2) + (eliteFireballSpread * i)
 				projectile.direction = firedDirection
 				projectile.speed = fireballSpeed
 				projectile.projDirection = firedDirection;
@@ -37,6 +37,11 @@ if(state == "attack"){
 		
 		//The acid pool will turn active at this point - code is in acid pool
 		
+	}
+	
+	else if(wizardType = "lightning"){
+		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oLightningStrike);
+		projectile.direction = current_player_lightning;	
 	}
 	
 	sprite_index = cooldownSprite
