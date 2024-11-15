@@ -1,11 +1,8 @@
 event_inherited()
 
-//Set active to true always because we are doing the damage check in oMainLightningStrike
-active = true 
 //The image angle was passed to this via a struct as 'index' - first we set the image_angle to index
 image_angle = index
-parent = parentID
-
+parentID = noone
 //Start off by assuming we need to create a new lightning strike at the end of this one
 var createNew = true
 if(place_meeting(x,y,oWall)) createNew = false //If this is touching a wall, it ends

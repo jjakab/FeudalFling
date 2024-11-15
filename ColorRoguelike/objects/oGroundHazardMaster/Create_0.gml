@@ -1,5 +1,5 @@
 //Set initial variables - these will be overwritten by children objects
-damage = 0
+damage = 2
 projType = "default"
 
 canDamage = true
