@@ -226,6 +226,7 @@
     {"name":"sHpEmpty","order":1,"path":"sprites/sHpEmpty/sHpEmpty.yy",},
     {"name":"sHpRestore","order":2,"path":"sprites/sHpRestore/sHpRestore.yy",},
     {"name":"sLightningAttackLine","order":1,"path":"sprites/sLightningAttackLine/sLightningAttackLine.yy",},
+    {"name":"sLightningCreationHitbox","order":3,"path":"sprites/sLightningCreationHitbox/sLightningCreationHitbox.yy",},
     {"name":"sLightningStrike","order":2,"path":"sprites/sLightningStrike/sLightningStrike.yy",},
     {"name":"sMidasMask","order":5,"path":"sprites/sMidasMask/sMidasMask.yy",},
     {"name":"sMidasMitts","order":6,"path":"sprites/sMidasMitts/sMidasMitts.yy",},

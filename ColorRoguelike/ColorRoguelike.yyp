@@ -277,6 +277,7 @@
     {"id":{"name":"sHpRestore","path":"sprites/sHpRestore/sHpRestore.yy",},},
     {"id":{"name":"sLeftWall","path":"sprites/sLeftWall/sLeftWall.yy",},},
     {"id":{"name":"sLightningAttackLine","path":"sprites/sLightningAttackLine/sLightningAttackLine.yy",},},
+    {"id":{"name":"sLightningCreationHitbox","path":"sprites/sLightningCreationHitbox/sLightningCreationHitbox.yy",},},
     {"id":{"name":"sLightningStrike","path":"sprites/sLightningStrike/sLightningStrike.yy",},},
     {"id":{"name":"sMidasMask","path":"sprites/sMidasMask/sMidasMask.yy",},},
     {"id":{"name":"sMidasMitts","path":"sprites/sMidasMitts/sMidasMitts.yy",},},

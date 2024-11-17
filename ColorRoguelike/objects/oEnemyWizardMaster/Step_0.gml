@@ -42,7 +42,7 @@ if(state == "attack"){
 	else if(wizardType = "lightning"){
 		
 		//Create a lightning bolt
-		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "Instances", oMainLightningStrike, {index : current_player_lightning });
+		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "FloorHazards", oMainLightningStrike, {index : current_player_lightning });
 	}
 	
 	sprite_index = cooldownSprite

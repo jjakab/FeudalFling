@@ -4,10 +4,15 @@ event_inherited()
 image_angle = index
 parentID = noone
 //Start off by assuming we need to create a new lightning strike at the end of this one
+
+mask_index = sLightningCreationHitbox
+
 var createNew = true
 if(place_meeting(x,y,oWall)) createNew = false //If this is touching a wall, it ends
 if(x > room_width or x < 0) createNew = false //If this is out of x-bounds, it ends
 if(y > room_height or y < 0) createNew = false //If this is out of y-bounds, it ends
+
+mask_index = sprite_index
 
 
 //If we need to create a new lightning strike, do so
