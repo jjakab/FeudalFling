@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oLightningStrike",
+  "%Name":"oLightningMaster",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oLightningStrike",
+  "name":"oLightningMaster",
   "overriddenProperties":[],
   "parent":{
     "name":"Lightning Strike",
     "path":"folders/Objects/Enemies/Ground Hazards/Lightning Strike.yy",
   },
   "parentObjectId":{
-    "name":"oLightningMaster",
-    "path":"objects/oLightningMaster/oLightningMaster.yy",
+    "name":"oGroundHazardMaster",
+    "path":"objects/oGroundHazardMaster/oGroundHazardMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +33,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sLightningStrike",
-    "path":"sprites/sLightningStrike/sLightningStrike.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

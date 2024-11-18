@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oMainLightningStrike",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oTeslaTowerSecondary",
+  "eventList":[],
   "managed":true,
-  "name":"oMainLightningStrike",
+  "name":"oTeslaTowerSecondary",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lightning Strike",
-    "path":"folders/Objects/Enemies/Ground Hazards/Lightning Strike.yy",
+    "name":"Traps",
+    "path":"folders/Objects/Terrain/Traps.yy",
   },
   "parentObjectId":{
-    "name":"oLightningMaster",
-    "path":"objects/oLightningMaster/oLightningMaster.yy",
+    "name":"oTeslaTowerMaster",
+    "path":"objects/oTeslaTowerMaster/oTeslaTowerMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLightningStrike",
-    "path":"sprites/sLightningStrike/sLightningStrike.yy",
+    "name":"sTowerCharging",
+    "path":"sprites/sTowerCharging/sTowerCharging.yy",
   },
   "spriteMaskId":null,
   "visible":true,
