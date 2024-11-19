@@ -6,3 +6,4 @@ canDamage = true
 noDamageWindow = 90
 
 active = false
+

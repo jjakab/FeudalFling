@@ -1,5 +1,7 @@
-event_inherited()
+damage = 2
 
+canDamage = true
+noDamageWindow = 90
 //Set active to true always because we are doing the damage check in oMainLightningStrike
 active = true 
 //The image angle was passed to this via a struct as 'index' - first we set the image_angle to index

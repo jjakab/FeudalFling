@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"findMainLightningParent",
+  "%Name":"lightningDamage",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"findMainLightningParent",
+  "name":"lightningDamage",
   "parent":{
     "name":"Lightning",
     "path":"folders/Scripts/Lightning.yy",

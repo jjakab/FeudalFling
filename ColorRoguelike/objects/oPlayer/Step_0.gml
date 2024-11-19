@@ -95,3 +95,10 @@ if(global.playerHealth <= 0){
 	instance_destroy()
 	instance_create_layer(x, y, "Instances", oTombstone)
 }
+
+lightningHit = instance_place(x, y, oLightningMaster)
+if(lightningHit != noone){
+	with(lightningHit){
+		lightningDamage(id)	
+	}
+}
