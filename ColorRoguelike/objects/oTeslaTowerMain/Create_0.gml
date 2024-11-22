@@ -1,8 +1,8 @@
 //Variable declarations
 startChargeSpeed = 0.02
 finalChargeSpeed = 0.3
-chargeTime = 300
-zapTime = 60
+chargeTime = 300 * (1 / global.trapSpeed)
+zapTime = 50
 
 image_speed = startChargeSpeed
 

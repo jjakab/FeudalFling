@@ -45,6 +45,18 @@ windEssence = false //does the player have the wind essence relic?
 windEssenceDelay = 30 //how long after max launch should wind essence be created
 windEssenceSpeedThreshold = 0 //minimum speed threshold for wind essence
 
+//Variables relating to shock collar
+shockCollarActive = false
+shockCollarLightning = false //Is the lightning being drawn
+refreshTimer = 60 * 15 //How long does this to take to refresh after being used
+lightningActiveTime = 60 //For how many frames is the lightning active
+pairedLightningObj = noone //Which enemy is the lightning paired to
+lightningDrawEndFrame = 5 //End frame for drawing lightning
+lightningCurrentFrame = 0
+lightningActiveFrame = 3 //Frame in which damage is implemented
+lightningSegmentsRequired = 0
+lightningAngle = 0
+
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")
 
@@ -65,6 +77,9 @@ if(array_contains(relicsOwned, "oRelicShield")){
 }
 if(array_contains(relicsOwned, "oRelicWindEssence")){
 	windEssence = true
+}
+if(array_contains(relicsOwned, "oShockCollar")){
+	shockCollarActive = true
 }
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full

@@ -29,3 +29,14 @@ if(mouseClicked)
 	var mouseDistance = point_distance(mouse_x,mouse_y,mouseClickedX,mouseClickedY)
 	draw_arrow(x,y,x-cos(degtorad(mouseAngle)) * min(maxAimRange,mouseDistance),y+sin(degtorad(mouseAngle)) * min(maxAimRange,mouseDistance),10)	
 }
+
+//Shock collar logic - ONLY DRAW PARTS - Parallel logic in Step
+if(shockCollarLightning) { //If this is active, we are paired to an active object
+	
+	//Draw the required segments in the required frames
+	for(i = 0; i < lightningSegmentsRequired; i++) {
+		draw_sprite_ext(sLightningStrike,lightningCurrentFrame,x + 32 * i * cos(degtorad(lightningAngle)),y - 32 * i * sin(degtorad(lightningAngle)),1,1,lightningAngle,c_white,1)
+		
+		//NEED TO ADD LOGIC TO CUT OFF THE LAST LIGHTNING SPRITE BASED ON COLLISION POINT
+	}
+}

@@ -90,15 +90,41 @@ with(oPlayerGroundHitbox) {
 	ds_list_destroy(collisionInstances)
 }
 
-//Die if health is zero
-if(global.playerHealth <= 0){
-	instance_destroy()
-	instance_create_layer(x, y, "Instances", oTombstone)
-}
-
 lightningHit = instance_place(x, y, oLightningMaster)
 if(lightningHit != noone){
 	with(lightningHit){
 		lightningDamage(id)	
 	}
+}
+
+//Shock collar logic
+if(shockCollarLightning) { //If this is active, we are paired to an active object
+	//If the lightning chain timer has elapsed, we no longer draw the lightning
+	if(alarm_get(3) < (refreshTimer - lightningActiveTime)) {
+		shockCollarLightning = false	
+	}
+	else { // We need to draw lightning
+		//Find how many lightning segments we'll need to draw
+		lightningSegmentsRequired = ceil(point_distance(x,y,pairedLightningObj.x,pairedLightningObj.y) / 32)
+	
+		//Determine the angle of lightning
+		lightningAngle = point_direction(x,y,pairedLightningObj.x,pairedLightningObj.y)
+		
+		//Determine the frame of lightning to draw using a proportion of time elapsed
+		lightningCurrentFrame = ((refreshTimer - alarm_get(3)) / (lightningActiveTime)) * lightningDrawEndFrame
+		
+		//Apply damage halfway at 40 second mark
+		if(refreshTimer - alarm_get(3) - 40) {
+			//NEED TO IMPLEMENT THIS
+		}
+		
+		
+	
+	}
+}
+
+//Die if health is zero
+if(global.playerHealth <= 0){
+	instance_destroy()
+	instance_create_layer(x, y, "Instances", oTombstone)
 }

@@ -41,8 +41,10 @@ if(state == "attack"){
 	
 	else if(wizardType = "lightning"){
 		
+		//The wizard lightning is created in the charge state, so we don't need to do anything here
+		
 		//Create a lightning bolt
-		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "FloorHazards", oMainLightningStrike, {index : current_player_lightning, creatingInstance : "enemy" });
+		//var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "FloorHazards", oMainLightningStrike, {index : current_player_lightning, creatingInstance : "enemy" });
 	}
 	
 	sprite_index = cooldownSprite

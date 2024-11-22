@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"oLightningStrike",
+  "%Name":"oShockCollar",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oLightningStrike",
+  "name":"oShockCollar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Lightning Strike",
-    "path":"folders/Objects/Enemies/Ground Hazards/Lightning Strike.yy",
+    "name":"Rare",
+    "path":"folders/Objects/Relics/Rare.yy",
   },
   "parentObjectId":{
-    "name":"oLightningMaster",
-    "path":"objects/oLightningMaster/oLightningMaster.yy",
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,9 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLightningStrikeExtended",
-    "path":"sprites/sLightningStrikeExtended/sLightningStrikeExtended.yy",
+    "name":"sShockCollar",
+    "path":"sprites/sShockCollar/sShockCollar.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+    "rare",
+  ],
   "visible":true,
 }

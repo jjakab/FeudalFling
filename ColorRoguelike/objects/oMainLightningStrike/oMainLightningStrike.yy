@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLightningStrike",
-    "path":"sprites/sLightningStrike/sLightningStrike.yy",
+    "name":"sLightningStrikeExtended",
+    "path":"sprites/sLightningStrikeExtended/sLightningStrikeExtended.yy",
   },
   "spriteMaskId":null,
   "visible":true,

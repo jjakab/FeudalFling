@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLightningStrike",
-    "path":"sprites/sLightningStrike/sLightningStrike.yy",
+    "name":"sLightningAttackLine",
+    "path":"sprites/sLightningAttackLine/sLightningAttackLine.yy",
   },
   "spriteMaskId":null,
   "visible":true,

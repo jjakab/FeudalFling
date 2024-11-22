@@ -89,9 +89,13 @@ else { //If there is a player, start charging up an attack
 		}
 	}
 	else if(wizardType = "lightning"){
+		
+		
 		current_player_lightning = point_direction(x, y, oPlayer.x, oPlayer.y)
 		current_difference_lightning = angle_difference(current_player_lightning, playerDirection)
-		var collidedObj = collision_line(x,y,x+lengthdir_x(room_width,current_player_lightning),y+lengthdir_y(room_height,current_player_lightning),oWall,false,true)
+		
+		
+		/*var collidedObj = collision_line(x,y,x+lengthdir_x(room_width,current_player_lightning),y+lengthdir_y(room_height,current_player_lightning),oWall,false,true)
 		if(collidedObj != noone) { //This should never happen
 			lightning_distance = point_distance(x,y,collidedObj.x,collidedObj.y)
 		}
@@ -101,5 +105,10 @@ else { //If there is a player, start charging up an attack
 		with(projectile) {
 			pairedObj = other	
 		}
+		
+		*/
+		
+		//Create a lightning bolt
+		var projectile = instance_create_layer(x + (2 * sign(image_xscale)), y, "FloorHazards", oMainLightningStrike, {index : current_player_lightning, creatingInstance : "enemy" });
 	}
 }
