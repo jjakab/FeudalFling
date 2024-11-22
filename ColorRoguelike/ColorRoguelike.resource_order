@@ -10,7 +10,7 @@
     {"name":"Enemy Projectiles","order":7,"path":"folders/Objects/Enemies/Enemy Projectiles.yy",},
     {"name":"Ground Hazards","order":12,"path":"folders/Objects/Enemies/Ground Hazards.yy",},
     {"name":"Acid Pool","order":1,"path":"folders/Objects/Enemies/Ground Hazards/Acid Pool.yy",},
-    {"name":"Lightning Strike","order":5,"path":"folders/Objects/Enemies/Ground Hazards/Lightning Strike.yy",},
+    {"name":"Lightning Strike","order":6,"path":"folders/Objects/Enemies/Enemy Projectiles/Lightning Strike.yy",},
     {"name":"Snow Trap","order":2,"path":"folders/Objects/Enemies/Ground Hazards/Snow Trap.yy",},
     {"name":"Ogre","order":13,"path":"folders/Objects/Enemies/Ogre.yy",},
     {"name":"Wizards","order":9,"path":"folders/Objects/Enemies/Wizards.yy",},

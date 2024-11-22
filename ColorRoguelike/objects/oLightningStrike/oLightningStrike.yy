@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Lightning Strike",
-    "path":"folders/Objects/Enemies/Ground Hazards/Lightning Strike.yy",
+    "path":"folders/Objects/Enemies/Enemy Projectiles/Lightning Strike.yy",
   },
   "parentObjectId":{
     "name":"oLightningMaster",
