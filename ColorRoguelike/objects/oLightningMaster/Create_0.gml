@@ -39,7 +39,7 @@ if(creatingInstance = "tower"){
 		spriteRatio = iterator/sprite_width
 	}
 }
-show_debug_message(iterator)
+
 if(creatingInstance = "enemy") if(place_meeting(x,y,oWall)) createNew = false //If this is touching a wall and was created by a wizard, it ends
 if(creatingInstance = "tower") if(place_meeting(x,y,oTeslaTowerSecondary)) createNew = false //If this is touching a tesla tower and was created by a tower, it ends
 if(x > room_width or x < 0) createNew = false //If this is out of x-bounds, it ends
