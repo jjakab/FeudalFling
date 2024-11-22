@@ -13,31 +13,19 @@ mask_index = sLightningCreationHitbox
 var createNew = true
 
 //X and Y of the new lightning bolt to be created
-var newx = x + lengthdir_x(sprite_width,image_angle)
-var newy = y + lengthdir_y(sprite_width,image_angle)
+newx = x + lengthdir_x(sprite_width,image_angle)
+newy = y + lengthdir_y(sprite_width,image_angle)
 //Variables to calculate the new sprite x ratio
 var iterator = 1
-var spriteRatio = 1
+spriteRatio = 1
 
 //Checking to see if new lightning bolt will collide with wall
 if(creatingInstance = "enemy"){
-	if(collision_line(x, y, newx + lengthdir_x(sprite_width,image_angle), newy + lengthdir_y(sprite_width,image_angle), oWall, false, true) != noone){
-		createNew = true
-		while(instance_position(newx + lengthdir_x(iterator, image_angle), newy + lengthdir_y(iterator, image_angle), oWall) == noone){
-			iterator += 1	
-		}
-		spriteRatio = iterator/sprite_width
-	}
+	spriteRatio = lightningXScale(oWall)	
 }
 //Checking to see if new lightning bolt will collide with tower
 if(creatingInstance = "tower"){
-	if(collision_line(x, y, newx + lengthdir_x(sprite_width,image_angle), newy + lengthdir_y(sprite_width,image_angle), oTeslaTowerSecondary, false, true) != noone){
-		createNew = true
-		while(instance_position(newx + lengthdir_x(iterator, image_angle), newy + lengthdir_y(iterator, image_angle), oTeslaTowerSecondary) == noone){
-			iterator += 1	
-		}
-		spriteRatio = iterator/sprite_width
-	}
+	spriteRatio = lightningXScale(oTeslaTowerSecondary)
 }
 
 if(creatingInstance = "enemy") if(place_meeting(x,y,oWall)) createNew = false //If this is touching a wall and was created by a wizard, it ends

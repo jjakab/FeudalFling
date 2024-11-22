@@ -196,6 +196,7 @@
     {"id":{"name":"healPlayer","path":"scripts/healPlayer/healPlayer.yy",},},
     {"id":{"name":"healthStatIncrease","path":"scripts/healthStatIncrease/healthStatIncrease.yy",},},
     {"id":{"name":"lightningDamage","path":"scripts/lightningDamage/lightningDamage.yy",},},
+    {"id":{"name":"lightningXScale","path":"scripts/lightningXScale/lightningXScale.yy",},},
     {"id":{"name":"playerCanPurchaseRelic","path":"scripts/playerCanPurchaseRelic/playerCanPurchaseRelic.yy",},},
     {"id":{"name":"priceRelic","path":"scripts/priceRelic/priceRelic.yy",},},
     {"id":{"name":"roomGenMacroCreator","path":"scripts/roomGenMacroCreator/roomGenMacroCreator.yy",},},

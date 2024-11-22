@@ -155,6 +155,7 @@
     {"name":"healPlayer","order":1,"path":"scripts/healPlayer/healPlayer.yy",},
     {"name":"healthStatIncrease","order":3,"path":"scripts/healthStatIncrease/healthStatIncrease.yy",},
     {"name":"lightningDamage","order":1,"path":"scripts/lightningDamage/lightningDamage.yy",},
+    {"name":"lightningXScale","order":2,"path":"scripts/lightningXScale/lightningXScale.yy",},
     {"name":"playerCanPurchaseRelic","order":1,"path":"scripts/playerCanPurchaseRelic/playerCanPurchaseRelic.yy",},
     {"name":"roomGenMacroCreator","order":2,"path":"scripts/roomGenMacroCreator/roomGenMacroCreator.yy",},
     {"name":"spawnStatSelection","order":13,"path":"scripts/spawnStatSelection/spawnStatSelection.yy",},
