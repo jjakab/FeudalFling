@@ -40,3 +40,8 @@ if(shockCollarLightning) { //If this is active, we are paired to an active objec
 		//NEED TO ADD LOGIC TO CUT OFF THE LAST LIGHTNING SPRITE BASED ON COLLISION POINT
 	}
 }
+else if (alarm_get(3) > (refreshTimer - lightningActiveTime)) { //Check if the timer was tripped but no enemy was in range
+	
+	var frame = ((refreshTimer - alarm_get(3)) / lightningActiveTime) * 5
+	draw_sprite_ext(sShockCollarSelf,frame,x,y,1,1,0,c_white,1)
+}
