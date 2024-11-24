@@ -1,20 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayerWind",
+  "%Name":"oBomberJacket",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oPlayerWind",
+  "name":"oBomberJacket",
   "overriddenProperties":[],
   "parent":{
-    "name":"Relic Related",
-    "path":"folders/Objects/Player/Relic Related.yy",
+    "name":"Rare",
+    "path":"folders/Objects/Relics/Rare.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,9 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerRunNew",
-    "path":"sprites/sPlayerRunNew/sPlayerRunNew.yy",
+    "name":"sBomberJacket",
+    "path":"sprites/sBomberJacket/sBomberJacket.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+    "rare",
+  ],
   "visible":true,
 }

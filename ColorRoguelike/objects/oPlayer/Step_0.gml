@@ -117,9 +117,6 @@ if(shockCollarLightning) { //If this is active, we are paired to an active objec
 		if(refreshTimer - alarm_get(3) - 40) {
 			//NEED TO IMPLEMENT THIS
 		}
-		
-		
-	
 	}
 }
 

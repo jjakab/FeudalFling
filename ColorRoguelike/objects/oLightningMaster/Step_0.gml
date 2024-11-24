@@ -2,3 +2,4 @@
 
 active = false
 if(image_index = 6 or image_index = 7) active = true
+

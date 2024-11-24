@@ -57,6 +57,10 @@ lightningActiveFrame = 3 //Frame in which damage is implemented
 lightningSegmentsRequired = 0
 lightningAngle = 0
 
+//Variables relating to bomber jacket
+bomberCooldown = 3 * 60
+bomberJacketActive = false
+
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")
 
@@ -80,6 +84,9 @@ if(array_contains(relicsOwned, "oRelicWindEssence")){
 }
 if(array_contains(relicsOwned, "oShockCollar")){
 	shockCollarActive = true
+}
+if(array_contains(relicsOwned, "oBomberJacket")){
+	bomberJacketActive = true
 }
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full

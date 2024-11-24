@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"lightningInvisible",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"lightningInvisible",
+  "parent":{
+    "name":"Lightning",
+    "path":"folders/Scripts/Lightning.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

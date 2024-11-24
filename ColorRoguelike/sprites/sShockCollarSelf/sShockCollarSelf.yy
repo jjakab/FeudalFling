@@ -31,7 +31,7 @@
   "origin":4,
   "parent":{
     "name":"Lightning",
-    "path":"folders/Sprites/Player/Lightning.yy",
+    "path":"folders/Sprites/Player/Relic Related/Lightning.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

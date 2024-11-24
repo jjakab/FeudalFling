@@ -45,6 +45,14 @@ if(mouseClicked) //a dash was being charged up
 		
 	}
 	
+	//If player has bomber jacket, we drop a bomb (if the cooldown is available
+	if(bomberJacketActive) {
+		if(alarm_get(4) <= 0) { //Check the cooldown
+			alarm_set(4,bomberCooldown) //Set the cooldown
+			instance_create_layer(x,y,layer,oPlayerBomb)
+		}
+	}
+	
 }
 mouseClicked = false
 moveDir = mouseAngle

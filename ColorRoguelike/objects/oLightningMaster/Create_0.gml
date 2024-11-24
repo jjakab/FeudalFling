@@ -1,3 +1,5 @@
+isVisible = true
+
 damage = 2
 
 canDamage = true
@@ -35,14 +37,16 @@ if(y > room_height or y < 0) createNew = false //If this is out of y-bounds, it 
 
 mask_index = sprite_index
 
-
 //If this was created by a tower, we skip the 'charge' portion of the lightning sprite
 if(creatingInstance = "tower") image_index = 4
 
 
 var temp = creatingInstance
 
+
+
 //If we need to create a new lightning strike, do so
+nextStrike = noone
 if(createNew) {
 	//This passes image_angle in a struct as 'index'
 	nextStrike = instance_create_layer(newx, newy, layer, oLightningStrike, { index : image_angle, parentID : id, creatingInstance: temp, spriteShrink : spriteRatio})	
