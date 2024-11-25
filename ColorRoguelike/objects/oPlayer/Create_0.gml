@@ -61,6 +61,9 @@ lightningAngle = 0
 bomberCooldown = 3 * 60
 bomberJacketActive = false
 
+//Variables relating to blood battery
+bloodBatteryActive = false
+
 //retrieving the tile layer
 wallMapID = layer_tilemap_get_id("WallTiles")
 
@@ -87,6 +90,9 @@ if(array_contains(relicsOwned, "oShockCollar")){
 }
 if(array_contains(relicsOwned, "oBomberJacket")){
 	bomberJacketActive = true
+}
+if(array_contains(relicsOwned, "oBloodBattery")) {
+	bloodBatteryActive = true	
 }
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full

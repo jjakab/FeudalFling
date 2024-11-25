@@ -18,7 +18,7 @@ if(mouseClicked) //a dash was being charged up
 			
 			//Make sure the player isn't in the shop - if they aren't, subtract 2 health
 			if(not(string_copy(room_get_name(room),1,5)="rShop")) {
-				global.playerHealth -=2
+				damagePlayer(2)
 			}
 		}
 	

@@ -5,4 +5,9 @@ function healPlayer(hpRestore, hpMaxIncrease){
 		global.maxPlayerHealth += hpMaxIncrease
 		global.playerHealth += min(global.maxPlayerHealth - global.playerHealth, hpRestore)	
 	}
+	
+	//If the player has blood battery, heal
+	if(bloodBatteryActive) {
+		instance_create_depth(x,y,depth+1,oFriendlyExplosion)	
+	}
 }

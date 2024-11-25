@@ -1,19 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"oFriendlyExplosion",
+  "%Name":"oBloodBattery",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oFriendlyExplosion",
+  "name":"oBloodBattery",
   "overriddenProperties":[],
   "parent":{
-    "name":"Relic Related",
-    "path":"folders/Objects/Player/Relic Related.yy",
+    "name":"Rare",
+    "path":"folders/Objects/Relics/Rare.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oRelicMaster",
+    "path":"objects/oRelicMaster/oRelicMaster.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,9 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFriendlyExplosion",
-    "path":"sprites/sFriendlyExplosion/sFriendlyExplosion.yy",
+    "name":"sBloodBattery",
+    "path":"sprites/sBloodBattery/sBloodBattery.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "relic",
+    "rare",
+  ],
   "visible":true,
 }

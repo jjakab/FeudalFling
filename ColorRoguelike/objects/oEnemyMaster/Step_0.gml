@@ -17,7 +17,7 @@ if(place_meeting(x, y, oPlayer)){
 				
 				//If the player has Harkon's Blade, they heal upon succesfully hitting an enemy
 				if(global.harkonsBlade) {
-					global.playerHealth +=4			
+					healPlayer(4,0)		
 				}
 				
 				//If they have not been hit by the charge and the player is moving sufficiently fast enough, hit them
