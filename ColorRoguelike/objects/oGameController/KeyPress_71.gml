@@ -1,1 +1,1 @@
-gainGold(10)
+gainGold(50)

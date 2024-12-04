@@ -19,18 +19,32 @@ with(groundHitbox) {
 		x += other.xSpeed
 	}
 	else{
-		other.xSpeed = -other.xSpeed
-		x += other.xSpeed
+		if(array_contains(other.relicsOwned, "oWallBoost") && other.alarm[5] <=0){
+			other.xSpeed =- other.xSpeed * 1.5
+			x += other.xSpeed
+			other.alarm[5] = 60
+		}
+		else{
+			other.xSpeed = -other.xSpeed
+			x += other.xSpeed
+		}
 	}
-	
+	show_debug_message(other.xSpeed)
 	other.x += (x - startingX)
 	
 	if(!place_meeting(x, y + other.ySpeed, oWall)){
 		y += other.ySpeed
 	}
 	else{
-		other.ySpeed = -other.ySpeed
-		y += other.ySpeed
+		if(array_contains(other.relicsOwned, "oWallBoost") && other.alarm[5] <=0){
+			other.ySpeed =- other.ySpeed * 1.5
+			y += other.ySpeed
+			other.alarm[5] = 60
+		}
+		else{
+			other.ySpeed = -other.ySpeed
+			y += other.ySpeed
+		}
 	}
 	
 	other.y += (y - startingY)
