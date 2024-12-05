@@ -7,7 +7,7 @@ function healPlayer(hpRestore, hpMaxIncrease){
 	}
 	
 	//If the player has blood battery, heal
-	if(bloodBatteryActive) {
+	if(instance_exists(oPlayer) && oPlayer.bloodBatteryActive) {
 		instance_create_depth(x,y,depth+1,oFriendlyExplosion)	
 	}
 }

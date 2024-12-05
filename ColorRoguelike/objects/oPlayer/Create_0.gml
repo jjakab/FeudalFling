@@ -76,6 +76,8 @@ groundHitbox = instance_create_depth(x,y,depth,oPlayerGroundHitbox)
 //If player has Shield relic, give them a block against the first hit of each room.
 firstHitNegate = false
 windEssence = false
+kineticKeystoneActive = false
+vampireFangsActive = false
 
 relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 //Doing checks for player relics
@@ -93,6 +95,12 @@ if(array_contains(relicsOwned, "oBomberJacket")){
 }
 if(array_contains(relicsOwned, "oBloodBattery")) {
 	bloodBatteryActive = true	
+}
+if(array_contains(relicsOwned, "oKineticKeystone")){
+	kineticKeystoneActive = true	
+}
+if(array_contains(relicsOwned, "oVampireFangs")){
+	vampireFangsActive = true	
 }
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full
