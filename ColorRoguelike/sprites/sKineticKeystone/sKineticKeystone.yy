@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sKineticKeystone",
   "bboxMode":0,
-  "bbox_bottom":95,
-  "bbox_left":6,
-  "bbox_right":89,
+  "bbox_bottom":15,
+  "bbox_left":1,
+  "bbox_right":14,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":96,
+  "height":16,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"bd5ffdd7-bdfc-40d6-8880-0226e1f27d99","blendMode":0,"displayName":"default","isLocked":false,"name":"bd5ffdd7-bdfc-40d6-8880-0226e1f27d99","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":96,
+  "width":16,
 }

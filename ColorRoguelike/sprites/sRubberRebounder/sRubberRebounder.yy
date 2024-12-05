@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"sRubberRebounder",
   "bboxMode":0,
-  "bbox_bottom":89,
-  "bbox_left":6,
-  "bbox_right":89,
+  "bbox_bottom":14,
+  "bbox_left":1,
+  "bbox_right":14,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":96,
+  "height":16,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"f222bee4-5f46-4adc-85e9-7d961af68c30","blendMode":0,"displayName":"default","isLocked":false,"name":"f222bee4-5f46-4adc-85e9-7d961af68c30","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":96,
+  "width":16,
 }

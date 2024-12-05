@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWallBoost",
-    "path":"sprites/sWallBoost/sWallBoost.yy",
+    "name":"sRubberRebounder",
+    "path":"sprites/sRubberRebounder/sRubberRebounder.yy",
   },
   "spriteMaskId":null,
   "tags":[
