@@ -19,7 +19,7 @@ with(groundHitbox) {
 		x += other.xSpeed
 	}
 	else{
-		if(array_contains(other.relicsOwned, "oWallBoost") && other.alarm[5] <=0){
+		if(array_contains(other.relicsOwned, "oRubberRebounder") && other.alarm[5] <=0){
 			other.xSpeed =- other.xSpeed * 1.5
 			x += other.xSpeed
 			other.alarm[5] = 60
@@ -36,7 +36,7 @@ with(groundHitbox) {
 		y += other.ySpeed
 	}
 	else{
-		if(array_contains(other.relicsOwned, "oWallBoost") && other.alarm[5] <=0){
+		if(array_contains(other.relicsOwned, "oRubberRebounder") && other.alarm[5] <=0){
 			other.ySpeed =- other.ySpeed * 1.5
 			y += other.ySpeed
 			other.alarm[5] = 60

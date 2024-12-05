@@ -1,5 +1,5 @@
 event_inherited()
 
-relicTitle = "Wall Bounce"
+relicTitle = "Rubber Rebounder"
 
 statString = "Once every second, gain extra movement speed when bouncing off a wall"
