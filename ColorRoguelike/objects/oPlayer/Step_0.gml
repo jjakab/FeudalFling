@@ -29,7 +29,6 @@ with(groundHitbox) {
 			x += other.xSpeed
 		}
 	}
-	show_debug_message(other.xSpeed)
 	other.x += (x - startingX)
 	
 	if(!place_meeting(x, y + other.ySpeed, oWall)){

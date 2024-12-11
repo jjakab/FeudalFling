@@ -10,3 +10,5 @@ poisonDamage = 50
 hurtTime = 15 // How many frames should this show as damaged
 
 goldDropped = 20
+
+maxHealthPotionRange = 100

@@ -19,7 +19,10 @@ if(place_meeting(x, y, oPlayer)){
 				if(global.harkonsBlade) {
 					healPlayer(4,0)		
 				}
-				
+				if(kineticKeystoneActive){
+					xSpeed = xSpeed * 1.4
+					ySpeed = ySpeed * 1.4
+				}
 				//If they have not been hit by the charge and the player is moving sufficiently fast enough, hit them
 				with(other) {
 					show_debug_message("Enemy hit")
@@ -49,9 +52,29 @@ if(place_meeting(x, y, oPlayer)){
 
 //Kill enemy if applicable
 if(hp <= 0){
+	
+	if(oPlayer.vampireFangsActive){
+		var dist,rot
+		var death_x= x
+		var death_y = y
+		dist = irandom(maxHealthPotionRange)
+		rot = irandom(360)
+		xx = death_x + lengthdir_x(dist,rot)
+		yy = death_y + lengthdir_y(dist,rot)
+		
+		while (instance_place(xx,yy,oWall)) {
+			dist = irandom(maxHealthPotionRange)
+			rot = irandom(360)
+			xx = death_x + lengthdir_x(dist,rot)
+			yy = death_y + lengthdir_y(dist,rot)
+		}
+		instance_create_layer(x, y, "Instances", oHealthPotion)			
+	}	
+	
 	instance_destroy()	
 	//Create tombstone animation
 	instance_create_layer(x, y, "Instances",oTombstone)
 	//Add gold to player 
 	gainGold(goldDropped)
+	
 }
