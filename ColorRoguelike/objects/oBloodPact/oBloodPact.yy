@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oRelicDamageBoost",
+  "%Name":"oBloodPact",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oRelicDamageBoost",
+  "name":"oBloodPact",
   "overriddenProperties":[],
   "parent":{
-    "name":"Common",
-    "path":"folders/Objects/Relics/Common.yy",
+    "name":"Cursed",
+    "path":"folders/Objects/Relics/Cursed.yy",
   },
   "parentObjectId":{
     "name":"oRelicMaster",
@@ -34,13 +34,13 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sDamageBoost",
-    "path":"sprites/sDamageBoost/sDamageBoost.yy",
+    "name":"sBloodPact",
+    "path":"sprites/sBloodPact/sBloodPact.yy",
   },
   "spriteMaskId":null,
   "tags":[
     "relic",
-    "common",
+    "cursed",
   ],
   "visible":true,
 }
