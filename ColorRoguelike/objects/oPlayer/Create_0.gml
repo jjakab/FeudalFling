@@ -40,6 +40,9 @@ attackDamage = global.attackDamage
 //Create list of enemies hit per charge
 enemyHitList = ds_list_create()
 
+//Variable for acid trail slime damage
+acidTrailCooldown = 90
+
 //variables related to wind essence
 windEssence = false //does the player have the wind essence relic?
 windEssenceDelay = 30 //how long after max launch should wind essence be created

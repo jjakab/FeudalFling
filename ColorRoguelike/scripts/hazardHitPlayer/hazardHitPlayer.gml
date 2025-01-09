@@ -14,6 +14,10 @@ function hazardHitPlayer(){
 				canDamage = false
 				alarm_set(0,noDamageWindow)
 			}
+			if(object_index = oEnemySlimeTrail and oPlayer.acidTrailCooldown = 0 and (!array_contains(relicsOwned, oAcidShoes))){
+				damagePlayer(damage)	
+				oPlayer.acidTrailCooldown = 90
+			}
 			if(object_index = oLightningStrike){
 				var currID = findMainLightningParent(id)
 				//Need to add active damage frames here

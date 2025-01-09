@@ -1,3 +1,7 @@
+//Tick down acid trail cooldown damage
+if(acidTrailCooldown > 0){
+	acidTrailCooldown -= 1	
+}
 //Update arrow accordingly if movement is being buffered
 if(mouseClicked)
 {

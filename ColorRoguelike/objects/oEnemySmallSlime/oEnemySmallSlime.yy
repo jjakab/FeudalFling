@@ -1,19 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemyBat",
+  "%Name":"oEnemySmallSlime",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oEnemyBat",
+  "name":"oEnemySmallSlime",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Slime",
+    "path":"folders/Objects/Enemies/Slime.yy",
   },
   "parentObjectId":{
     "name":"oEnemyMaster",
@@ -37,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyBat",
-    "path":"sprites/sEnemyBat/sEnemyBat.yy",
+    "name":"sEnemySmalSlime",
+    "path":"sprites/sEnemySmalSlime/sEnemySmalSlime.yy",
   },
   "spriteMaskId":null,
   "visible":true,
