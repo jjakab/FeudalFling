@@ -1,5 +1,6 @@
 event_inherited()
 
+//If player touches slime, damage player, then stop the slimes for 60 frames before resuming their pathing
 if(place_meeting(x, y, oPlayer) && canDamage = 0){
 	damagePlayer(2)	
 	alarm[0] = -1
