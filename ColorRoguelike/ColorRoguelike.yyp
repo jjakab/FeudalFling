@@ -285,7 +285,7 @@
     {"id":{"name":"sEnemyOgreCooldownAlternate","path":"sprites/sEnemyOgreCooldownAlternate/sEnemyOgreCooldownAlternate.yy",},},
     {"id":{"name":"sEnemyOgreExclamation","path":"sprites/sEnemyOgreExclamation/sEnemyOgreExclamation.yy",},},
     {"id":{"name":"sEnemySlimeTrail","path":"sprites/sEnemySlimeTrail/sEnemySlimeTrail.yy",},},
-    {"id":{"name":"sEnemySmalSlime","path":"sprites/sEnemySmalSlime/sEnemySmalSlime.yy",},},
+    {"id":{"name":"sEnemySmallSlime","path":"sprites/sEnemySmallSlime/sEnemySmallSlime.yy",},},
     {"id":{"name":"sFireAttackLine","path":"sprites/sFireAttackLine/sFireAttackLine.yy",},},
     {"id":{"name":"sFireballAttack","path":"sprites/sFireballAttack/sFireballAttack.yy",},},
     {"id":{"name":"sFireballExplodeWall","path":"sprites/sFireballExplodeWall/sFireballExplodeWall.yy",},},

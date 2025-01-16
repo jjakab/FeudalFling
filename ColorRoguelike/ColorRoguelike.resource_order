@@ -230,7 +230,7 @@
     {"name":"sEnemyOgreCooldownAlternate","order":6,"path":"sprites/sEnemyOgreCooldownAlternate/sEnemyOgreCooldownAlternate.yy",},
     {"name":"sEnemyOgreExclamation","order":10,"path":"sprites/sEnemyOgreExclamation/sEnemyOgreExclamation.yy",},
     {"name":"sEnemySlimeTrail","order":2,"path":"sprites/sEnemySlimeTrail/sEnemySlimeTrail.yy",},
-    {"name":"sEnemySmalSlime","order":1,"path":"sprites/sEnemySmalSlime/sEnemySmalSlime.yy",},
+    {"name":"sEnemySmallSlime","order":1,"path":"sprites/sEnemySmallSlime/sEnemySmallSlime.yy",},
     {"name":"sFireAttackLine","order":2,"path":"sprites/sFireAttackLine/sFireAttackLine.yy",},
     {"name":"sFireballAttack","order":3,"path":"sprites/sFireballAttack/sFireballAttack.yy",},
     {"name":"sFireballExplodeWall","order":6,"path":"sprites/sFireballExplodeWall/sFireballExplodeWall.yy",},

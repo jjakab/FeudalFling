@@ -8,4 +8,7 @@ function enemyProjectileList(id){
 	ds_list_add(id.enemies, oEnemyIceWizard)
 	ds_list_add(id.enemies, oEnemyIceWizardElite)
 	ds_list_add(id.enemies, oEnemyOgre)
+	ds_list_add(id.enemies, oEnemyBat)
+	ds_list_add(id.enemies, oEnemySmallSlime)
+	ds_list_add(id.enemies, oEnemyBigSlime)
 }

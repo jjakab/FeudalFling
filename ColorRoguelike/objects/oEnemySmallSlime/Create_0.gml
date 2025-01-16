@@ -17,3 +17,9 @@ xSpeed = 2
 ySpeed = 2
 
 canDamage = 0
+
+hopping = true
+startHopFrame = 3
+stopHopFrame = 7
+
+hopSpeed = 0.8

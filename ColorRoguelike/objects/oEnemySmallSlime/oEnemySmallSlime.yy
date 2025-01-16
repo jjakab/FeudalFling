@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemySmalSlime",
-    "path":"sprites/sEnemySmalSlime/sEnemySmalSlime.yy",
+    "name":"sEnemySmallSlime",
+    "path":"sprites/sEnemySmallSlime/sEnemySmallSlime.yy",
   },
   "spriteMaskId":null,
   "visible":true,
