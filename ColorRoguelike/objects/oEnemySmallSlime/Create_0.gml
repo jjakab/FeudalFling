@@ -11,7 +11,6 @@ gridHeight = room_height div gridSize
 pathGrid = mp_grid_create(112, 64, gridWidth, gridHeight, gridSize, gridSize)
 mp_grid_add_instances(pathGrid, oWall, false)
 
-alarm_set(0,10)
 
 xSpeed = 2
 ySpeed = 2
