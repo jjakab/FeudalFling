@@ -24,3 +24,13 @@ if(sprite_index == sEnemySmallSlime){
 		}
 	}
 }
+<<<<<<< Updated upstream
+=======
+//If slime should be hopping, move towards player
+if(hopping){
+	if(instance_exists(oPlayer)){
+		//Uses "solid" objects to path around and get to player
+		mp_potential_step(oPlayer.x, oPlayer.y, hopSpeed, false)	
+	}
+}
+>>>>>>> Stashed changes
