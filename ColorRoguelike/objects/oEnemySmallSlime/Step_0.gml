@@ -24,8 +24,7 @@ if(sprite_index == sEnemySmallSlime){
 		}
 	}
 }
-<<<<<<< Updated upstream
-=======
+
 //If slime should be hopping, move towards player
 if(hopping){
 	if(instance_exists(oPlayer)){
@@ -33,4 +32,4 @@ if(hopping){
 		mp_potential_step(oPlayer.x, oPlayer.y, hopSpeed, false)	
 	}
 }
->>>>>>> Stashed changes
+

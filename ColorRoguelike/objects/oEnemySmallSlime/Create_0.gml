@@ -19,6 +19,6 @@ canDamage = 0
 
 hopping = true
 startHopFrame = 3
-stopHopFrame = 9
+stopHopFrame = 7
 
 hopSpeed = random_range(0.6,0.8)
