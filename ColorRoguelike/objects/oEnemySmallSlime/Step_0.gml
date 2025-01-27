@@ -10,6 +10,7 @@ if(canDamage != 0){
 	canDamage -= 1	
 }
 
+
 //Check to make sure slime is in the hopping animation
 if(sprite_index == sEnemySmallSlime){
 	//We need to check this range because the image_index is floating point num, so it might not hit the exact startHopFrame number
@@ -20,7 +21,7 @@ if(sprite_index == sEnemySmallSlime){
 	if(image_index >= stopHopFrame && image_index <= (stopHopFrame + 0.5)){
 		//path_index is -1 if there is no path currently being followed. 
 		if(path_index != -1){
-			path_end()	
+			path_end()
 		}
 	}
 }

@@ -21,4 +21,6 @@ hopping = true
 startHopFrame = 3
 stopHopFrame = 7
 
+restTime = 15 //# of frames to rest between hops
+
 hopSpeed = random_range(0.6,0.8)

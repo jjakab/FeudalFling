@@ -1,5 +1,5 @@
 
-//VAariables related to drawing hearts
+//Variables related to drawing hearts
 hpPerHeart = 4
 numHearts = 0
 
@@ -21,6 +21,9 @@ goldAmountDrawStartX = goldDrawStartX + 30
 
 //General draw settings
 draw_set_font(fPixelFont24)
+display_set_gui_maximize(2,2)
 
 drawXScale = 1.5
 drawYScale = 1.5
+
+

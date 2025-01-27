@@ -34,6 +34,8 @@ draw_set_font(fPixelFont24)
 draw_text(goldAmountDrawStartX, goldDrawStartY-5, goldAmount)
 
 
+// Code to draw relics in GUI - now disabled
+/* 
 itemsOwned = ds_map_keys_to_array(global.relicsOwned)
 var spr
 for (var j = 0; j < array_length(itemsOwned); j++) {
@@ -51,3 +53,4 @@ for (var j = 0; j < array_length(itemsOwned); j++) {
 		draw_text(relicDrawStartX + (relicDrawXInterval * (j - 1)) + 20, relicDrawStartY + 8,string(numStacks))
 	}
 }
+*/
