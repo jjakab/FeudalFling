@@ -1,10 +1,15 @@
+//Variables related to drawing banners
+bannerXOffset = -8
+bannerYOffset = -5
+bannerAlpha = 0.6
+
 
 //Variables related to drawing hearts
 hpPerHeart = 4
 numHearts = 0
 
 healthDrawStartX = 10
-healthDrawXInterval = 22
+healthDrawXInterval = 18
 healthDrawStartY = view_get_hport(0) - 25
 
 
@@ -15,15 +20,14 @@ relicDrawStartY = healthDrawStartY
 
 
 //Variables related to drawing gold
-goldDrawStartX = 180
+goldDrawStartX = 200
 goldDrawStartY = healthDrawStartY
 goldAmountDrawStartX = goldDrawStartX + 30
 
 //General draw settings
 draw_set_font(fPixelFont24)
-display_set_gui_maximize(2,2)
 
-drawXScale = 1.5
-drawYScale = 1.5
+drawXScale = 1.2
+drawYScale = 1.2
 
 

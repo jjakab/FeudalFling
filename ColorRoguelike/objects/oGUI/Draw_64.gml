@@ -1,5 +1,11 @@
 draw_set_halign(fa_left)
 
+
+//Draw the GUI banner first
+draw_sprite_ext(sGUIBannerHealth,0,healthDrawStartX + bannerXOffset,healthDrawStartY + bannerYOffset,drawXScale,drawYScale,0,c_white,bannerAlpha)
+
+
+
 //Loop through every heart
 for (var i = 1; i <= numHearts; i++) {
 
@@ -25,13 +31,16 @@ for (var i = 1; i <= numHearts; i++) {
 	}
 }
 
+//Draw gold banner
+draw_sprite_ext(sGUIBannerGold,0,goldDrawStartX + bannerXOffset,goldDrawStartY + bannerYOffset,drawXScale,drawYScale,0,c_white,bannerAlpha)
+
 //Drawing gold owned
 draw_sprite_ext(sGoldOwned,0,goldDrawStartX, goldDrawStartY, drawXScale,drawYScale,0,c_white,1)
 var goldAmount = string(global.goldOwned)
 draw_set_color(c_white)
 draw_set_valign(fa_top)
 draw_set_font(fPixelFont24)
-draw_text(goldAmountDrawStartX, goldDrawStartY-5, goldAmount)
+draw_text(goldAmountDrawStartX - 3, goldDrawStartY-7, "x " + goldAmount)
 
 
 // Code to draw relics in GUI - now disabled
