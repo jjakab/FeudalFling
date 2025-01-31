@@ -1,18 +1,18 @@
 event_inherited()
 
-if(!place_meeting(x + xSpeed,y, oWall)){
-	x += xSpeed
+if(!place_meeting(x + getEnemyMovespeedFactor(xSpeed),y, oWall)){
+	x += getEnemyMovespeedFactor(xSpeed)
 }
 else{
 	xSpeed = -xSpeed
-	x += xSpeed
+	x += getEnemyMovespeedFactor(xSpeed)
 }
-if(!place_meeting(x, y + ySpeed, oWall)){
-	y += ySpeed
+if(!place_meeting(x, y + getEnemyMovespeedFactor(ySpeed), oWall)){
+	y += getEnemyMovespeedFactor(ySpeed)
 }
 else{
 	ySpeed = -ySpeed
-	y += ySpeed
+	y += getEnemyMovespeedFactor(ySpeed)
 }
 	
 //Orient to face the correct direction

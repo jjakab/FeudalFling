@@ -34,11 +34,16 @@ if(place_meeting(x, y, oPlayer)){
 						else{
 							hp = hp - oPlayer.attackDamage
 						}	
-					}	
-					if(global.waxCandle){
-						xSpeed = xSpeed * 0.85
-						ySpeed = ySpeed * 0.85
 					}
+					else {
+							hp = hp - oPlayer.attackDamage
+					}	
+					
+					//If the player has wax candle, this enemy has been wax candled
+					if(global.waxCandle) {
+						waxCandled = true	
+					}
+					
 					alarm_set(11,hurtTime)
 					
 					//Poison enemy if applicable

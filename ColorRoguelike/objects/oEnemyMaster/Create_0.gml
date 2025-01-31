@@ -3,6 +3,8 @@
 hp = 200
 max_hp = 100
 
+waxCandled = false
+
 poisoned = false
 poisonDelay = 120
 poisonDamage = 50

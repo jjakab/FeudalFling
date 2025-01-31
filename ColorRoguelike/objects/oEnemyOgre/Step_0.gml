@@ -7,11 +7,11 @@ if(state="amble"){
 		var distToPlayer = point_distance(x, y,  oPlayer.x, oPlayer.y)
 		//Check to see if player is within ogre trigger range
 		if(distToPlayer > slamRange){
-			if(!place_meeting(x+lengthdir_x(xSpeed, dir),y, oWall)){
-				x += lengthdir_x(xSpeed, dir)
+			if(!place_meeting(x+getEnemyMovespeedFactor(lengthdir_x(xSpeed, dir)),y, oWall)){
+				x += getEnemyMovespeedFactor(lengthdir_x(xSpeed, dir))
 			}
-			if(!place_meeting(x, y + lengthdir_y(ySpeed, dir), oWall)){
-				y += lengthdir_y(ySpeed, dir)
+			if(!place_meeting(x, y + getEnemyMovespeedFactor(lengthdir_y(ySpeed, dir)), oWall)){
+				y += getEnemyMovespeedFactor(lengthdir_y(ySpeed, dir))
 			}
 		}
 		//Swap the state into charging if player gets close enough

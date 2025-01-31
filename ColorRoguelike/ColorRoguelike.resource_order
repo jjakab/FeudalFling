@@ -85,7 +85,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fPixelFont12","order":2,"path":"fonts/fPixelFont12/fPixelFont12.yy",},
-    {"name":"fPixelFont24","order":1,"path":"fonts/fPixelFont24/fPixelFont24.yy",},
+    {"name":"fPixelFont24","order":4,"path":"fonts/fPixelFont24/fPixelFont24.yy",},
+    {"name":"fPixelFont30","order":1,"path":"fonts/fPixelFont30/fPixelFont30.yy",},
     {"name":"fPixelFont6","order":3,"path":"fonts/fPixelFont6/fPixelFont6.yy",},
     {"name":"oAcidPool","order":1,"path":"objects/oAcidPool/oAcidPool.yy",},
     {"name":"oAcidPoolLarge","order":2,"path":"objects/oAcidPoolLarge/oAcidPoolLarge.yy",},
@@ -174,6 +175,7 @@
     {"name":"createRoom","order":1,"path":"scripts/createRoom/createRoom.yy",},
     {"name":"damagePlayer","order":3,"path":"scripts/damagePlayer/damagePlayer.yy",},
     {"name":"enemyProjectileList","order":15,"path":"scripts/enemyProjectileList/enemyProjectileList.yy",},
+    {"name":"getEnemyMovespeedFactor","order":20,"path":"scripts/getEnemyMovespeedFactor/getEnemyMovespeedFactor.yy",},
     {"name":"healPlayer","order":1,"path":"scripts/healPlayer/healPlayer.yy",},
     {"name":"healthStatIncrease","order":3,"path":"scripts/healthStatIncrease/healthStatIncrease.yy",},
     {"name":"lightningDamage","order":1,"path":"scripts/lightningDamage/lightningDamage.yy",},
