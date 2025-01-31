@@ -25,8 +25,20 @@ if(place_meeting(x, y, oPlayer)){
 				}
 				//If they have not been hit by the charge and the player is moving sufficiently fast enough, hit them
 				with(other) {
-					show_debug_message("Enemy hit")
-					hp = hp - oPlayer.attackDamage
+					//If oPlayer has coolGlasses, add a chance for critical damage
+					if(global.coolGlasses){
+						var doubleDamage = irandom_range(1, 10)
+						if(doubleDamage == 1){
+							hp = hp - (oPlayer.attackDamage * 2)	
+						}
+						else{
+							hp = hp - oPlayer.attackDamage
+						}	
+					}	
+					if(global.waxCandle){
+						xSpeed = xSpeed * 0.85
+						ySpeed = ySpeed * 0.85
+					}
 					alarm_set(11,hurtTime)
 					
 					//Poison enemy if applicable
@@ -76,5 +88,4 @@ if(hp <= 0){
 	instance_create_layer(x, y, "Instances",oTombstone)
 	//Add gold to player 
 	gainGold(goldDropped)
-	
 }

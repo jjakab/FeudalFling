@@ -4,4 +4,4 @@ beginningString = "Take "
 statString = "100% "
 endingString = "less damage from acid"
 
-relicTitle = "Acid shoes"
+relicTitle = "Acid Shoes"

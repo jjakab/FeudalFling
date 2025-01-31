@@ -30,6 +30,8 @@ global.harkonsBlade = false //Starts without Harkon's Blade
 global.goldGain = 1 //Coefficient for gaining gold
 global.poisonedBlade = false //Poisoned blade
 global.trapSpeed = 1 //Coefficient for how fast traps work
+global.coolGlasses = false
+global.waxCandle = false
 
 global.exp = 0
 global.expNextLevel = 10

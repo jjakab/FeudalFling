@@ -108,11 +108,13 @@
     {"name":"inst_26305D39","path":"rooms/rStartingRoom2_1/rStartingRoom2_1.yy",},
     {"name":"inst_6D884E4C","path":"rooms/rStartingRoom2_1/rStartingRoom2_1.yy",},
     {"name":"inst_6E479A7A","path":"rooms/rStartingRoom2_1/rStartingRoom2_1.yy",},
+    {"name":"inst_46EE8300","path":"rooms/rStartingRoom2_1/rStartingRoom2_1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":50,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
         {"$GMRInstance":"","%Name":"inst_2EB240A_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_2EB240A_1","path":"rooms/rBasicRoomMaster/rBasicRoomMaster.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_2EB240A_1_1_1","objectId":{"name":"oEnemyFireWizard","path":"objects/oEnemyFireWizard/oEnemyFireWizard.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":96.0,},
+        {"$GMRInstance":"","%Name":"inst_46EE8300","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46EE8300","objectId":{"name":"oWaxCandle","path":"objects/oWaxCandle/oWaxCandle.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":96.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Level","depth":150,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
         {"$GMRInstance":"","%Name":"inst_5D0BDBCD_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D0BDBCD_1_1","objectId":{"name":"oDoorCombat","path":"objects/oDoorCombat/oDoorCombat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":16.0,},
