@@ -25,20 +25,20 @@ if(place_meeting(x, y, oPlayer)){
 				}
 				//If they have not been hit by the charge and the player is moving sufficiently fast enough, hit them
 				with(other) {
+					//Use this damage to calculate each enemy's hit (for relics that change dmg)
+					var tempAttack = oPlayer.attackDamage
+					//If player has Vampire cloak triggered, boost damage
+					if(oPlayer.vampireCloakDamageBoost){
+						tempAttack = tempAttack * 1.25
+					}
 					//If oPlayer has coolGlasses, add a chance for critical damage
 					if(global.coolGlasses){
 						var doubleDamage = irandom_range(1, 10)
 						if(doubleDamage == 1){
-							hp = hp - (oPlayer.attackDamage * 2)	
+							tempAttack = tempAttack * 2
 						}
-						else{
-							hp = hp - oPlayer.attackDamage
-						}	
 					}
-					else {
-							hp = hp - oPlayer.attackDamage
-					}	
-					
+					hp = hp - tempAttack
 					//If the player has wax candle, this enemy has been wax candled
 					if(global.waxCandle) {
 						waxCandled = true	
@@ -57,11 +57,7 @@ if(place_meeting(x, y, oPlayer)){
 			
 			}
 			
-			// If the player has already hit this enemy, we do nothing
 		}
-	//If the player is not moving fast enough, we do nothing
-	
-	
 	
 	}
 }

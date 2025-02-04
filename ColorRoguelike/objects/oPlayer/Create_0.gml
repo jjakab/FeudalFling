@@ -81,6 +81,8 @@ firstHitNegate = false
 windEssence = false
 kineticKeystoneActive = false
 vampireFangsActive = false
+vampireCloakActive = false
+vampireCloakDamageBoost = false
 
 relicsOwned = ds_map_keys_to_array(global.relicsOwned)
 //Doing checks for player relics
@@ -104,6 +106,9 @@ if(array_contains(relicsOwned, "oKineticKeystone")){
 }
 if(array_contains(relicsOwned, "oVampireFangs")){
 	vampireFangsActive = true	
+}
+if(array_contains(relicsOwned, "oVampireCloak")){
+	vampireCloakActive = true	
 }
 
 //if player has a hp restore relic, restore half an hp heart if hp isn't full

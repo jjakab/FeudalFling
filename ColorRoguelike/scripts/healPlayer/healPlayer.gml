@@ -10,4 +10,8 @@ function healPlayer(hpRestore, hpMaxIncrease){
 	if(instance_exists(oPlayer) && oPlayer.bloodBatteryActive) {
 		instance_create_depth(x,y,depth+1,oFriendlyExplosion)	
 	}
+	//If the player has vampire cloak, trigger a 25% damage boost on next hit
+	if(instance_exists(oPlayer) && oPlayer.vampireCloakActive) {
+		oPlayer.vampireCloakDamageBoost = true
+	}
 }
